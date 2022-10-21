@@ -1,9 +1,9 @@
 $(function() {
     let timer = $('#timer').pietimer({
-        timerSeconds: 15,
+        timerSeconds: 20,
         color: '#C72D37',
         fill: false,
-        showPercentage: true,
+        showPercentage: false,
         callback: function() {
             $('#timer').pietimer('reset');
             //следующий элемент

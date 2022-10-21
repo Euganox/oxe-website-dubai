@@ -80,6 +80,7 @@
                     </div>
 
                     <div class="swiper-header-nav-right">
+                        <div id="timer"></div>
                         <svg class="swiper-header-nav-arrow swiper-header-nav-arrow-right" width="49" height="14" viewBox="0 0 49 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z"/>
                         </svg>
@@ -94,5 +95,4 @@
             </div>
         </div>
     </section>
-    <div id="timer"></div>
 </main>
