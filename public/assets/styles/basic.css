@@ -1,0 +1,161 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'RalewayRegular', serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /*margin-right: calc(-1 * (100vw - 100%));*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.flex-default-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-default-fs-c {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.color-white {
+    color: #F8F8F8;
+}
+
+.color-red {
+    color: #C72D37;
+}
+
+.fz-20-px {
+    font-size: 1.111rem;
+}
+
+.fz-40-px {
+    font-size: 2.2rem;
+}
+
+.fz-80-px {
+    font-size: 4.5rem;
+}
+
+.fz-90-px {
+    font-size: 5rem;
+}
+
+.fz-128-px {
+    font-size: 7rem;
+}
+
+.pl-296-px {
+    padding-left: 16.5rem;
+}
+
+.font-arolse-serif {
+    font-family: 'ArolseSerif', serif;
+}
+
+.font-arolse-script {
+    font-family: 'ArolseScript', serif;
+}
+
+.btn {
+    padding: 1.5rem 2.8rem;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.btn:hover .svg-arrow-i {
+    margin-left: 2rem;
+}
+
+.btn .svg-arrow-i {
+    margin-left: 1.5rem;
+    transition: all 0.3s;
+}
+
+.btn-white-textred {
+    background-color: #F8F8F8;
+    color: #C72D37;
+}
+
+.btn-white-textred .svg-arrow-i {
+    fill: #C72D37;
+}
+
+.btn-red-textwhite {
+    background: linear-gradient(96.71deg, #C12C36 13.04%, #AA262F 82.41%);
+    color: #F8F8F8;
+}
+
+.btn-red-textwhite .svg-arrow-i {
+    fill: #F8F8F8;
+}
+
+.btn-text-bold {
+    font-family: 'RalewayBold', serif;
+}
+
+/* НОУТБУК */
+@media screen and (max-width: 1550px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+/* ПЛАНШЕТ */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ПЛАНШЕТ */
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+
+    .display-sm-none {
+        display: none;
+    }
+}
+
+/* ТЕЛЕФОН */
+@media screen and (max-width: 736px) {
+
+}
+
+/* ТЕЛЕФОН */
+@media screen and (max-width: 667px) {
+
+}
+
+/* ТЕЛЕФОН */
+@media screen and (max-width: 414px) {
+
+}
+
+/* ТЕЛЕФОН */
+@media screen and (max-width: 375px) {
+
+}
+
+/* ТЕЛЕФОН */
+@media screen and (max-width: 320px) {
+    * {
+        font-size: 12px;
+    }
+}
