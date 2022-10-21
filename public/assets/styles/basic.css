@@ -66,6 +66,10 @@ a {
     font-family: 'ArolseSerif', serif;
 }
 
+.font-arolse-serif-special {
+    font-feature-settings: 'case'on, 'ordn'on, 'salt'on;
+}
+
 .font-arolse-script {
     font-family: 'ArolseScript', serif;
 }
