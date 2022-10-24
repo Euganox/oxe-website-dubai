@@ -73,14 +73,13 @@
                 </h2>
 
                 <div class="swiper-header-nav flex-default-sb-c">
-                    <div class="swiper-header-nav-left">
+                    <div id="goToPrevSlide" class="swiper-header-nav-left">
                         <svg class="swiper-header-nav-arrow swiper-header-nav-arrow-left" style="transform: rotate(180deg);" width="49" height="14" viewBox="0 0 49 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z"/>
                         </svg>
                     </div>
 
-                    <div class="swiper-header-nav-right">
-                        <div id="timer"></div>
+                    <div id="goToNextSlide" class="swiper-header-nav-right">
                         <svg class="swiper-header-nav-arrow swiper-header-nav-arrow-right" width="49" height="14" viewBox="0 0 49 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z"/>
                         </svg>
@@ -92,6 +91,35 @@
                         <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
                     </svg>
                 </a>
+            </div>
+
+            <div id="features" class="swiper-catalog">
+                <div class="swiper-item" style="background-image: url('./public/images/peninsula/peninsula_card.png');">
+                    <div class="swiper-tags">
+                        <img src="./public/assets/images/hottest.png" alt="">
+                        <img src="./public/assets/images/topsales.png" alt="">
+                    </div>
+
+                    <div class="swiper-item-cover">
+
+                        <div class="swiper-item-vision">
+                            <h1 class="swiper-item-title fz-36-px color-white font-raleway-light">Peninsula</h1>
+                            <p class="swiper-item-text color-white font-raleway-light">Business Bay</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-item" style="background-image: url('./public/images/creek/creek_card.png');">
+                    2
+                </div>
+
+                <div class="swiper-item" style="background-image: url('./public/images/safaone/safaone_card.png');">
+                    3
+                </div>
+
+                <div class="swiper-item" style="background-image: url('./public/images/safaone/safaone_card.png');">
+                    3
+                </div>
             </div>
         </div>
     </section>

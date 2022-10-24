@@ -1,22 +1,21 @@
-$(function() {
-    let timer = $('#timer').pietimer({
-        timerSeconds: 20,
-        color: '#C72D37',
-        fill: false,
-        showPercentage: false,
-        callback: function() {
-            $('#timer').pietimer('reset');
-            //следующий элемент
+$(document).ready(function() {
+    const autoplaySlider = $('#features').lightSlider({
+        auto:true,
+        loop:true,
+        autoWidth:true,
+        pause: 8000,
+        controls: false,
+        pager: false,
+        pauseOnHover: true,
+        onBeforeSlide: function (el) {
+            $('#current').text(el.getCurrentSlideCount());
         }
     });
-
-    $('.swiper-header-nav-right').click(function () {
-        //next elem
-        return timer.pietimer('reset');
+    $('#goToPrevSlide').click(function(){
+        autoplaySlider.goToPrevSlide();
     });
-
-    $('.swiper-header-nav-left').click(function () {
-        //past elem
-        return timer.pietimer('reset');
+    $('#goToNextSlide').click(function(){
+        autoplaySlider.goToNextSlide();
     });
+    $('#total').text(autoplaySlider.getTotalSlideCount());
 });

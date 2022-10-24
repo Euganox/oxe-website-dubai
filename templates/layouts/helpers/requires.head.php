@@ -5,4 +5,5 @@
 
 <link rel="stylesheet" href="/public/assets/js/fatNav/jquery.fatNav.css">
 <link rel="stylesheet" href="/public/assets/js/pieTimer/pietimer.css">
+<link rel="stylesheet" href="/public/assets/js/lightSlider/lightslider.css">
 

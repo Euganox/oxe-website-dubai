@@ -42,6 +42,10 @@ a {
     font-size: 1.111rem;
 }
 
+.fz-36-px {
+    font-size: 2rem;
+}
+
 .fz-40-px {
     font-size: 2.2rem;
 }
@@ -72,6 +76,10 @@ a {
 
 .font-arolse-script {
     font-family: 'ArolseScript', serif;
+}
+
+.font-raleway-light {
+    font-family: 'RalewayLight', serif;
 }
 
 .btn {

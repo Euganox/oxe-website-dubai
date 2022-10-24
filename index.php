@@ -31,7 +31,7 @@ $filePath = $actionPath . '.php';
 if (!file_exists($filePath)) {
     $log = 'Пользователь попытался войти на страницу ' . $currentAction . '.';
     // writeLogDB('access', $log);
-    abort(404, 'Страница не найдена');
+    // abort(404, 'Страница не найдена');
 }
 
-require($filePath);
+require $filePath;
