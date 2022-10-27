@@ -100,25 +100,143 @@
                         <img src="./public/assets/images/topsales.png" alt="">
                     </div>
 
-                    <div class="swiper-item-cover">
+                    <a href="/catalog" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
 
-                        <div class="swiper-item-vision">
-                            <h1 class="swiper-item-title fz-36-px color-white font-raleway-light">Peninsula</h1>
+                    <div class="swiper-item-cover">
+                        <div class="swiper-item-vision animate__animated animate__fadeInUp">
+                            <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight">Peninsula</h1>
                             <p class="swiper-item-text color-white font-raleway-light">Business Bay</p>
+                        </div>
+
+                        <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
+                            <div class="swiper-item-nonvision-top">
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/calendar.svg" alt="">
+                                    Year: <br>2025
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/checkbox.svg" alt="">
+                                    Installment: <br>yes
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/subtract.svg" alt="">
+                                    Initial payment:<br>from 10%
+                                </p>
+                            </div>
+                            
+                            <div class="swiper-item-nonvision-bottom font-raleway-light">
+                                from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem">50 000 $</span> per m<sup>2</sup>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="swiper-item" style="background-image: url('./public/images/creek/creek_card.png');">
-                    2
+                    <div class="swiper-tags">
+                        <img src="./public/assets/images/hottest.png" alt="">
+                    </div>
+
+                    <a href="/catalog" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
+
+                    <div class="swiper-item-cover">
+                        <div class="swiper-item-vision animate__animated animate__fadeInUp">
+                            <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight">Dubai Creek Harbor Views International</h1>
+                            <p class="swiper-item-text color-white font-raleway-light">Dubai Creek Harbour</p>
+                        </div>
+
+                        <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
+                            <div class="swiper-item-nonvision-top">
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/calendar.svg" alt="">
+                                    Year: <br>2025
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/checkbox.svg" alt="">
+                                    Installment: <br>yes
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/subtract.svg" alt="">
+                                    Initial payment:<br>from 10%
+                                </p>
+                            </div>
+
+                            <div class="swiper-item-nonvision-bottom font-raleway-light">
+                                from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem">50 000 $</span> per m<sup>2</sup>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="swiper-item" style="background-image: url('./public/images/safaone/safaone_card.png');">
-                    3
+                    <div class="swiper-tags">
+                        <img src="./public/assets/images/hottest.png" alt="">
+                    </div>
+
+                    <a href="/catalog" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
+
+                    <div class="swiper-item-cover">
+                        <div class="swiper-item-vision animate__animated animate__fadeInUp">
+                            <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight">Safa One</h1>
+                            <p class="swiper-item-text color-white font-raleway-light">Al Safa</p>
+                        </div>
+
+                        <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
+                            <div class="swiper-item-nonvision-top">
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/calendar.svg" alt="">
+                                    Year: <br>2025
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/checkbox.svg" alt="">
+                                    Installment: <br>yes
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/subtract.svg" alt="">
+                                    Initial payment:<br>from 10%
+                                </p>
+                            </div>
+
+                            <div class="swiper-item-nonvision-bottom font-raleway-light">
+                                from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem">50 000 $</span> per m<sup>2</sup>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="swiper-item" style="background-image: url('./public/images/safaone/safaone_card.png');">
-                    3
+                    <div class="swiper-tags">
+                        <img src="./public/assets/images/hottest.png" alt="">
+                    </div>
+
+                    <a href="/catalog" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
+
+                    <div class="swiper-item-cover">
+                        <div class="swiper-item-vision animate__animated animate__fadeInUp">
+                            <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight">Safa One</h1>
+                            <p class="swiper-item-text color-white font-raleway-light">Al Safa</p>
+                        </div>
+
+                        <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
+                            <div class="swiper-item-nonvision-top">
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/calendar.svg" alt="">
+                                    Year: <br>2025
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/checkbox.svg" alt="">
+                                    Installment: <br>yes
+                                </p>
+                                <p class="swiper-item-nonvision-text fz-10-px">
+                                    <img src="./public/assets/images/subtract.svg" alt="">
+                                    Initial payment:<br>from 10%
+                                </p>
+                            </div>
+
+                            <div class="swiper-item-nonvision-bottom font-raleway-light">
+                                from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem">50 000 $</span> per m<sup>2</sup>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

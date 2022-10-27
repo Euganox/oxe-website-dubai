@@ -38,12 +38,20 @@ a {
     color: #C72D37;
 }
 
+.fz-1-5-rem {
+    font-size: 1.5rem;
+}
+
+.fz-10-px {
+    font-size: 0.7rem;
+}
+
 .fz-20-px {
     font-size: 1.111rem;
 }
 
 .fz-36-px {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .fz-40-px {
@@ -82,6 +90,14 @@ a {
     font-family: 'RalewayLight', serif;
 }
 
+.font-raleway-extralight {
+    font-family: 'RalewayExtraLight', serif;
+}
+
+.font-raleway-semibold {
+    font-family: 'RalewaySemiBold', serif;
+}
+
 .btn {
     padding: 1.5rem 2.8rem;
     border-radius: 70px;
@@ -91,8 +107,9 @@ a {
     transition: all 0.3s;
 }
 
-.btn:hover .svg-arrow-i {
+.btn-white-textred:hover .svg-arrow-i {
     margin-left: 2rem;
+    fill: #F8F8F8;
 }
 
 .btn .svg-arrow-i {
@@ -103,6 +120,15 @@ a {
 .btn-white-textred {
     background-color: #F8F8F8;
     color: #C72D37;
+}
+
+.btn-white-textred:hover {
+    background: #C72D37;
+    color: #F8F8F8;
+}
+
+.btn-white-textred:active {
+    background: linear-gradient(91.54deg, #C52E38 -5.97%, #A4262F 73.35%, #821F25 156.04%);
 }
 
 .btn-white-textred .svg-arrow-i {
@@ -116,6 +142,14 @@ a {
 
 .btn-red-textwhite .svg-arrow-i {
     fill: #F8F8F8;
+}
+
+.btn-red-textwhite:hover {
+    background: linear-gradient(96.68deg, #AA262F 13.14%, #69191E 107.13%);
+}
+
+.btn-red-textwhite:active {
+    background: #68141A;
 }
 
 .btn-text-bold {

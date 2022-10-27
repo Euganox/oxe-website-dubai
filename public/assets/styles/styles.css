@@ -124,7 +124,15 @@
     transition: all 0.7s;
 }
 
+.accordion-active .accordion-title {
+    color: #1E1E1E;
+}
+
 .accordion-title:hover {
+    color: #C72D37;
+}
+
+.accordion-title:active {
     color: #C72D37;
 }
 
@@ -132,9 +140,7 @@
     margin-top: 16px;
 }
 
-.accordion-active .accordion-title {
-    color: #1E1E1E;
-}
+
 
 .accordion-title::after {
     content: url("data:image/svg+xml,%3Csvg width='21' height='10' viewBox='0 0 21 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.1032 0.386839L10.604 8.05881L2.10492 0.386839C1.95307 0.249489 1.74923 0.172595 1.53696 0.172595C1.32469 0.172595 1.12084 0.249489 0.968987 0.386839C0.895461 0.45355 0.837049 0.533176 0.797172 0.621054C0.757295 0.708933 0.736755 0.803297 0.736755 0.898618C0.736755 0.99394 0.757295 1.0883 0.797172 1.17618C0.837049 1.26406 0.895461 1.34369 0.968987 1.4104L10.0106 9.57368C10.1694 9.717 10.3823 9.79721 10.604 9.79721C10.8258 9.79721 11.0387 9.717 11.1975 9.57368L20.2391 1.41197C20.3132 1.34521 20.372 1.26539 20.4122 1.17722C20.4524 1.08905 20.4731 0.994319 20.4731 0.898618C20.4731 0.802917 20.4524 0.708186 20.4122 0.620016C20.372 0.531846 20.3132 0.452025 20.2391 0.385263C20.0873 0.247914 19.8834 0.171021 19.6711 0.171021C19.4589 0.171021 19.255 0.247914 19.1032 0.385263V0.386839Z' fill='%23C72D37'/%3E%3C/svg%3E");
@@ -231,6 +237,32 @@
     align-items: flex-start;
 }
 
+.swiper-item-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #C72D37;
+    border-radius: 50%;
+    height: 2.7rem;
+    width: 2.7rem;
+    padding: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-item-link img {
+    height: 90%;
+}
+
+.swiper-item-link:hover {
+    background: linear-gradient(96.68deg, #AA262F 13.14%, #69191E 107.13%);
+}
+
+.swiper-item:hover .swiper-item-link {
+    display: flex;
+}
+
 .active .swiper-tags {
     display: flex;
 }
@@ -243,6 +275,44 @@
 .swiper-tags img:first-child {
     margin-right: 0.5rem;
 }
+
+.swiper-item-nonvision {
+    display: none;
+    margin-top: 1.8rem;
+}
+
+.swiper-item:hover .swiper-item-nonvision {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.swiper-item-nonvision-top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.swiper-item-nonvision-text {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-right: 0.7rem;
+}
+
+.swiper-item-nonvision-text:last-child {
+    margin-right: 0;
+}
+
+.swiper-item-nonvision-text img {
+    height: 22px;
+    margin-right: 5px;
+}
+
+.swiper-item-nonvision-bottom {
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
 
 /* НОУТБУК */
 @media screen and (max-width: 1550px) {
