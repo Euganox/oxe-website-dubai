@@ -1,0 +1,10 @@
+/* ПЛАНШЕТ */
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+
+    .display-sm-none {
+        display: none;
+    }
+}

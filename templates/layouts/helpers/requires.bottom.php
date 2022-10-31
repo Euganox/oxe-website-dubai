@@ -6,3 +6,5 @@
 <script src="public/assets/js/general-header.js"></script>
 <script src="public/assets/js/home-accordion.js"></script>
 <script src="public/assets/js/home-swiper.js"></script>
+<script src="public/assets/js/classes-refactor.js"></script>
+<script src="public/assets/js/contactUsInputs.js"></script>
