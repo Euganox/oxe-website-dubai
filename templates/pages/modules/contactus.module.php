@@ -1,4 +1,4 @@
-<section class="contactUs">
+<section id="contactUs" class="contactUs">
     <img id="contactUs-img" src="/public/assets/images/dubai_view3.png" alt="">
 
     <div class="contactUs-right">

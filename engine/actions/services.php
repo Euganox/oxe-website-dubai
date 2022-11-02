@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-$title = 'Home';
+$title = 'Services';
 
-$content = view('home');
+$content = view('services');
 require TPL_PATH . 'layouts' . DIRECTORY_SEPARATOR . 'main.layout.php';

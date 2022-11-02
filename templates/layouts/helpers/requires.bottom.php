@@ -5,6 +5,12 @@
 
 <script src="public/assets/js/general-header.js"></script>
 <script src="public/assets/js/home-accordion.js"></script>
-<script src="public/assets/js/home-swiper.js"></script>
+
+<?php if(empty($currentPage)): ?>
+    <script src="public/assets/js/home-swiper.js"></script>
+<?php elseif($currentPage === 'about'): ?>
+    <script src="public/assets/js/about-swiper.js"></script>
+<?php endif; ?>
+
 <script src="public/assets/js/classes-refactor.js"></script>
 <script src="public/assets/js/contactUsInputs.js"></script>

@@ -5,6 +5,10 @@
     padding: 0 70px;
 }
 
+.header .for-nav {
+    display: flex;
+}
+
 .header-fixed {
     position: fixed;
     left: 0;
@@ -14,8 +18,7 @@
 }
 
 .header-logo-img {
-    width: 195px;
-    height: 58px;
+    width: 160px;
 }
 
 .header-tel {
@@ -24,10 +27,8 @@
     align-items: center;
     color: #F8F8F8;
     transition: all 0.3s;
-    font-variant-numeric: proportional-nums;
-    -moz-font-feature-settings: "pnum";
-    -webkit-font-feature-settings: "pnum";
-    font-feature-settings: "pnum";
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum";
 }
 
 .header-tel:hover {
@@ -385,4 +386,303 @@
     opacity: 0.7;
     margin-bottom: 1.3rem;
     font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.map {
+    height: 25.5rem;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-top-left, .mapboxgl-ctrl-top-right {
+    display: none;
+}
+
+.map-popup .mapboxgl-popup-content {
+    padding: 1.1rem 1.6rem;
+    border-radius: 0;
+}
+
+.mapboxgl-marker.mapboxgl-marker-anchor-center {
+    cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+    display: none;
+}
+
+.mapboxgl-popup-content .mapboxgl-popup-close-button {
+    right: 5px;
+}
+
+.map .mapboxgl-canvas-container.mapboxgl-interactive {
+    cursor: unset;
+}
+
+.map .mapboxgl-canvas-container.mapboxgl-interactive:active {
+    cursor: unset;
+}
+
+.map-info-title {
+    font-size: 1.33rem;
+    line-height: 140%;
+    margin-bottom: 0.388rem;
+}
+
+.map-info-address,
+.map-info-time,
+.map-tel {
+    font-family: 'RalewayLight', serif;
+}
+
+.map-info-address,
+.map-info-time {
+    margin-bottom: 1.444em;
+    line-height: 140%;
+}
+
+.map-info-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-tel {
+    display: flex;
+    align-items: center;
+}
+
+.map-tel:hover {
+    opacity: 0.8;
+}
+
+.map-tel svg {
+    margin-right: 0.777rem;
+}
+
+.map-socials,
+.mainFooter-socials {
+    display: flex;
+    align-items: center;
+}
+
+.map-socials-link,
+.mainFooter-socials-link {
+    margin-right: 16px;
+}
+
+.map-socials-link:hover,
+.mainFooter-socials-link:hover {
+    opacity: 0.8;
+}
+
+.map-socials-link:last-of-type,
+.mainFooter-socials-link:last-of-type {
+    margin-right: 0;
+}
+
+.footer {
+    background-color: #1E1E1E;
+    padding: 6.8rem 16.5rem 3.7rem 16.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.footer-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 6rem;
+}
+
+.footer-head .footer-head-socials {
+    justify-self: start;
+}
+
+.footer-head-social:nth-child(2n) {
+    margin: 0 0.9rem;
+}
+
+.footer-head .footer-head-btn {
+    justify-self: end;
+}
+
+.footer-tel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 120%;
+    margin-bottom: 6rem;
+}
+
+.footer-tel .footer-tel-btn {
+    display: none;
+    margin-top: 1.3rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 2.1rem;
+}
+
+.footer-nav-link {
+    font-family: 'RalewaySemiBold', serif;
+    color: #F8F8F8;
+    transition: all 0.3s;
+}
+
+.footer-nav-link:hover {
+    opacity: 0.8;
+}
+
+.footer-nav-blockInblock {
+    margin-top: 1.333rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-link-mini {
+    font-family: 'RalewayLight', serif;
+    color: #F8F8F8;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.footer-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-foot-link {
+    font-family: 'RalewayLight', serif;
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+    color: #F8F8F8;
+}
+
+.footer-foot-year {
+    font-family: 'RalewayLight', serif;
+    font-size: 0.7rem;
+    color: #F8F8F8;
+}
+
+.header-page {
+    padding: 12.2rem 16.5rem 0 16.5rem;
+}
+
+.header-page-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5.5rem;
+}
+
+.header-page-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.about-section.section-first {
+    margin-top: 2.2rem;
+    margin-bottom: 16.7rem;
+}
+
+.header-page-link {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-page-link p:first-child {
+    margin-right: 1rem;
+}
+
+.header-page-link p:last-child, .header-page-text {
+    line-height: 1.6rem;
+}
+
+.header-page-text {
+    width: 35%;
+}
+
+.about-section.section-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16.8rem;
+}
+
+.about-leftside, .about-rightside {
+    width: 47%;
+}
+
+.about-leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-leftside-img {
+    width: 100%;
+    margin-bottom: 2.7rem;
+}
+
+.about-leftside-text {
+    width: 55%;
+    align-self: flex-end;
+}
+
+.about-rightside-script {
+    margin-bottom: 4.6rem;
+}
+
+.about-rightside-title {
+    margin-bottom: 1.7rem;
+}
+
+.about-rightside-text, .about-leftside-text {
+    line-height: 150%;
+    margin-bottom: 2.7rem;
+}
+
+.about-rightside-img {
+    width: 35%;
+}
+
+.about-section.section-third {
+    margin-bottom: 12.6rem;
+}
+
+.about-swiper-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.4rem;
+}
+
+.about-swiper-title {
+    font-weight: 400;
+    margin-right: 9.1rem;
+}
+
+.about-swiper-header-nav {
+    width: 13%;
+}
+
+.about-swiper-item {
+    width: 19rem;
+}
+
+.about-swiper-item-img {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+.about-swiper-item-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.about-swiper-item-descr {
+    color: #787878;
 }

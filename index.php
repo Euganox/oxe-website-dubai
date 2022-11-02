@@ -16,6 +16,10 @@ require SETTINGS_PATH . 'settingsGeneral.php';
 require HLP_PATH . 'abort.php';
 require HLP_PATH . 'arraysHelper.php';
 require HLP_PATH . 'view.php';
+require HLP_PATH . 'objects.php';
+require HLP_PATH . 'currentPage.php';
+
+$currentPage = currentPage($_SERVER["REQUEST_URI"]);
 
 // Маршрутизатор. Пока такой
 $uriArr = array_values(array_filter(explode('/', explode('?', $_SERVER['REQUEST_URI'])[0]), fn($it) => boolval($it))) ;
@@ -32,7 +36,7 @@ $filePath = $actionPath . '.php';
 if (!file_exists($filePath)) {
     $log = 'Пользователь попытался войти на страницу ' . $currentAction . '.';
     // writeLogDB('access', $log);
-    // abort(404, 'Страница не найдена');
+    abort(404, 'Страница не найдена');
 }
 
 require $filePath;

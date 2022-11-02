@@ -1,9 +1,8 @@
 $(document).ready(function() {
-    const autoplaySlider = $('#features').lightSlider({
-        auto:true,
+    const autoplaySlider = $('#team').lightSlider({
+        auto:false,
         loop:true,
         autoWidth:true,
-        pause: 4000,
         controls: false,
         pager: false,
         pauseOnHover: true,

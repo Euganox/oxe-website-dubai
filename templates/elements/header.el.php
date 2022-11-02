@@ -4,6 +4,7 @@
         <div class="fat-nav">
             <div class="fat-nav__wrapper">
                 <ul>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/catalog">Catalog</a></li>
                     <li><a href="/about">About Us</a></li>
                     <li><a href="/services">Services</a></li>

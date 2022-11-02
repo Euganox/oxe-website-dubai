@@ -50,6 +50,10 @@ img {
     font-size: 0.7rem;
 }
 
+.fz-16-px {
+    font-size: 0.888rem;
+}
+
 .fz-20-px {
     font-size: 1.111rem;
 }
@@ -64,6 +68,10 @@ img {
 
 .fz-4-5-rem {
     font-size: 4.5rem;
+}
+
+.fz-6-7-rem {
+    font-size: 6.7rem;
 }
 
 .fz-36-px {
@@ -88,6 +96,10 @@ img {
 
 .pl-296-px {
     padding-left: 16.5rem;
+}
+
+.pr-296-px {
+    padding-right: 16.5rem;
 }
 
 .font-arolse-serif {
@@ -192,4 +204,8 @@ img {
 
 .text-color-red {
     color: #C72D37;
+}
+
+.bgc-red {
+    background: linear-gradient(89.79deg, #C52E38 5.23%, #821F25 128.49%);
 }
