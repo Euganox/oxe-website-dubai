@@ -1,5 +1,16 @@
+<?php
+$currentPage = currentPage($_SERVER["REQUEST_URI"]);
+$photoUrl = '';
+
+if (empty($currentPage)) $photoUrl = '/public/assets/images/dubai_view3.png';
+else if ($currentPage === 'about') $photoUrl = '/public/assets/images/aboutpage4.png';
+else if ($currentPage === 'services') $photoUrl = '/public/assets/images/servicespage2.png';
+else if ($currentPage === 'contacts') $photoUrl = '/public/assets/images/contactspage1.png';
+
+?>
+
 <section id="contactUs" class="contactUs">
-    <img id="contactUs-img" src="/public/assets/images/dubai_view3.png" alt="">
+    <img id="contactUs-img" src="<?= $photoUrl ?>" alt="">
 
     <div class="contactUs-right">
         <div class="contactUs-top">

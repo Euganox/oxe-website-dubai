@@ -213,3 +213,16 @@ img {
 .bgc-red {
     background: linear-gradient(89.79deg, #C52E38 5.23%, #821F25 128.49%);
 }
+
+.basic-li {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.basic-li-lines div {
+    display: block;
+    border-bottom: 1px solid #C72D37;
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+}
