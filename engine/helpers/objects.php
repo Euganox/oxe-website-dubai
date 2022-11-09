@@ -12,6 +12,24 @@ const OBJECTS = [
         'archive' => false,
         'img' => 'peninsula/peninsula_card.png',
         'tags' => ['hottest', 'topsales'],
+        'description' => '
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in facilisis sem, a porta justo. 
+                Nullam in egestas tellus, et feugiat neque. Donec a tincidunt magna. Fusce luctus ante orci, quis 
+                bibendum nunc posuere pharetra. Sed a odio libero. Maecenas finibus rutrum justo gravida congue. Nulla 
+                non molestie nunc, eu condimentum elit. Phasellus at suscipit ante. Duis laoreet iaculis erat vel 
+                volutpat. Phasellus nec viverra turpis, a dignissim nisl. Quisque dapibus velit ut orci sollicitudin, 
+                in tempus quam mollis. Aenean imperdiet, augue ut viverra tempor, magna neque pharetra sem, sed mattis 
+                massa leo id nisl. In eu maximus metus, non sollicitudin nibh. Proin ipsum est, tempor vitae tempor eu, 
+                rutrum et mi.
+            </p>
+            <p>
+                Cras at varius mauris, id consequat ipsum. Ut pharetra dolor quam, in ultrices tortor sodales sit amet.
+                Cras molestie nec mi vitae elementum. Curabitur eu aliquam metus. Duis massa libero, tincidunt vitae 
+                est ac, eleifend fermentum odio. Pellentesque et interdum lacus. Nullam vitae justo id sapien rutrum 
+                volutpat in commodo magna.
+            </p>
+        ',
         'title' => 'Peninsula',
         'descr' => 'Business Bay',
         'year' => '2025',

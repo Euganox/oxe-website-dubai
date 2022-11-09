@@ -14,6 +14,9 @@ $mediaQueries = [1550, 1024, 768, 736, 667, 414, 375, 320];
 <link rel="stylesheet" href="/public/assets/js/fatNav/jquery.fatNav.css">
 <link rel="stylesheet" href="/public/assets/js/pieTimer/pietimer.css">
 <link rel="stylesheet" href="/public/assets/js/lightSlider/lightslider.css">
+<link rel="stylesheet" href="/public/assets/js/forms/jquery.formstyler.css">
+<link rel="stylesheet" href="/public/assets/js/rangeSlider/ion.rangeSlider.css">
+<link href="/public/assets/js/forms/jquery.formstyler.theme.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>

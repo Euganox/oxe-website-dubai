@@ -64,13 +64,13 @@
         <div class="footer-nav-block">
             <a href="/sevices" class="footer-nav-link">Services</a>
             <div class="footer-nav-blockInblock">
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Consulting</a>
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Management of Real Estate</a>
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Investments</a>
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Real Estate: buy, sell, rent</a>
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Citizenship, passport</a>
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Business Relocation</a>
-                <a href="/" class="footer-nav-link footer-nav-link-mini">Legal services</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Consulting</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Management of Real Estate</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Investments</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Real Estate: buy, sell, rent</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Citizenship, passport</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Business Relocation</a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Legal services</a>
             </div>
         </div>
 

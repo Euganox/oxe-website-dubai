@@ -3,6 +3,7 @@
 $servicesArr = [
     [
         'title' => 'Investments',
+        'id' => 'investments',
         'description' => '
             <p class="services-details-text">The company investment department offers available and efficient ways of getting recurring revenue. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions.</p>
             <p class="services-details-text">The department staff members possess expertise in how the Arabian real-estate market works and get true up-to-date information from their partners on financial markets and investments worldwide. It provides us access to the world market of institutional and private-sector capital, which gives us an opportunity to promptly respond to the dynamics of the global financial market environment and focus on most vital and commercially successful lines of business.</p>
@@ -20,6 +21,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Real Properties: buy, sell, rent',
+        'id' => 'buysellrent',
         'description' => '
             <p class="services-details-text services-details-title">Services offered to developers and sellers</p>
             <ul class="services-details-ul">
@@ -62,6 +64,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Management of Real Estate',
+        'id' => 'management',
         'description' => '
             <p class="services-details-text">
                 OXE GROUP provides the residential real estate management service to those who have several properties 
@@ -104,6 +107,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Consulting',
+        'id' => 'consulting',
         'description' => '
             <p class="services-details-text">
                 The principal task of the OXE CAPITAL consulting service is to analyze and substantiate development 
@@ -130,6 +134,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Citizenship, passport',
+        'id' => 'passport',
         'description' => '
             <p class="services-details-text">
                 One of the segments of the company operation is providing assistance in getting citizenship or residence 
@@ -148,6 +153,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Legal services',
+        'id' => 'legalservices',
         'description' => '
             <p class="services-details-text">
                 The OXE GROUP lawyers are high-end experts in due diligence of real properties and title holders, 
@@ -185,6 +191,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Documents',
+        'id' => 'documents',
         'description' => '
             <p class="services-details-text">
                 Properly documented closing of transactions be it property sale, investment, acquisition and renting of 
@@ -197,6 +204,7 @@ $servicesArr = [
     ],
     [
         'title' => 'Insurance',
+        'id' => 'insurance',
         'description' => '
             <p class="services-details-text">
                 Insurance of real property owned either by physical or juridical persons provides for protection of 
