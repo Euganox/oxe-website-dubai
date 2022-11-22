@@ -156,6 +156,17 @@ img {
     color: #C72D37;
 }
 
+.btn-red-border {
+    border: 2px solid #C72D37;
+    color: #C72D37;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-red-border .svg-arrow-i {
+    fill: #C72D37;
+}
+
 .btn-white-textred:hover {
     background: #C72D37;
     color: #F8F8F8;

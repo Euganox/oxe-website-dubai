@@ -11,8 +11,10 @@ const ACT_PATH = ENG_PATH . 'actions' . DIRECTORY_SEPARATOR;
 const HLP_PATH = ENG_PATH . 'helpers' . DIRECTORY_SEPARATOR;
 
 require SETTINGS_PATH . 'database/DB.php';
-
+require SETTINGS_PATH . 'database/Sql.php';
+require SETTINGS_PATH . 'database/Objects.php';
 require SETTINGS_PATH . 'settingsGeneral.php';
+
 require HLP_PATH . 'abort.php';
 require HLP_PATH . 'arraysHelper.php';
 require HLP_PATH . 'view.php';
@@ -20,6 +22,11 @@ require HLP_PATH . 'objects.php';
 require HLP_PATH . 'currentPage.php';
 
 $currentPage = currentPage($_SERVER["REQUEST_URI"]);
+
+if (isset($_GET['ajax'])) {
+    include HLP_PATH . 'ajax.php';
+    exit();
+}
 
 // Маршрутизатор. Пока такой
 $uriArr = array_values(array_filter(explode('/', explode('?', $_SERVER['REQUEST_URI'])[0]), fn($it) => boolval($it))) ;

@@ -1,9 +1,16 @@
 <script src="public/assets/js/jQuery.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="public/assets/js/fatNav/jquery.fatNav.js"></script>
 <script src="public/assets/js/pieTimer/jquery.pietimer.js"></script>
 <script src="public/assets/js/lightSlider/lightslider.js"></script>
 <script src="public/assets/js/resizeJS/ElementQueries.js"></script>
 <script src="public/assets/js/resizeJS/ResizeSensor.js"></script>
+<script src="public/assets/js/amodal/amodal.min.js"></script>
+
+
+<script src="public/assets/js/build/js/utils.js"></script>
+<script src="public/assets/js/build/js/intlTelInput-jquery.js"></script>
+
 
 <script src="public/assets/js/general-header.js"></script>
 <script src="public/assets/js/home-accordion.js"></script>
@@ -20,6 +27,7 @@
     <script src="public/assets/js/forms/jquery.formstyler.js"></script>
     <script src="public/assets/js/rangeSlider/ion.rangeSlider.js"></script>
     <script src="public/assets/js/catalog-filter.js"></script>
+    <script src="public/assets/js/catalog-objects.js"></script>
     <script src="public/assets/js/catalog.js"></script>
 <?php endif; ?>
 
@@ -28,3 +36,4 @@
 <?php endif; ?>
 
 <script src="public/assets/js/contactUsInputs.js"></script>
+<script src="public/assets/js/inputCountryTel.js"></script>
