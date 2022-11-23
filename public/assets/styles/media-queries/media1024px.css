@@ -1,4 +1,6 @@
 /* ПЛАНШЕТ */
 @media screen and (max-width: 1024px) {
-
+    * {
+        font-size: 15px;
+    }
 }

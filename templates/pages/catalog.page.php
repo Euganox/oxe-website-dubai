@@ -123,7 +123,7 @@
             <?php endforeach; ?>
         </div>
         <div class="catalog-second-block catalog-second-map" id="tabs-2">
-            <p>map</p>
+            <p>soon...</p>
         </div>
     </section>
 

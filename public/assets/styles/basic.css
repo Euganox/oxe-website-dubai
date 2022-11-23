@@ -141,6 +141,10 @@ img {
     outline: none;
 }
 
+.btn-height {
+    padding: 1rem 3rem;
+}
+
 .btn-white-textred:hover .svg-arrow-i {
     margin-left: 2rem;
     fill: #F8F8F8;

@@ -73,6 +73,12 @@
     margin-bottom: 1.7rem;
 }
 
+.home-section .section-third-right {
+    height: 46rem;
+    width: 30rem;
+
+}
+
 .section-second-text {
     line-height: 120%;
 }
@@ -1000,6 +1006,7 @@
     background-color: #fff;
     padding-left: 2.2rem;
     padding-right: 2.2rem;
+    padding-bottom: 2.2rem;
     overflow: auto;
 }
 
@@ -1234,9 +1241,9 @@ select.sort {
     padding: 0 8.8rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 650px;
     grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 650px;
     gap: 2rem;
     grid-auto-flow: row;
     grid-template-areas:
@@ -1268,7 +1275,6 @@ select.sort {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30rem;
     background-color: grey;
 }
 
@@ -1363,10 +1369,6 @@ select.sort {
     color: #808080;
 }
 
-.ajax-modal-opp {
-    margin-bottom: 3.3rem;
-}
-
 .ajax-modal-opp-item {
     display: flex;
     justify-content: space-between;
@@ -1380,3 +1382,50 @@ select.sort {
     font-size: 0.9rem;
 }
 
+.ajax-modal-block {
+    margin-bottom: 3.3rem;
+}
+
+.ajax-modal-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 1.1rem;
+}
+
+.ajax-modal-types-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.8rem;
+}
+
+.ajax-modal-types-block div {
+    display: flex;
+    align-items: center;
+}
+
+.ajax-modal-types-icon {
+    height: 32px;
+    width: 32px;
+    background-image: url('/public/assets/images/planning.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #C72D37;
+    margin-right: 10px;
+}
+
+.ajax-modal-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ajax-modal-description-text p {
+    line-height: 140%;
+    margin-bottom: 0.8rem;
+}

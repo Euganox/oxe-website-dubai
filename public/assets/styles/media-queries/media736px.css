@@ -1,4 +1,6 @@
 /* ТЕЛЕФОН */
 @media screen and (max-width: 736px) {
-
+    * {
+        font-size: 13px;
+    }
 }
