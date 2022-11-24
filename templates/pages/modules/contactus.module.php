@@ -32,7 +32,7 @@ if (isset($_POST) && !empty($_POST)) {
             </div>
 
             <div class="contactUs-form-input-block">
-                <label for="phone" class="contactUs-form-label"></label>
+                <label for="phone" class="contactUs-form-label">Your phone</label>
                 <input id="phone" name="phone" type="tel" class="contactUs-form-input">
             </div>
 

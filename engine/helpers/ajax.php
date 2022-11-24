@@ -4,6 +4,26 @@ if (isset($_GET['openObject'])) {
     $object = Objects::getOneObject($_POST['id']);
 
     $toEcho = "<div class='ajax-modal'>";
+
+        $toEcho .= "<div id='contactInModal' class='contactInModal animate__animated animate__fadeIn'>";
+            $toEcho .= "<form id='contactInModal-form'>";
+                $toEcho .= '<div class="contactUs-form-input-block">';
+                    $toEcho .= '<label for="name" class="contactUs-form-label">Your name</label><input id="name" name="name" type="text" class="contactUs-form-input">';
+                $toEcho .= '</div>';
+
+                $toEcho .= '<div class="contactUs-form-input-block">';
+                    $toEcho .= '<label for="phone" class="contactUs-form-label">Your phone</label><input id="phone" name="phone" type="tel" class="contactUs-form-input">';
+                $toEcho .= '</div>';
+
+                $toEcho .= '<div class="contactUs-form-btn-place">';
+                    $toEcho .= '<p class="contactUs-form-term">By clicking «send» you agree to the privacy policy</p>';
+                    $toEcho .= '<button class="btn btn-white-textred btn-text-bold">send';
+                        $toEcho .= '<svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg"><path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" /></svg>';
+                    $toEcho .= '</button>';
+                    $toEcho .= '<a class="contactUs-form-btn-place-close">or close this form</a>';
+                $toEcho .= '</div>';
+            $toEcho .= "</form>";
+        $toEcho .= "</div>";
         $toEcho .= "<a class='ajax-modal-close'>X</a>";
 
         $toEcho .= "<div id='ajax-modal-slider' class='ajax-modal-left'>";
@@ -22,7 +42,7 @@ if (isset($_GET['openObject'])) {
                     $toEcho .= "<p class='ajax-modal-header-discr'>Business Bay</p>";
                 $toEcho .= "</div>";
 
-                $toEcho .= "<a class='btn btn-red-border btn-height'>contact us <svg class='svg-arrow-i' width='49' height='14' viewBox='0 0 49 13' xmlns='http://www.w3.org/2000/svg'><path d='M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z' /></svg></a>";
+                $toEcho .= "<a class='btn-contactUs btn btn-red-border btn-height'>contact us <svg class='svg-arrow-i' width='49' height='14' viewBox='0 0 49 13' xmlns='http://www.w3.org/2000/svg'><path d='M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z' /></svg></a>";
             $toEcho .= "</div>";
 
             $toEcho .= "<div class='ajax-modal-body'>";
@@ -61,7 +81,7 @@ if (isset($_GET['openObject'])) {
 
                 $toEcho .= "<div class='ajax-modal-block ajax-modal-bottom'>";
                     $toEcho .= "<h3 class='ajax-modal-subtitle'>Leave an enquiry and we will tell you more</h3>";
-                    $toEcho .= "<a class='btn btn-red-textwhite btn-height' href='#'>contact us</a>";
+                    $toEcho .= "<a class='btn-contactUs btn btn-red-textwhite btn-height'>contact us</a>";
                 $toEcho .= "</div>";
             $toEcho .= "</div>";
         $toEcho .= "</div>";

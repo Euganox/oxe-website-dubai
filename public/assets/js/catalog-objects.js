@@ -48,28 +48,39 @@ function openObject($id) {
                     currentPagerPosition: 'left',
                 });
 
-                // mapboxgl.accessToken = 'pk.eyJ1Ijoia29uZGFrb3YiLCJhIjoiY2w5d3l3bHk2MDU0NTN5cGk4b294ZThyaiJ9.oUqVR7L78ggiNqa7CMofNQ';
-                // let point = [55.2768, 25.1850];
-                //
-                // let mapInModal = new mapboxgl.Map({
-                //     container: 'mapInObject',
-                //     style: 'mapbox://styles/mapbox/dark-v10',
-                //     center: point,
-                //     zoom: 16,
-                //     scrollZoom: false,
-                //     pitch: 20,
-                //     doubleClickZoom: false,
-                //     dragPan: false,
-                //     dragRotate: false,
-                // });
-                //
-                // mapInModal.on('load', () => {
-                //     const marker = new mapboxgl.Marker({
-                //         color: "#C72D37",
-                //     }).setLngLat(point).addTo(mapInModal);
-                // });
+                let btnContactUs = $('.btn-contactUs');
+                btnContactUs.click(function (e) {
+                    let modalInModal = $('#contactInModal')
+                    modalInModal.css('display', 'flex');
+
+                    let input = $('.contactUs-form-input');
+
+                    input.on('focusin', function() {
+                        $(this).parent().find('.contactUs-form-label').addClass('contactUs-form-label-active');
+                    });
+
+                    input.on('focusout', function() {
+                        if (!this.value) {
+                            $(this).parent().find('.contactUs-form-label').removeClass('contactUs-form-label-active');
+                        }
+                    });
+
+                    let options =  {
+                        onKeyPress: function(cep, e, field, options) {
+                            let masks = ['0-000-000-0000', '000-00-000-0000'];
+                            let mask = (cep.length>11) ? masks[1] : masks[0];
+                            $('input[name="phone"]').mask(mask, options);
+                        }};
+
+                    $('input[name="phone"]').mask('0-000-000-0000', options);
+
+                    $('.contactUs-form-btn-place-close').click(function (e) {
+                        modalInModal.hide();
+                    });
+                });
+
             } else {
-                console.log('lol')
+                console.log('error')
             }
         }
     });

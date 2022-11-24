@@ -11,7 +11,7 @@
             <div class="contacts-line">
                 <header class="contacts-line-head">
                     <p class="contacts-line-title fz-40-px font-arolse-serif">OUR<br>CONTACTS</p>
-                    <p class="contacts-line-text">Dubai, Business Bay, Metropolis Tower Penthouse, Holding OXE GROUP</p>
+                    <p class="contacts-line-text">Dubai, Business Bay, Metropolis Tower Penthouse, 22nd floor, Holding "OXE GROUP"</p>
                 </header>
 
                 <section class="contacts-line-works">

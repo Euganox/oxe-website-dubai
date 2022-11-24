@@ -139,6 +139,7 @@ img {
     transition: all 0.3s;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .btn-height {

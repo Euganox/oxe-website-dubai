@@ -2,8 +2,10 @@
 
 class Objects
 {
-    public static function objectsForCatalog ($where = '') : array {
-        $objects = self::getAllObjects();
+    public static function objectsForCatalog ($get = []) : array {
+        if (isset($get) && !empty($get)) $objects = self::getFilteredObjects($get);
+        else $objects = self::getAllObjects();
+
         $objectsForCatalog = [];
 
         foreach ($objects as $object) {
@@ -39,8 +41,83 @@ class Objects
         // return DB::select('soho_int_objects_site', '*', ['where' => ['archive = 0', 'foto_coverHoriz != ""']]);
     }
 
-    public static function getGeoJSONObjects() {
+    public static function getFilteredObjects($get) {
+        $where = self::getFilterWhere($get);
+        return DB::select('soho_int_objects_site', '*', $where);
+    }
+
+    public static function getFilterWhere($get) : array {
+        $where = ['where' => []];
+
+        if (isset($get['price']) && !empty($get['price'])) {
+            $price = explode(';', $get['price']);
+
+            $where['where'][] = "from_price_m2 >= ${price[0]} and from_price_m2 <= ${price[1]}";
+        }
+
+        if (isset($get['district']) && !empty($get['district'])) {
+            if (count($get['district']) > 1) {
+                $arrayQueryElement = [];
+
+                foreach ($get['district'] as $nameDistrict => $value) {
+                    $arrayQueryElement[] = "district = '${nameDistrict}'";
+                }
+
+                $stringQueryElement = implode(' OR ', $arrayQueryElement);
+                $where['where'][] = "(${stringQueryElement})";
+            } else {
+                $district = key($get['district']);
+                $where['where'][] = "district = '${district}'";
+            }
+        }
+
+        if (isset($get['type']) && !empty($get['type'])) {
+            if (count($get['type']) > 1) {
+                $arrayQueryElement = [];
+
+                foreach ($get['type'] as $typeName => $value) {
+                    $arrayQueryElement[] = "types_of_apart = '%".$typeName."%'";
+                }
+
+                $stringQueryElement = implode(' and ', $arrayQueryElement);
+                $where['where'][] = "(${stringQueryElement})";
+            } else {
+                $type = key($get['type']);
+                $where['where'][] = "types_of_apart LIKE '%${type}%'";
+            }
+        }
+
+        return array_merge($where['where'], ['archive = 0', 'foto_coverHoriz != ""']);
+    }
+
+    public static function getGeoJSONObjects() : array {
         $objects = OBJECTS;
+
+        $json = [
+            'type' => 'FeatureCollection',
+            'features' => [],
+        ];
+
+        foreach ($objects as $object) {
+            $arr = [
+                'type' => 'Feature',
+                'geometry' => [
+                    'type' => 'Point',
+                    'coordinates' => [$object['longitude'], $object['latitude']]
+                ],
+                'properties' => [
+                    'title' => $object['title'],
+                    'subtitle' => $object['descr'],
+                    'id' => $object['id'],
+                    'from_price' => $object['from_price'],
+                    'photoSrc' => $object['img']
+                ]
+            ];
+
+            $json['features'][] = $arr;
+        }
+
+        return $json;
     }
 
     public static function getOneObject($id) : array {

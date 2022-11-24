@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-.header-logo-img {
+.header-logo-img, .footer-head-logo-img {
     width: 160px;
 }
 
@@ -1302,16 +1302,15 @@ select.sort {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 9999;
+    z-index: 160;
 }
 
 .ajax-modal {
     position: relative;
     background: #fff;
-    z-index: 99999;
     opacity: 1;
     width: 90%;
-    height: 80vh;
+    height: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -1429,3 +1428,144 @@ select.sort {
     line-height: 140%;
     margin-bottom: 0.8rem;
 }
+
+.mapInCatalog {
+    height: 35rem;
+}
+
+.mapInCatalog-popup-container {
+    padding: 1rem;
+}
+
+.catalog-second-block.catalog-second-map {
+    position: relative;
+}
+
+.addonForMap {
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+    right: 3rem;
+    width: 35%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.addonForMap-object {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 0.7);
+    margin-bottom: 3rem;
+}
+
+.addonForMap-object-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.addonForMap-object-header-left h2 {
+    font-family: 'RalewayLight', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.addonForMap-object-header-left p {
+    font-family: 'RalewayLight', serif;
+    font-size: 0.9rem;
+}
+
+.addonForMap-object-price {
+    margin-bottom: 1rem;
+}
+
+.addonForMap-object-price, .addonForMap-object-price span {
+    font-family: 'RalewayLight', serif;
+}
+
+.addonForMap-object-price span {
+    font-family: 'RalewayBold', serif;
+}
+
+.addonForMap-object-header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C72D37;
+    border-radius: 50%;
+    padding: 5px;
+    height: 2.7rem;
+    width: 2.7rem;
+}
+
+.addonForMap-object-header-link:hover {
+    background: linear-gradient(96.68deg, #AA262F 13.14%, #69191E 107.13%);
+    cursor: pointer;
+}
+
+.addonForMap-object-header-link img {
+    height: 90%;
+}
+
+.addonForMap-object-preferenses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.addonForMap-preferense {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    line-height: 140%;
+}
+
+.addonForMap-preferense svg {
+    margin-right: 0.8rem;
+}
+
+.addonForMap-object-cover {
+    width: 100%;
+    height: 15rem;
+}
+
+.contactInModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(92.26deg, #C52E38 4.87%, #821F25 92.61%);
+    z-index: 170;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInModal form {
+    width: 50%;
+    padding: 2rem;
+}
+
+#contactInModal-form .contactUs-form-input-block {
+    position: relative;
+    margin-bottom: 1.3rem;
+}
+
+#contactInModal-form .contactUs-form-btn-place {
+    margin-top: 2.5rem;
+}
+
+.contactUs-form-btn-place-close {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #F8F8F8;
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 1.3rem;
+}
+

@@ -30,10 +30,10 @@ $objects = getObjects(OBJECTS);
             </svg>
         </a>
     </div>
-
+    <div id="toInsertModal"></div>
     <div id="features" class="swiper-catalog">
         <?php foreach ($objects as $object): ?>
-            <div class="swiper-item" style="background-image: url('./public/images/<?= $object['img'] ?>');">
+            <div class="swiper-item" onclick="openObject(<?= $object['id'] ?>)" style="background-image: url('./public/images/<?= $object['img'] ?>');">
 
                 <?php if(isset($object['tags']) && !empty($object['tags'])): ?>
                     <div class="swiper-tags">
@@ -42,7 +42,7 @@ $objects = getObjects(OBJECTS);
                     </div>
                 <?php endif; ?>
 
-                <a href="/catalog" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
+                <a class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
 
                 <div class="swiper-item-cover">
                     <div class="swiper-item-vision animate__animated animate__fadeInUp">
