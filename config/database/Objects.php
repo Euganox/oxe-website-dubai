@@ -3,7 +3,9 @@
 class Objects
 {
     public static function objectsForCatalog ($get = []) : array {
-        if (isset($get) && !empty($get)) $objects = self::getFilteredObjects($get);
+        if (isset($get) && !empty($get)) {
+            $objects = self::getFilteredObjects($get);
+        }
         else $objects = self::getAllObjects();
 
         $objectsForCatalog = [];
@@ -37,12 +39,12 @@ class Objects
     }
 
     public static function getAllObjects(): array {
-        return OBJECTS;
-        // return DB::select('soho_int_objects_site', '*', ['where' => ['archive = 0', 'foto_coverHoriz != ""']]);
+        return DB::select('soho_int_objects_site', '*', ['where' => ['archive = 0', 'foto_coverHoriz != ""']]);
     }
 
     public static function getFilteredObjects($get) {
         $where = self::getFilterWhere($get);
+
         return DB::select('soho_int_objects_site', '*', $where);
     }
 
@@ -87,11 +89,13 @@ class Objects
             }
         }
 
-        return array_merge($where['where'], ['archive = 0', 'foto_coverHoriz != ""']);
+        $newWhere['where'] = array_merge($where['where'], ['archive = 0', 'foto_coverHoriz != ""']);
+
+        return $newWhere;
     }
 
     public static function getGeoJSONObjects() : array {
-        $objects = OBJECTS;
+        $objects = self::getAllObjects();
 
         $json = [
             'type' => 'FeatureCollection',
@@ -107,10 +111,10 @@ class Objects
                 ],
                 'properties' => [
                     'title' => $object['title'],
-                    'subtitle' => $object['descr'],
+                    'subtitle' => $object['subtitle'],
                     'id' => $object['id'],
-                    'from_price' => $object['from_price'],
-                    'photoSrc' => $object['img']
+                    'from_price' => $object['from_price_m2'],
+                    'photoSrc' => $object['foto_coverHoriz']
                 ]
             ];
 
@@ -120,8 +124,15 @@ class Objects
         return $json;
     }
 
+    public static function getTopObjects() : array {
+        return DB::select('soho_int_objects_site', '*', ['where' => ["isTop = 1"]]);
+    }
+
     public static function getOneObject($id) : array {
-        //$object = DB::select('soho_int_objects_site', '*', ['where' => ["id = ${id}"]]);
-        return [];
+        return DB::select('soho_int_objects_site', '*', ['where' => ["id = ${id}"]]);
+    }
+
+    public static function getPhotoUrl($id, $nameField, $src) : string {
+        return "https://crm.oxecapital.ru/export/img.php?watermark=false&img=files/int/objects_dubai/${id}/${nameField}/${src}";
     }
 }

@@ -12,5 +12,4 @@ if (isset($_GET['decode']) & !empty($_GET['decode'])) {
     header('Content-Encoding: gzip');
     ob_start('ob_gzhandler');
     echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-//    echo 'Время выполнения скрипта всего: '.round(microtime(true) - $start, 4).' сек.<br>';
 }

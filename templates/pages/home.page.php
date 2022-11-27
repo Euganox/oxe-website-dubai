@@ -62,7 +62,7 @@
                 </svg>
             </a>
         </div>
-        <img src="/public/assets/images/oxana.png" alt="" class="section-third-right">
+        <img src="/public/assets/images/oxana.jpg" alt="" class="section-third-right">
     </section>
 
     <section class="home-section section section-fourth pl-296-px">

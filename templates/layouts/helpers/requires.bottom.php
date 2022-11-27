@@ -41,3 +41,4 @@
 <script src="public/assets/js/inputCountryTel.js"></script>
 <script src="public/assets/js/catalog-objects.js"></script>
 <script src="public/assets/js/contactUsInputs.js"></script>
+<script src="public/assets/js/loaded-imgs.js"></script>

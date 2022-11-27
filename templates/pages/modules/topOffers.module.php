@@ -1,6 +1,6 @@
 <?php
 
-$objects = getObjects(OBJECTS);
+$objects = Objects::getTopObjects();
 
 ?>
 
@@ -33,21 +33,23 @@ $objects = getObjects(OBJECTS);
     <div id="toInsertModal"></div>
     <div id="features" class="swiper-catalog">
         <?php foreach ($objects as $object): ?>
-            <div class="swiper-item" onclick="openObject(<?= $object['id'] ?>)" style="background-image: url('./public/images/<?= $object['img'] ?>');">
-
-                <?php if(isset($object['tags']) && !empty($object['tags'])): ?>
+            <div class="swiper-item"">
+                <div class="background-photo-block">
+                    <img class="background-photo" onload="imgLoaded(this)" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverVert', $object['foto_coverVert']) ?>" alt="">
+                </div>
+                <?php if(!empty($object['isTopSalesTag']) && !empty($object['isHottestTag'])): ?>
                     <div class="swiper-tags">
-                        <?php if(in_array('hottest', $object['tags'])): ?><img src="./public/assets/images/hottest.png" alt=""><?php endif; ?>
-                        <?php if(in_array('topsales', $object['tags'])): ?><img src="./public/assets/images/topsales.png" alt=""><?php endif; ?>
+                        <?php if($object['isHottestTag'] === 1): ?><img src="./public/assets/images/hottest.png" alt=""><?php endif; ?>
+                        <?php if($object['isTopSalesTag'] === 1): ?><img src="./public/assets/images/topsales.png" alt=""><?php endif; ?>
                     </div>
                 <?php endif; ?>
 
-                <a class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
+                <a onclick="openObject(<?= $object['id'] ?>)" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
 
                 <div class="swiper-item-cover">
                     <div class="swiper-item-vision animate__animated animate__fadeInUp">
                         <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight"><?= $object['title'] ?></h1>
-                        <p class="swiper-item-text color-white font-raleway-light"><?= $object['descr'] ?></p>
+                        <p class="swiper-item-text color-white font-raleway-light"><?= $object['subtitle'] ?></p>
                     </div>
 
                     <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
@@ -56,7 +58,7 @@ $objects = getObjects(OBJECTS);
                                 <img src="./public/assets/images/calendar.svg" alt="">
                                 Year: <br><?= $object['year'] ?>
                             </p>
-                            <?php if($object['istallment']): ?>
+                            <?php if($object['installment']): ?>
                             <p class="swiper-item-nonvision-text fz-10-px">
                                 <img src="./public/assets/images/checkbox.svg" alt="">
                                 Installment: <br>yes
@@ -69,7 +71,7 @@ $objects = getObjects(OBJECTS);
                         </div>
 
                         <div class="swiper-item-nonvision-bottom font-raleway-light">
-                            from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price'] ?> $</span> per m<sup>2</sup>
+                            from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup>
                         </div>
                     </div>
                 </div>

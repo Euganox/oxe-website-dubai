@@ -7,7 +7,7 @@
             </a>
 
             <div class="header-page-module">
-                <img src="/public/assets/images/servicespage1.png" alt="" class="header-page-img">
+                <img src="/public/assets/images/servicespage1.jpg" alt="" class="header-page-img">
             </div>
         </div>
 

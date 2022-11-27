@@ -57,7 +57,7 @@ $services = [
 
     <section class="about-section section section-second">
         <div class="about-leftside">
-            <img src="/public/assets/images/aboutpage1.png" alt="" class="about-leftside-img">
+            <img src="/public/assets/images/aboutpage1.jpg" alt="" class="about-leftside-img">
 
             <p class="about-leftside-text">
                 Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
@@ -75,7 +75,7 @@ $services = [
                 We do not welcome elaborate wordings, and the properties we work with do not need idle adjectives. No adjectival attributes needed in case of the best. We are young, full of energy and ambitious, which means our customers are the first to get access to the best. We value our and your time, guard your and our own reputation, care about your and our money.
             </p>
 
-            <img src="/public/assets/images/aboutpage2.png" alt="" class="about-rightside-img">
+            <img src="/public/assets/images/aboutpage4.jpg" alt="" class="about-rightside-img">
         </div>
     </section>
 
@@ -92,7 +92,7 @@ $services = [
 
             <div id="team" class="about-swiper-team">
                 <div class="about-swiper-item">
-                    <img src="/public/images/team/oxana.png" alt="" class="about-swiper-item-img">
+                    <img src="/public/images/team/oxana.jpg" alt="" class="about-swiper-item-img">
                     <div class="about-swiper-item-footer">
                         <p class="about-swiper-item-name">Oxana Ermishina</p>
                         <p class="about-swiper-item-descr">Founder. Chair of the Board of Directors</p>
@@ -114,7 +114,7 @@ $services = [
                     <div class="about-fourth-menu-item">The City Real Estate Department</div>
                 </div>
 
-                <img src="/public/assets/images/aboutpage3.png" alt="" class="about-fourth-img">
+                <img src="/public/assets/images/aboutpage3.jpg" alt="" class="about-fourth-img">
             </div>
 
             <div class="about-fourth-right pr-296-px">

@@ -50,6 +50,8 @@
                             <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
                         </svg>
                     </button>
+
+                    <a href="/catalog" class="catalog-link-filter">clear filter</a>
                 </form>
             </div>
         </div>
@@ -78,12 +80,16 @@
                         <?= $object['text'] ?>
                     </div>
                 <?php else: ?>
-                    <div id="object_<?= $object['id'] ?>" class="catalog-item <?= isset($object['class']) ? $object['class'] : '' ?>" style="background-image: url('./public/images/<?= $object['img'] ?>');">
+                    <div id="object_<?= $object['id'] ?>" class="catalog-item <?= isset($object['class']) ? $object['class'] : '' ?>">
 
-                        <?php if(isset($object['tags']) && !empty($object['tags'])): ?>
+                        <div class="background-photo-block">
+                            <img class="background-photo" onload="imgLoaded(this)" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverVert', $object['foto_coverVert']) ?>" alt="">
+                        </div>
+
+                        <?php if(!empty($object['isTopSalesTag']) && !empty($object['isHottestTag'])): ?>
                             <div class="swiper-tags">
-                                <?php if(in_array('hottest', $object['tags'])): ?><img src="./public/assets/images/hottest.png" alt=""><?php endif; ?>
-                                <?php if(in_array('topsales', $object['tags'])): ?><img src="./public/assets/images/topsales.png" alt=""><?php endif; ?>
+                                <?php if($object['isHottestTag'] === 1): ?><img src="./public/assets/images/hottest.png" alt=""><?php endif; ?>
+                                <?php if($object['isTopSalesTag'] === 1): ?><img src="./public/assets/images/topsales.png" alt=""><?php endif; ?>
                             </div>
                         <?php endif; ?>
 
@@ -92,7 +98,7 @@
                         <div class="swiper-item-cover">
                             <div class="swiper-item-vision animate__animated animate__fadeInUp">
                                 <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight"><?= $object['title'] ?></h1>
-                                <p class="swiper-item-text color-white font-raleway-light"><?= $object['descr'] ?></p>
+                                <p class="swiper-item-text color-white font-raleway-light"><?= $object['subtitle'] ?></p>
                             </div>
 
                             <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
@@ -101,7 +107,7 @@
                                         <img src="./public/assets/images/calendar.svg" alt="">
                                         Year: <br><?= $object['year'] ?>
                                     </p>
-                                    <?php if($object['istallment']): ?>
+                                    <?php if($object['installment']): ?>
                                         <p class="swiper-item-nonvision-text fz-10-px">
                                             <img src="./public/assets/images/checkbox.svg" alt="">
                                             Installment: <br>yes
@@ -114,7 +120,7 @@
                                 </div>
 
                                 <div class="swiper-item-nonvision-bottom font-raleway-light">
-                                    from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price'] ?> $</span> per m<sup>2</sup>
+                                    from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +136,7 @@
                         <div class="addonForMap-object-header">
                             <div class="addonForMap-object-header-left">
                                 <h2><?= $object['title'] ?></h2>
-                                <p><?= $object['descr'] ?></p>
+                                <p><?= $object['subtitle'] ?></p>
                             </div>
 
                             <a onclick="openObject(<?= $object['id'] ?>)" class="addonForMap-object-header-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
@@ -148,7 +154,7 @@
                                 </p>
                             <?php endif; ?>
 
-                            <?php if($object['istallment']): ?>
+                            <?php if($object['installment']): ?>
                                 <p class="addonForMap-preferense">
                                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 0C7.3873 0 0 7.3873 0 16.5C0 25.6127 7.3873 33 16.5 33C25.6127 33 33 25.6127 33 16.5C33 7.3873 25.6127 0 16.5 0ZM23.9021 10.7972C24.0662 10.5751 24.0193 10.262 23.7972 10.0979C23.5751 9.93377 23.262 9.98074 23.0979 10.2028L14.9252 21.26L10.3345 17.1284C10.1292 16.9436 9.81308 16.9603 9.62835 17.1655C9.44362 17.3708 9.46026 17.6869 9.66552 17.8716L14.6655 22.3716C14.7703 22.466 14.91 22.5116 15.0503 22.4975C15.1905 22.4833 15.3183 22.4106 15.4021 22.2972L23.9021 10.7972Z" fill="#C72D37"/>
@@ -170,8 +176,8 @@
                             <?php endif; ?>
                         </div>
 
-                        <p class="addonForMap-object-price">from <span><?= $object['from_price'] ?> $</span> per m<sup>2</sup></p>
-                        <img src="./public/images/<?= $object['img'] ?>" alt="" class="addonForMap-object-cover">
+                        <p class="addonForMap-object-price">from <span><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup></p>
+                        <img src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="" class="addonForMap-object-cover">
                     </div>
                 <?php endforeach; ?>
             </div>

@@ -17,13 +17,13 @@ $(document).ready(function() {
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",
-        min: 1000,
-        max: 500000,
+        min: 10000,
+        max: 1000000,
         from: 20000,
-        to: 100000,
+        to: 800000,
         skin: "round",
         prefix: "$",
-        step: 1000,
+        step: 5000,
     });
 
     $( function() {

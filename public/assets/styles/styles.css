@@ -203,18 +203,42 @@
 
 .swiper-item {
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 22rem;
     height: 30rem;
     background-color: grey;
 }
 
+.background-photo-block {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.background-photo {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+
+.background-photo-block.img-loaded .background-photo {
+    opacity: 1;
+}
+
 .swiper-item-cover {
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.20073967086834732) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.20073967086834732) 50%, rgba(255,255,255,0) 100%);
     padding: 0 35px 35px 35px;
     display: flex;
     flex-direction: column;
@@ -234,7 +258,9 @@
 }
 
 .swiper-item-link {
+    cursor: pointer;
     position: absolute;
+    z-index: 3;
     top: 20px;
     right: 20px;
     background: #C72D37;
@@ -660,7 +686,7 @@
 }
 
 .about-rightside-img {
-    width: 35%;
+    width: 100%;
 }
 
 .about-section.section-third {
@@ -873,6 +899,10 @@
     width: 26rem;
     margin-bottom: -20rem;
     margin-top: -13rem;
+}
+
+.header-page-img {
+    width: 100%;
 }
 
 .services-header-page {
@@ -1112,6 +1142,12 @@
     align-self: center;
 }
 
+.catalog-link-filter {
+    margin-top: 1rem;
+    font-family: 'RalewaySemiBold', serif;
+    color: #C72D37;
+}
+
 .section-first-bottom-title {
     font-size: 1.3rem;
     margin-bottom: 1.7rem;
@@ -1330,11 +1366,11 @@ select.sort {
 }
 
 .ajax-modal .lSSlideOuter {
-    width: 45%;
+    width: 40%;
 }
 
 .ajax-modal-left {
-    height: auto; !important;
+    height: auto !important;
 }
 
 .ajax-modal .lSPager {
@@ -1346,7 +1382,7 @@ select.sort {
 }
 
 .ajax-modal-right {
-    width: 55%;
+    width: 60%;
     padding: 2.4rem 3rem;
     overflow: auto;
     min-height: 507px;
@@ -1427,6 +1463,10 @@ select.sort {
 .ajax-modal-description-text p {
     line-height: 140%;
     margin-bottom: 0.8rem;
+}
+
+.ajax-modal-slider {
+    height: 100%;
 }
 
 .mapInCatalog {
