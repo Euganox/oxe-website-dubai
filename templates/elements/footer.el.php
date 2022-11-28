@@ -58,19 +58,21 @@
         </div>
 
         <div class="footer-nav-block">
-            <a href="/" class="footer-nav-link">Facilities</a>
+            <a href="/catalog" class="footer-nav-link">Catalog</a>
         </div>
 
         <div class="footer-nav-block">
             <a href="/sevices" class="footer-nav-link">Services</a>
             <div class="footer-nav-blockInblock">
+                <a href="/services#investments" class="footer-nav-link footer-nav-link-mini">Investments</a>
+                <a href="/services#buysellrent" class="footer-nav-link footer-nav-link-mini">Real Estate: buy, sell, rent</a>
+                <a href="/services#management" class="footer-nav-link footer-nav-link-mini">Management of Real Estate</a>
                 <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Consulting</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Management of Real Estate</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Investments</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Real Estate: buy, sell, rent</a>
                 <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Citizenship, passport</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Business Relocation</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Legal services</a>
+                <a href="/services#passport" class="footer-nav-link footer-nav-link-mini">Business Relocation</a>
+                <a href="/services#legalservices" class="footer-nav-link footer-nav-link-mini">Legal services</a>
+                <a href="/services#documents" class="footer-nav-link footer-nav-link-mini">Documents</a>
+                <a href="/services#insurance" class="footer-nav-link footer-nav-link-mini">Insurance</a>
             </div>
         </div>
 
@@ -85,7 +87,7 @@
 
     <div class="footer-foot">
         <a href="#" class="footer-foot-link">Privacy Policy</a>
-        <a href="#" class="footer-foot-link">welcome@oxegroup.ae</a>
+        <a href="mailto:welcome@oxegroup.ae" class="footer-foot-link">welcome@oxegroup.ae</a>
         <p class="footer-foot-year">2022</p>
     </div>
 </footer>

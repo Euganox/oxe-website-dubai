@@ -8,7 +8,7 @@
 
     <?php require TPL_PATH . 'layouts/helpers/requires.head.php' ?>
 
-    <title>OXE CAPITAL<?= isset($title) ? ' - ' . $title : '' ?></title>
+    <title>OXE GROUP<?= isset($title) ? ' - ' . $title : '' ?></title>
 </head>
 <body>
     <?php require TPL_PATH . 'elements/header.el.php' ?>

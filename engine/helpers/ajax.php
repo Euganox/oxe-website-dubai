@@ -53,7 +53,7 @@ if (isset($_GET['openObject'])) {
                     if(isset($object['payment']) && !empty($object['payment'])) $toEcho .= "<div class='ajax-modal-opp-item'><p>Initial payment</p> <p>${object['payment']}%</p></div>";
 
                     $toEcho .= "<div class='ajax-modal-opp-item'><p>Year of completion</p> <p>${object['year']}</p></div>";
-                    $toEcho .= "<div class='ajax-modal-opp-item'><p>Cost per square metre</p> <p>от ${object['from_price_m2']} $</p></div>";
+                    $toEcho .= "<div class='ajax-modal-opp-item'><p>Cost</p> <p>from ${object['from_price_m2']} $</p></div>";
                 $toEcho .= "</div>";
 
                 $toEcho .= "<div class='ajax-modal-block ajax-modal-types'>";
