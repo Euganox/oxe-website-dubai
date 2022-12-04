@@ -1,5 +1,5 @@
 <?php
-$mediaQueries = [1550, 1024, 768, 736, 667, 414, 375, 320];
+$mediaQueries = [1550, 1024, 768, 736, 667, 550, 414, 375, 320];
 ?>
 
 <link rel="stylesheet" href="/public/assets/styles/fonts.css">

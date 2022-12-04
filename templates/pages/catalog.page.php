@@ -1,5 +1,69 @@
 <main class="main main-catalog">
 
+    <div class="catalog-global-filter-btn">
+        <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4.37114e-08" y1="2.5" x2="25" y2="2.5" stroke="white"/>
+            <line x1="4.37114e-08" y1="8.5" x2="25" y2="8.5" stroke="white"/>
+            <line x1="4.37114e-08" y1="14.5" x2="25" y2="14.5" stroke="white"/>
+            <circle cx="4.5" cy="2.5" r="2" fill="#C72D37" stroke="white"/>
+            <circle cx="18.5" cy="14.5" r="2" fill="#C72D37" stroke="white"/>
+        </svg>
+    </div>
+
+    <div class="catalog-global-filter">
+        <div class="catalog-global-filter-close">close</div>
+
+        <p class="section-first-bottom-title color-white">Choose characteristics for your real estate</p>
+
+        <div class="catalog-filter-group">
+            <form method="get" class="catalog-filter">
+                <div id="price_block" class="catalog-filter-block">
+                    <p class="catalog-global-filter-title" for="price">Price (m2)</p>
+                    <input class="js-range-slider" name="price" id="price" type="text">
+                </div>
+
+                <div id="district_block" class="catalog-filter-block">
+                    <p class="catalog-global-filter-title">Select or enter the district</p>
+                    <div class="catalog-global-filter-btns">
+                        <?php foreach ($districts as $district): ?>
+                            <div>
+                                <label class="filter-checkbox" for="<?= $district['value'] ?>">
+                                    <input class="filter-checkbox-input" <?= isset($_GET['district'][$district['value']]) ? 'checked' : '' ?> id="<?= $district['value'] ?>" type="checkbox" name="district[<?= $district['value'] ?>]">
+                                    <?= $district['text'] ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <div id="type_block" class="catalog-filter-block">
+                    <p class="catalog-global-filter-title">Type of object</p>
+                    <div class="catalog-global-filter-btns">
+                        <?php foreach ($typesOfAparts as $apart): ?>
+                            <div>
+                                <label class="filter-checkbox" for="<?= $apart['value'] ?>">
+                                    <input class="filter-checkbox-input" <?= isset($_GET['type'][$apart['value']]) ? 'checked' : '' ?> id="<?= $apart['value'] ?>" type="checkbox" name="type[<?= $apart['value'] ?>]">
+                                    <?= $apart['text'] ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <div class="catalog-global-filter-bottom">
+                    <button type="submit" id="btn_filter" class="catalog-global-filter-submit catalog-btn-filter btn btn-white-textred btn-text-bold">
+                        filter
+                        <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
+                        </svg>
+                    </button>
+
+                    <a href="/catalog" class="catalog-link-filter catalog-global-filter-clear">clear filter</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <section class="catalog-section section section-first pl-296-px pr-296-px">
         <div class="section-first-top">
             <p class="section-first-text fz-20-px color-white">Billion worth real estate in</p>

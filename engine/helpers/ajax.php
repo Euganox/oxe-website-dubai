@@ -28,11 +28,12 @@ if (isset($_GET['openObject'])) {
         $toEcho .= "<a class='ajax-modal-close'>X</a>";
 
 
-
-        $toEcho .= "<div id='ajax-modal-slider' class='ajax-modal-left'>";
-            foreach ($imgs as $img) {
-                $toEcho .= "<img class='ajax-modal-img' onload='imgLoaded(this)' src='https://crm.oxecapital.ru/export/img.php?watermark=false&img=files/int/objects_dubai/${object['id']}/foto/${img['src']}'>";
-            }
+        $toEcho .="<div class='ajax-modal-photos'>";
+            $toEcho .= "<div id='ajax-modal-slider' class='ajax-modal-left'>";
+                foreach ($imgs as $img) {
+                    $toEcho .= "<div class='ajax-modal-slider-imgBlock'><img class='ajax-modal-img' onload='imgLoaded(this)' src='https://crm.oxecapital.ru/export/img.php?watermark=false&img=files/int/objects_dubai/${object['id']}/foto/${img['src']}'></div>";
+                }
+            $toEcho .= "</div>";
         $toEcho .= "</div>";
 
         $toEcho .= "<div class='ajax-modal-right'>";

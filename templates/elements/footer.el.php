@@ -61,7 +61,7 @@
             <a href="/catalog" class="footer-nav-link">Catalog</a>
         </div>
 
-        <div class="footer-nav-block">
+        <div class="footer-nav-block footer-nav-block-tel-flex">
             <a href="/sevices" class="footer-nav-link">Services</a>
             <div class="footer-nav-blockInblock">
                 <a href="/services#investments" class="footer-nav-link footer-nav-link-mini">Investments</a>

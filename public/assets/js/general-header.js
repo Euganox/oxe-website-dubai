@@ -2,6 +2,12 @@
     $.fatNav();
 }());
 
+if (window.location.pathname === '/contacts') {
+    $('.header').css({
+        'background': 'rgba(51, 51, 51, 0.33)'
+    });
+}
+
 $(function() {
     let header = $('.header');
     let headerHeight = header.height(); // вычисляем высоту шапки
@@ -28,10 +34,12 @@ $(function() {
                 'transition': '.3s'
             });
         } else {
-            header.css({
-                'background': 'rgba(255, 255, 255, 0.1)',
-                'transition': '.3s'
-            });
+            if (window.location.pathname !== '/contacts') {
+                header.css({
+                    'background': 'rgba(255, 255, 255, 0.1)',
+                    'transition': '.3s'
+                });
+            }
         }
     });
 });

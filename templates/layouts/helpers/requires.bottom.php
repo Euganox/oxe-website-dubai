@@ -29,7 +29,7 @@
     <script src="public/assets/js/forms/jquery.formstyler.js"></script>
     <script src="public/assets/js/rangeSlider/ion.rangeSlider.js"></script>
     <script src="public/assets/js/catalog-filter.js"></script>
-
+    <script src="public/assets/js/catalog-global-filter.js"></script>
     <script src="public/assets/js/catalog.js"></script>
 <?php endif; ?>
 

@@ -41,12 +41,30 @@ function openObject($id) {
                     }
                 });
 
-                $("#ajax-modal-slider").lightSlider({
-                    item: 1,
-                    loop:true,
-                    keyPress: true,
-                    currentPagerPosition: 'left',
-                });
+                if ($(window).width() > '667') {
+                    $("#ajax-modal-slider").lightSlider({
+                        item: 1,
+                        loop: true,
+                        keyPress: true,
+                        pager: false,
+                    });
+                } else if ($(window).width() > '400' && $(window).width() < '667') {
+                    $("#ajax-modal-slider").lightSlider({
+                        item: 2,
+                        pager: false,
+                        loop:true,
+                        keyPress: true,
+                    });
+                } else {
+                    $("#ajax-modal-slider").lightSlider({
+                        item: 1,
+                        pager: false,
+                        loop:true,
+                        keyPress: true,
+                    });
+                }
+
+
 
                 let btnContactUs = $('.btn-contactUs');
                 btnContactUs.click(function (e) {

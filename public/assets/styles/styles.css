@@ -168,6 +168,10 @@
     margin-bottom: 4.5rem;
 }
 
+.swiper-bottom {
+    display: none;
+}
+
 .swiper-header-title {
     color: #1E1E1E;
 }
@@ -676,13 +680,22 @@
     margin-bottom: 4.6rem;
 }
 
-.about-rightside-title {
+.about-rightside-title-main, .about-rightside-title-tel {
     margin-bottom: 1.7rem;
+}
+
+.about-rightside-title-tel {
+    display: none;
 }
 
 .about-rightside-text, .about-leftside-text {
     line-height: 150%;
     margin-bottom: 2.7rem;
+
+}
+
+.about-rightside-text-tel {
+    display: none;
 }
 
 .about-rightside-img {
@@ -765,8 +778,12 @@
     font-family: 'RalewayBold', serif;
 }
 
-.about-fourth-img {
+.about-fourth-img-main, .about-fourth-img-tel {
     width: 100%;
+}
+
+.about-fourth-img-tel {
+    display: none;
 }
 
 .about-fourth-info {
@@ -1365,13 +1382,28 @@ select.sort {
     cursor: pointer;
 }
 
-.ajax-modal .lSSlideOuter {
+.ajax-modal-photos {
     width: 40%;
+    height: 100%;
 }
 
-.ajax-modal-left {
-    height: auto !important;
+.catalog-global-filter-btn, .catalog-global-filter {
+    display: none;
 }
+
+.ajax-modal-slider-imgBlock {
+    width: 100%;
+    height: 100%;
+}
+
+.ajax-modal .lSSlideOuter, .ajax-modal .lSSlideWrapper.usingCss, .ajax-modal-left{
+    height: 100% !important;
+}
+
+
+    /*.ajax-modal-left {*/
+/*    height: auto !important;*/
+/*}*/
 
 .ajax-modal .lSPager {
     display: none;
@@ -1379,6 +1411,7 @@ select.sort {
 
 .ajax-modal-img {
     height: 100%;
+    width: 100%;
 }
 
 .ajax-modal-right {

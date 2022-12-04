@@ -1,4 +1,10 @@
 /* ТЕЛЕФОН */
 @media screen and (max-width: 320px) {
+    * {
+        font-size: 10px;
+    }
 
+    .fz-80-px {
+        font-size: 2.5rem;
+    }
 }

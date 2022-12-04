@@ -67,12 +67,16 @@ $services = [
         <div class="about-rightside">
             <p class="about-rightside-script beauty-text-words font-arolse-script fz-40-px color-red">Billion-worth real estate in Dubai</p>
 
-            <p class="about-rightside-title font-arolse-serif fz-80-px"><span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>XE<br>&nbsp;&nbsp;&nbsp;GROUP</p>
+            <p class="about-rightside-title-main font-arolse-serif fz-80-px"><span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>XE<br>&nbsp;&nbsp;&nbsp;GROUP</p>
+            <p class="about-rightside-title-tel font-arolse-serif fz-80-px"><span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>XE GROUP</p>
 
             <p class="about-rightside-text pr-296-px">
                 If the worth does not shy you away – you’re at the right address. And we are real professionals when it comes to addresses and locations. We love big houses, substantial deals and big money. And we transformed the love into our business. Buying, selling, renting, investing, closing and effecting transactions, consulting and a million of other operations are not a big deal for us. Even for pre-sales. Everything is clear and efficient to the maximum.
                 <br><br>
                 We do not welcome elaborate wordings, and the properties we work with do not need idle adjectives. No adjectival attributes needed in case of the best. We are young, full of energy and ambitious, which means our customers are the first to get access to the best. We value our and your time, guard your and our own reputation, care about your and our money.
+            </p>
+            <p class="about-rightside-text about-rightside-text-tel pr-296-px">
+                <br><br>Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
             </p>
 
             <img src="/public/assets/images/aboutpage4.jpg" alt="" class="about-rightside-img">
@@ -114,7 +118,7 @@ $services = [
                     <div class="about-fourth-menu-item">The City Real Estate Department</div>
                 </div>
 
-                <img src="/public/assets/images/aboutpage3.jpg" alt="" class="about-fourth-img">
+                <img src="/public/assets/images/aboutpage3.jpg" alt="" class="about-fourth-img-main">
             </div>
 
             <div class="about-fourth-right pr-296-px">
@@ -184,6 +188,8 @@ $services = [
                 </ul>
             </div>
         </div>
+
+        <img src="/public/assets/images/aboutpage3.jpg" alt="" class="about-fourth-img-tel">
     </section>
 
     <section class="about-section section section-fifth">

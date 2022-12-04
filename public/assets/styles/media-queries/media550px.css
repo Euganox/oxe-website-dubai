@@ -1,0 +1,46 @@
+/* ТЕЛЕФОН */
+@media screen and (max-width: 550px) {
+    .catalog-second-table {
+        grid-template-columns: 1fr;
+        grid-template-rows: 715px;
+        grid-auto-rows: 715px;
+
+    }
+
+    select.sort {
+        display: none;
+    }
+
+    .text-1 {
+        align-self: center;
+        font-size: 5.6rem;
+    }
+
+    .swiper-item-cover {
+        padding: 0 3.5rem 3.5rem 3.5rem;
+    }
+
+    .swiper-item-link {
+        height: 5.7rem;
+        width: 5.7rem;
+    }
+
+    .swiper-item-title {
+        margin-bottom: 1.4rem;
+        font-size: 2.7rem;
+    }
+
+    .swiper-item-text {
+        font-size: 1.2rem;
+    }
+
+    .swiper-item-nonvision-text img {
+        height: 2rem;
+        margin-right: 10px;
+    }
+
+    .swiper-item-nonvision-bottom {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+}

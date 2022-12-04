@@ -1,19 +1,24 @@
 $(document).ready(function() {
-    let elements = $('div.catalog-filter-block');
-    elements.hide();
 
-    $('.catalog-filter-accord').click(function (e) {
-        let idBlock = '#' + e.target.id + '_block';
+    if ($(window).width() > '736') {
+        let elements = $('div.catalog-filter-block');
+        elements.hide();
 
-        if ($(idBlock).hasClass("filter-active")) {
-            $(idBlock).removeClass("filter-active").fadeOut();
-        } else {
-            let otherEl = $(".catalog-filter-block.filter-active");
-            otherEl.hide();
-            otherEl.removeClass("filter-active");
-            $(idBlock).addClass("filter-active").fadeIn();
-        }
-    });
+        $('.catalog-filter-accord').click(function (e) {
+            let idBlock = '#' + e.target.id + '_block';
+
+            if ($(idBlock).hasClass("filter-active")) {
+                $(idBlock).removeClass("filter-active").fadeOut();
+            } else {
+                let otherEl = $(".catalog-filter-block.filter-active");
+                otherEl.hide();
+                otherEl.removeClass("filter-active");
+                $(idBlock).addClass("filter-active").fadeIn();
+            }
+        });
+    }
+
+
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",

@@ -3,4 +3,287 @@
     * {
         font-size: 13px;
     }
+
+    .swiper-item-cover {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .swiper-item-nonvision-text img {
+        height: 1.5rem;
+    }
+
+    .catalog-section.section-first {
+        padding-top: 17.6rem;
+        justify-content: end;
+    }
+
+    .section-first-bottom {
+        display: none;
+    }
+
+    .catalog-global-filter {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(110.26deg, #C52E38 -0.31%, #A4262F 36.2%, #821F25 74.27%);
+        height: 100vh;
+        z-index: 10;
+        width: 100%;
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+        overflow: auto;
+
+    }
+
+    .catalog-filter-block {
+        padding: 0 15px;
+        background: none;
+        margin-top: 0;
+        z-index: 1;
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .catalog-global-filter-title {
+        font-size: 1.2rem;
+        color: #FFFFFF;
+        line-height: 140%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .catalog-global-filter-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem
+    }
+
+    .filter-checkbox {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+
+    .header {
+        min-height: 80px;
+    }
+
+    .catalog-global-filter-btn {
+        cursor: pointer;
+        position: fixed;
+        bottom: 65px;
+        right: 40px;
+        background: #C72D37;
+        border-radius: 59px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        z-index: 10;
+        width: 60px;
+    }
+
+    .catalog-global-filter-close {
+        position: absolute;
+        right: 30px;
+        top: 9rem;
+        font-size: 1.1rem;
+        color: #FFFFFF;
+        line-height: 140%;
+    }
+
+    .swiper-item-nonvision-text {
+        font-size: 1rem;
+        align-items: start;
+        margin-right: 0;
+    }
+
+    .swiper-item-nonvision-top {
+        gap: 6px;
+    }
+
+    .catalog-global-filter-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .catalog-global-filter-submit {
+        border-radius: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+
+    }
+
+    .catalog-global-filter-clear {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: #2E2E2E;
+        color: #FFFFFF;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .about-section.section-second {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .about-leftside,
+    .about-rightside,
+    .about-fourth-left,
+    .about-fourth-right,
+    .about-services-left,
+    .about-services-right {
+        width: 100%;
+    }
+
+    .beauty-text-words {
+        justify-content: end;
+    }
+
+    .about-leftside-text,
+    .about-rightside-title-main,
+    .catalog-section-header-tabs,
+    .about-fourth-img-main,
+    .about-services-h2,
+    .about-services-head .btn,
+    .header-page-module,
+    .contacts-line {
+        display: none;
+    }
+
+    .about-leftside {
+        margin-bottom: 6rem;
+    }
+
+    .about-rightside-title-tel, .about-fourth-img-tel, .about-rightside-text-tel {
+        display: block;
+    }
+
+    .about-rightside-text {
+        margin-bottom: 0;
+    }
+
+    .about-rightside-text-tel {
+        margin-bottom: 2.7rem;
+    }
+
+    .about-swiper-header {
+        justify-content: space-between;
+        padding-right: 2rem;
+    }
+
+    .about-swiper-header-nav {
+        width: 20%;
+    }
+
+    .about-section.section-fourth .about-fourth-block {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .about-fourth-right {
+        padding-left: 2rem;
+    }
+
+    .about-fourth-li div, .services-details-item div {
+        width: 5%;
+    }
+
+    .about-fourth-menu {
+        display: flex;
+        align-items: start;
+        margin-bottom: 2rem;
+    }
+
+    .about-fourth-menu-item {
+        margin-bottom: 0;
+        width: 35%;
+    }
+
+    .about-section.section-fourth .about-fourth-title,
+    .about-services-first,
+    .about-services-right,
+    .contacts-line-mobile {
+        margin-bottom: 2rem;
+    }
+
+    .about-services-first, .about-services-second {
+        flex-direction: column-reverse;
+    }
+
+    .services-section.section-second {
+        margin-bottom: 15rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .header-page {
+        padding: 12.2rem 2rem 0 2rem;
+    }
+
+    .services-section.section-first {
+        padding-left: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .services-details-body {
+        padding-left: 2rem;
+        margin-top: 0;
+        padding-bottom: 4rem;
+    }
+
+    .contacts-header-page {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 9rem 0 0 0;
+        background-color: #fff;
+        height: initial;
+    }
+
+    .contacts-header-page .contacts-map {
+        position: relative;
+        height: 400px;
+    }
+
+    .contacts-block {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .contacts-header-page .header-page-link {
+        color: #C72D37;
+        margin-bottom: 2rem;
+    }
+
+    .contacts-line-mobile {
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .contacts-line-det-item div {
+        width: 5%;
+    }
+
+    .contacts-section.section-first {
+        margin-top: 7rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-bottom: 14rem;
+    }
+
+    .fz-4-rem {
+        font-size: 2.6rem;
+    }
+
+    .fz-4-5-rem {
+        font-size: 3rem;
+    }
+
 }

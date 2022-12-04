@@ -1,4 +1,10 @@
 /* ТЕЛЕФОН */
 @media screen and (max-width: 375px) {
+    * {
+        font-size: 11px;
+    }
 
+    .swiper-header {
+        padding-right: 1rem;
+    }
 }
