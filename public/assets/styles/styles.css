@@ -1260,6 +1260,7 @@
 }
 
 select.sort {
+    display: none;
     border: 1px solid #C72D37;
     border-radius: 40px;
     background: none;

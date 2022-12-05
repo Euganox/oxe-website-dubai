@@ -10,7 +10,34 @@ else if ($currentPage === 'catalog') $photoUrl = '/public/assets/images/catalogp
 
 if (isset($_POST) && !empty($_POST)) {
     if (isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['phone']) && !empty($_POST['phone'])) {
-        DB::insert('soho_calls', ['cl_name' => $_POST['name'], 'phone' => $_POST['phone']]);
+        DB::insert('soho_calls',
+            [
+                'source' => 'OXE GROUP Site',
+                'country' => 'ОАЭ',
+                'city' => 'Dubai',
+                'call_tp' => 'Buy',
+                'realty_tp' => 'int',
+                'cl_name' => $_POST['name'],
+                'phone' => $_POST['phone'],
+                'secretar_comment' => "Phone - ${_POST['phone']}",
+                'obj_name' => !empty($_POST['obj_name']) ? $_POST['obj_name'] : ''
+            ]
+        );
+
+        $subject = 'Новая заявка из OxeGroup.ae';
+
+        if (!empty($_POST['obj_name'])) $body = "В СРМ заведена новая заявка из сайта OxeGroup.ae по объекту <b>${_POST['obj_name']}</b>.<br><br> Нужно определить ответственного брокера для неё.";
+        else $body = "В СРМ заведена новая заявка из сайта OxeGroup.ae.<br><br> Нужно определить ответственного брокера для неё.";
+
+
+        $file = fopen ("https://staging-crm.oxecapital.ru/export/api/sendMail.php?to=kondakov@oxe.capital&subject=${subject}&body=${body}", "r");
+        if (!$file) {
+            echo '=(';
+        }
+
+        fclose($file);
+
+        header("Location: http://${_SERVER['HTTP_HOST']}/");
     }
 }
 

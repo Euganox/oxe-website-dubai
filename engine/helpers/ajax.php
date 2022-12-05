@@ -7,7 +7,8 @@ if (isset($_GET['openObject'])) {
 
     $toEcho = "<div class='ajax-modal'>";
         $toEcho .= "<div id='contactInModal' class='contactInModal animate__animated animate__fadeIn'>";
-            $toEcho .= "<form id='contactInModal-form'>";
+            $toEcho .= "<form method='post' id='contactInModal-form'>";
+                $toEcho .= "<input hidden id='obj_name' value='${object['title']}' name='obj_name'>";
                 $toEcho .= '<div class="contactUs-form-input-block">';
                     $toEcho .= '<label for="name" class="contactUs-form-label">Your name</label><input id="name" name="name" type="text" class="contactUs-form-input">';
                 $toEcho .= '</div>';

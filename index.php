@@ -20,7 +20,6 @@ require HLP_PATH . 'arraysHelper.php';
 require HLP_PATH . 'view.php';
 require HLP_PATH . 'objects.php';
 require HLP_PATH . 'currentPage.php';
-
 $currentPage = currentPage($_SERVER["REQUEST_URI"]);
 
 if (isset($_GET['ajax'])) {

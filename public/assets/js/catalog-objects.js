@@ -85,12 +85,12 @@ function openObject($id) {
 
                     let options =  {
                         onKeyPress: function(cep, e, field, options) {
-                            let masks = ['0-000-000-0000', '000-00-000-0000'];
-                            let mask = (cep.length>11) ? masks[1] : masks[0];
+                            let masks = ['0-000-000-00000', '000-00-000-0000'];
+                            let mask = (cep.length > 14) ? masks[1] : masks[0];
                             $('input[name="phone"]').mask(mask, options);
                         }};
 
-                    $('input[name="phone"]').mask('0-000-000-0000', options);
+                    $('input[name="phone"]').mask('0-000-000-00000', options);
 
                     $('.contactUs-form-btn-place-close').click(function (e) {
                         modalInModal.hide();

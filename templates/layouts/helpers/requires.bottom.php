@@ -30,7 +30,6 @@
     <script src="public/assets/js/rangeSlider/ion.rangeSlider.js"></script>
     <script src="public/assets/js/catalog-filter.js"></script>
     <script src="public/assets/js/catalog-global-filter.js"></script>
-    <script src="public/assets/js/catalog.js"></script>
 <?php endif; ?>
 
 <?php if($currentPage !== 'about'): ?>
@@ -38,7 +37,6 @@
 <?php endif; ?>
 
 
-<script src="public/assets/js/inputCountryTel.js"></script>
 <script src="public/assets/js/catalog-objects.js"></script>
 <script src="public/assets/js/contactUsInputs.js"></script>
 <script src="public/assets/js/loaded-imgs.js"></script>
