@@ -15,7 +15,7 @@ jobs:
         uses: JimCronqvist/action-ssh@master
         with:
           hosts: 'root@138.68.84.31'
-          privateKey: ${{ secrets.USER_PRIVATE_KEY }}
+          privateKey: ${{ secrets.OXE_SSH_PRIVATE_KEY }}
           command: |
             cd /www/oxegroup-ae
             git checkout main
