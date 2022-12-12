@@ -1,0 +1,22 @@
+name: CI Production
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  upload_to_sftp:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Execute Git Pull on remote server
+        uses: JimCronqvist/action-ssh@master
+        with:
+          hosts: 'root@138.68.84.31'
+          privateKey: ${{ secrets.USER_PRIVATE_KEY }}
+          command: |
+            cd /www/oxegroup-ae
+            git checkout main
+            git pull
