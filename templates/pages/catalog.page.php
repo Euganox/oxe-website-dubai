@@ -17,12 +17,12 @@
 
         <div class="catalog-filter-group">
             <form method="get" class="catalog-filter">
-                <div id="price_block" class="catalog-filter-block">
+                <div class="catalog-filter-block">
                     <p class="catalog-global-filter-title" for="price">Price (m2)</p>
                     <input class="js-range-slider" name="price" id="price" type="text">
                 </div>
 
-                <div id="district_block" class="catalog-filter-block">
+                <div class="catalog-filter-block">
                     <p class="catalog-global-filter-title">Select or enter the district</p>
                     <div class="catalog-global-filter-btns">
                         <?php foreach ($districts as $district): ?>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div id="type_block" class="catalog-filter-block">
+                <div class="catalog-filter-block">
                     <p class="catalog-global-filter-title">Type of object</p>
                     <div class="catalog-global-filter-btns">
                         <?php foreach ($typesOfAparts as $apart): ?>

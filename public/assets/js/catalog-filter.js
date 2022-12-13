@@ -1,22 +1,25 @@
-$(document).ready(function() {
 
-    if ($(window).width() > '736') {
-        let elements = $('div.catalog-filter-block');
-        elements.hide();
+if ($(window).width() > '736') {
+    let elements = $('div.catalog-filter-block');
+    elements.hide();
 
-        $('.catalog-filter-accord').click(function (e) {
-            let idBlock = '#' + e.target.id + '_block';
+    $('.catalog-filter-accord').click(function (e) {
+        let block = $('#' + e.target.id + '_block');
 
-            if ($(idBlock).hasClass("filter-active")) {
-                $(idBlock).removeClass("filter-active").fadeOut();
-            } else {
-                let otherEl = $(".catalog-filter-block.filter-active");
-                otherEl.hide();
-                otherEl.removeClass("filter-active");
-                $(idBlock).addClass("filter-active").fadeIn();
-            }
-        });
-    }
+        console.log(block)
+
+        if (block.hasClass("filter-active")) {
+            block.removeClass("filter-active").fadeOut();
+            console.log('if')
+        } else {
+            console.log('else')
+            let otherEl = $(".catalog-filter-block.filter-active");
+            otherEl.hide();
+            otherEl.removeClass("filter-active");
+            block.addClass("filter-active").fadeIn();
+        }
+    });
+}
 
 
 
@@ -45,7 +48,6 @@ $(document).ready(function() {
             else sortElement.show()
         })
     });
-});
 
 function submitForm(){
     let name=document.getElementsByName('district[]');
