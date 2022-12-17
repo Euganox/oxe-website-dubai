@@ -133,6 +133,12 @@ class Objects
     }
 
     public static function getPhotoUrl($id, $nameField, $src) : string {
-        return "https://crm.oxecapital.ru/export/img.php?watermark=false&img=files/int/objects_dubai/${id}/${nameField}/${src}";
+        return "https://crm.oxecapital.ru/export/img.php?watermark=false&img=". Objects::encrypt("sohokeyskeyssoho","files/int/objects_dubai/${id}/${nameField}/${src}");
+    }
+
+    public static function encrypt($key,$s) {
+	$encrypted_text = base64_encode(openssl_encrypt($s, 'aes-256-ctr', $key,0,'vectorvectorvect'));
+	$encrypted_text = str_replace("=","",$encrypted_text); // Удаляем знаки "="
+	return rawurlencode($encrypted_text);
     }
 }
