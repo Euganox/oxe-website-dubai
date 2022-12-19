@@ -21,14 +21,14 @@
             this._bodyOverflow = $('body').css('overflow');
 
             // Hack to prevent mobile safari scrolling the whole body when nav is open
-            if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
-                
-                $nav.children().css({
-                    'height': '110%',
-                    'transform': 'translateY(-5%)'
-                });
-                
-            }
+            // if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+            //
+            //     $nav.children().css({
+            //         'height': '110%',
+            //         'transform': 'translateY(-5%)'
+            //     });
+            //
+            // }
             
             $('.for-nav').append($hamburger);
             
