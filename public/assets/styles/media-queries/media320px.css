@@ -7,4 +7,8 @@
     .fz-80-px {
         font-size: 2.5rem;
     }
+
+    .home-section.section-first, .catalog-section.section-first {
+        background-position-x: -840px;
+    }
 }

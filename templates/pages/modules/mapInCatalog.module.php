@@ -17,7 +17,7 @@
     map.on('load', () => {
         map.addSource('earthquakes', {
             type: 'geojson',
-            data: 'http://localhost/apiGeo',
+            data: 'https://oxegroup.ae/apiGeo',
             cluster: true,
             clusterMaxZoom: 14, // Max zoom to cluster points on
             clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)

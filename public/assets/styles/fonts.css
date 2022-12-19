@@ -42,28 +42,36 @@
 
 @font-face {
     font-family: 'ArolseScript';
-    src: url(../fonts/arolse/ArolseBelmonteriaScript.woff);
+    src:    url(../fonts/arolse/ArolseBelmonteriaScript.woff) format('woff'),
+            url("../fonts/arolse/AB_script.otf") format('opentype'),
+            url("../fonts/arolse/AB_script.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ArolseScriptItalic';
-    src: url(../fonts/arolse/ArolseBelmonteriaScriptItalic.woff);
+    src:    url(../fonts/arolse/ArolseBelmonteriaScriptItalic.woff) format('woff'),
+            url("../fonts/arolse/AB_script_italic.otf") format('opentype'),
+            url("../fonts/arolse/AB_script_italic.ttf") format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ArolseSerif';
-    src: url(../fonts/arolse/ArolseBelmonteriaSerif.woff);
+    src:    url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),
+            url("../fonts/arolse/AB_serif.otf") format('opentype'),
+            url("../fonts/arolse/AB_serif.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ArolseSerifItalic';
-    src: url(../fonts/arolse/ArolseBelmonteriaSerifItalic.woff);
+    src:    url(../fonts/arolse/ArolseBelmonteriaSerifItalic.woff),
+            url("../fonts/arolse/AB_serif_italic.otf") format('opentype'),
+            url("../fonts/arolse/AB_serif_italic.ttf") format('truetype');
     font-weight: 400;
     font-style: italic;
 }

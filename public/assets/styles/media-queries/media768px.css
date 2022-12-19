@@ -74,4 +74,42 @@
         width: 100%;
         padding: 2rem;
     }
+
+    .fz-6-7-rem {
+        font-size: 4.5rem;
+    }
+
+    .header-page-module {
+        width: 22rem;
+    }
+
+    .services-section.section-second {
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+
+    .services-details-body {
+        padding-left: 6rem;
+    }
+
+    .services-details-text, .services-details-item {
+        font-size: 1.2rem;
+    }
+
+    .header-page {
+        padding: 12.2rem 2.5rem 0 2.5rem;
+    }
+
+    .services-section.section-first {
+        padding-left: 2.5rem;
+    }
+
+    .services-section.section-second {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    .services-details-item p {
+        font-size: 1.1rem;
+    }
 }
