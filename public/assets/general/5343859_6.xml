@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://oxegroup.ae/</loc>
+	<lastmod>2023-02-05T20:49:25+01:00</lastmod>
+</url>
+<url>
+	<loc>https://oxegroup.ae/catalog</loc>
+	<lastmod>2023-02-05T20:49:25+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/whitelogo.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/phone.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/arrow-dia.svg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/calendar.svg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/subtract.svg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/checkbox.svg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/catalogpage1.png</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://oxegroup.ae/about</loc>
+	<lastmod>2023-02-05T20:49:25+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/aboutpage1.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/aboutpage4.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/images/team/oxana.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/aboutpage3.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/aboutpage4.png</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://oxegroup.ae/services</loc>
+	<lastmod>2023-02-05T20:49:25+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/servicespage1.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/servicespage2.png</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://oxegroup.ae/contacts</loc>
+	<lastmod>2023-02-05T20:49:25+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://oxegroup.ae/public/assets/images/contactspage1.png</image:loc>
+	</image:image>
+</url>
+</urlset>
