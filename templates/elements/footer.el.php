@@ -62,7 +62,7 @@
         </div>
 
         <div class="footer-nav-block footer-nav-block-tel-flex">
-            <a href="/sevices" class="footer-nav-link">Services</a>
+            <a href="/services" class="footer-nav-link">Services</a>
             <div class="footer-nav-blockInblock">
                 <a href="/services#investments" class="footer-nav-link footer-nav-link-mini">Investments</a>
                 <a href="/services#buysellrent" class="footer-nav-link footer-nav-link-mini">Real Estate: buy, sell, rent</a>

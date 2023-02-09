@@ -9,6 +9,7 @@
     }
 
     .home-section.section-first, .catalog-section.section-first {
-        background-position-x: -840px;
+        background: #afafaf url('../../images/mainCover320.png') no-repeat;
+        background-size: cover;
     }
 }

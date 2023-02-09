@@ -4,6 +4,11 @@
         font-size: 15px;
     }
 
+    .home-section.section-first, .catalog-section.section-first {
+        background: #afafaf url('../../images/mainCover1024.png') no-repeat;
+        background-size: cover;
+    }
+
     .header-page {
         padding: 12.2rem 4.5rem 0 4.5rem;
     }

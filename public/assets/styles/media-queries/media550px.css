@@ -7,6 +7,11 @@
 
     }
 
+    .home-section.section-first, .catalog-section.section-first {
+        background: #afafaf url('../../images/mainCover480.png') no-repeat;
+        background-size: cover;
+    }
+
     select.sort {
         display: none;
     }

@@ -4,6 +4,11 @@
         font-size: 14px;
     }
 
+    .home-section.section-first, .catalog-section.section-first {
+        background: #afafaf url('../../images/mainCover720.png') no-repeat;
+        background-size: cover;
+    }
+
     .display-sm-none {
         display: none;
     }
