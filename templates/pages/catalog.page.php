@@ -248,7 +248,7 @@
                         </div>
 
                         <p class="addonForMap-object-price">from <span><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup></p>
-                        <img src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="" class="addonForMap-object-cover">
+                        <img src="<?= Objects::getOldPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="" class="addonForMap-object-cover">
                     </div>
                 <?php endforeach; ?>
             </div>

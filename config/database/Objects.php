@@ -151,6 +151,10 @@ class Objects
         }
     }
 
+    public static function getOldPhotoUrl($id, $nameField, $src) : string {
+        return "https://crm.oxecapital.ru/export/img.php?watermark=false&img=". Objects::encrypt("sohokeyskeyssoho","files/int/objects_dubai/${id}/${nameField}/${src}");
+    }
+
     public static function checkPhoto($id, $src) : bool {
         $file = IMG_PATH . "$id/$src";
 
