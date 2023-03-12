@@ -146,9 +146,16 @@
                 <?php else: ?>
                     <div id="object_<?= $object['id'] ?>" class="catalog-item <?= isset($object['class']) ? $object['class'] : '' ?>">
 
-                        <div class="background-photo-block">
-                            <img class="background-photo" onload="imgLoaded(this)" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverVert', $object['foto_coverVert']) ?>" alt="">
-                        </div>
+
+                        <?php if(Objects::checkPhoto($object['id'], $object['foto_coverVert'])): ?>
+                            <div class="background-photo-block img-loaded">
+                                <img class="background-photo" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverVert', $object['foto_coverVert']) ?>" alt="">
+                            </div>
+                        <?php else: ?>
+                            <div class="background-photo-block">
+                                <img class="background-photo" onload="imgLoaded(this)" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverVert', $object['foto_coverVert']) ?>" alt="">
+                            </div>
+                        <?php endif; ?>
 
                         <?php if(!empty($object['isTopSalesTag']) && !empty($object['isHottestTag'])): ?>
                             <div class="swiper-tags">

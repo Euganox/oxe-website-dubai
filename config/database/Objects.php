@@ -133,7 +133,28 @@ class Objects
     }
 
     public static function getPhotoUrl($id, $nameField, $src) : string {
-        return "https://crm.oxecapital.ru/export/img.php?watermark=false&img=". Objects::encrypt("sohokeyskeyssoho","files/int/objects_dubai/${id}/${nameField}/${src}");
+        $privateLink = "https://crm.oxecapital.ru/files/int/objects_dubai/${id}/${nameField}/${src}";
+        $publicLink  = "https://crm.oxecapital.ru/export/img.php?watermark=false&img=". Objects::encrypt("sohokeyskeyssoho","files/int/objects_dubai/${id}/${nameField}/${src}");
+        $file        = IMG_PATH . "$id/$src";
+
+        if (!file_exists($file)) {
+
+            $folderPath = IMG_PATH . $id;
+            if (!is_dir($folderPath)) {
+                mkdir($folderPath);
+            }
+
+            file_put_contents($file, file_get_contents($privateLink));
+            return $publicLink;
+        } else {
+            return "/public/images/$id/$src";
+        }
+    }
+
+    public static function checkPhoto($id, $src) : bool {
+        $file = IMG_PATH . "$id/$src";
+
+        return file_exists($file);
     }
 
     public static function encrypt($key,$s) {

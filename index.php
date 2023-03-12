@@ -9,6 +9,7 @@ const MOD_PATH = TPL_PATH . 'pages' . DIRECTORY_SEPARATOR . 'modules' . DIRECTOR
 const ENG_PATH = DOCROOT . 'engine' . DIRECTORY_SEPARATOR;
 const ACT_PATH = ENG_PATH . 'actions' . DIRECTORY_SEPARATOR;
 const HLP_PATH = ENG_PATH . 'helpers' . DIRECTORY_SEPARATOR;
+const IMG_PATH = DOCROOT . 'public' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
 
 require SETTINGS_PATH . 'database/DB.php';
 require SETTINGS_PATH . 'database/Sql.php';
@@ -18,7 +19,6 @@ require SETTINGS_PATH . 'settingsGeneral.php';
 require HLP_PATH . 'abort.php';
 require HLP_PATH . 'arraysHelper.php';
 require HLP_PATH . 'view.php';
-require HLP_PATH . 'objects.php';
 require HLP_PATH . 'currentPage.php';
 $currentPage = currentPage($_SERVER["REQUEST_URI"]);
 
