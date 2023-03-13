@@ -188,7 +188,6 @@ $services = [
                 </ul>
             </div>
         </div>
-
         <img src="/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-tel">
     </section>
 
