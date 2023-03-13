@@ -266,20 +266,18 @@
 .background-photo-block {
     position: absolute;
     z-index: 1;
-    width: 396px;
-    height: 540px;
     top: 0;
     left: 0;
 }
 
-.catalog-item .background-photo-block {
-    width: 470px;
-    height: 650px;
+.background-photo-block {
+    width: 100%;
+    height: 100%;
 }
 
 .double-1 .background-photo-block, .double-2 .background-photo-block {
-    width: 977px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
 }
 
 

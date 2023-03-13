@@ -19,6 +19,8 @@ if ($(window).width() > '736') {
             block.addClass("filter-active").fadeIn();
         }
     });
+} else {
+    $('.catalog-second-map').remove();
 }
 
 

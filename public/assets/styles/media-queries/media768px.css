@@ -72,7 +72,7 @@
     }
 
     .swiper-header {
-        padding-right: 3rem;
+        padding-right: 2rem;
     }
 
     .contactInModal form {
@@ -116,5 +116,39 @@
 
     .services-details-item p {
         font-size: 1.1rem;
+    }
+
+    .about-swiper-item-img, .about-rightside-img, .about-leftside-img, .about-fourth-img-main {
+        width: 100%;
+    }
+
+    .about-rightside-script {
+        padding-right: 20px;
+    }
+
+    .home-section .section-third-right {
+        width: 50%;
+        height: auto;
+    }
+
+    .background-photo-block {
+        width: 100%;
+    }
+
+    .about-swiper-header {
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .about-swiper-header-nav, .swiper-header-nav {
+        width: 20%;
+    }
+
+    .contacts-line-foot {
+        flex-direction: column;
+    }
+
+    .map-tel {
+        margin-bottom: 1rem;
     }
 }

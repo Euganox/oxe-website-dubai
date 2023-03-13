@@ -48,4 +48,12 @@
         margin-top: 2rem;
         font-size: 1.3rem;
     }
+
+    .swiper-header-nav {
+        width: 35%;
+    }
+
+    .home-section .section-third-right {
+        width: 90%;
+    }
 }

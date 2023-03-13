@@ -16,9 +16,6 @@ $(document).ready(function() {
 
         // CONTACT US BLOCK
         let marginTopImg = imgContactUsHeight / 3;
-        contactUsBlock.css({
-            'height': imgContactUsHeight + 'px',
-        });
         contactUsImg.css({
             'marginTop': '-' + marginTopImg + 'px',
         });
@@ -32,6 +29,4 @@ $(document).ready(function() {
             'marginTop': '-' + marginTopImg + 'rem',
         });
     }
-
-
 });

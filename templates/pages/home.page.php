@@ -3,7 +3,7 @@
         <p class="section-first-text fz-20-px color-white">Billion worth real estate in</p>
         <p class="section-first-text-big fz-128-px color-white font-arolse-serif">Dubai</p>
 
-        <a href="#" class="btn btn-white-textred btn-text-bold">see options
+        <a href="/catalog" class="btn btn-white-textred btn-text-bold">see options
             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
             </svg>
