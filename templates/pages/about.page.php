@@ -57,7 +57,7 @@ $services = [
 
     <section class="about-section section section-second">
         <div class="about-leftside">
-            <img loading="lazy" src="/public/assets/images/aboutpage1.jpg" alt="" class="about-leftside-img">
+            <img loading="lazy" src="/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
 
             <p class="about-leftside-text">
                 Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
@@ -79,7 +79,7 @@ $services = [
                 <br><br>Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
             </p>
 
-            <img src="/public/assets/images/aboutpage4.jpg" alt="" class="about-rightside-img">
+            <img src="/public/assets/images/office_view2.webp" alt="" class="about-rightside-img">
         </div>
     </section>
 
@@ -118,7 +118,7 @@ $services = [
                     <div class="about-fourth-menu-item">The City Real Estate Department</div>
                 </div>
 
-                <img src="/public/assets/images/aboutpage3.jpg" alt="" class="about-fourth-img-main">
+                <img src="/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-main">
             </div>
 
             <div class="about-fourth-right pr-296-px">
@@ -189,7 +189,7 @@ $services = [
             </div>
         </div>
 
-        <img src="/public/assets/images/aboutpage3.jpg" alt="" class="about-fourth-img-tel">
+        <img src="/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-tel">
     </section>
 
     <section class="about-section section section-fifth">
