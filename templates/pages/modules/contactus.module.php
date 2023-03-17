@@ -2,11 +2,11 @@
 $currentPage = currentPage($_SERVER["REQUEST_URI"]);
 $photoUrl = '';
 
-if (empty($currentPage)) $photoUrl = '/public/assets/images/dubai_view3.png';
-else if ($currentPage === 'about') $photoUrl = '/public/assets/images/aboutpage5.png';
-else if ($currentPage === 'services') $photoUrl = '/public/assets/images/servicespage2.png';
-else if ($currentPage === 'contacts') $photoUrl = '/public/assets/images/contactspage1.png';
-else if ($currentPage === 'catalog') $photoUrl = '/public/assets/images/catalogpage1.png';
+if (empty($currentPage)) $photoUrl = '/public/assets/images/dubai_view3.webp';
+else if ($currentPage === 'about') $photoUrl = '/public/assets/images/aboutpage5.webp';
+else if ($currentPage === 'services') $photoUrl = '/public/assets/images/servicespage2.webp';
+else if ($currentPage === 'contacts') $photoUrl = '/public/assets/images/contactspage1.webp';
+else if ($currentPage === 'catalog') $photoUrl = '/public/assets/images/catalogpage1.webp';
 
 if (isset($_POST) && !empty($_POST)) {
     if (isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['phone']) && !empty($_POST['phone'])) {

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ПЛАНШЕТ */
 @media screen and (max-width: 1024px) {
     * {
@@ -5,7 +12,7 @@
     }
 
     .home-section.section-first, .catalog-section.section-first {
-        background: #afafaf url('../../images/mainCover1024.png') no-repeat;
+        background: #afafaf url('../../images/mainCover1024.webp') no-repeat;
         background-size: cover;
     }
 
@@ -125,6 +132,7 @@
 
     .catalog-second-table {
         padding: 0 1rem;
+        -ms-grid-rows: 500px;
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
         gap: 1rem;

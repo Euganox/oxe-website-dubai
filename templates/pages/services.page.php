@@ -7,7 +7,7 @@
             </a>
 
             <div class="header-page-module">
-                <img loading="lazy" src="/public/assets/images/servicespage3.png" alt="" class="header-page-img">
+                <img loading="lazy" src="/public/assets/images/servicespage3.webp" alt="" class="header-page-img">
             </div>
         </div>
 

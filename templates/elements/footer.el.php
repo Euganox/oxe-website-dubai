@@ -28,9 +28,8 @@
                 </svg>
             </a>
         </div>
-
         <a href="/" class="footer-head-logo">
-            <img class="footer-head-logo-img" src="/public/assets/images/whitelogo.png" alt="">
+            <img class="footer-head-logo-img" src="/public/assets/images/whitelogo.webp" alt="">
         </a>
 
         <a href="/#contactUs" class="footer-head-btn btn btn-red-textwhite btn-text-bold">book a call

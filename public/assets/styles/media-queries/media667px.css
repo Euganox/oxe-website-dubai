@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ТЕЛЕФОН */
 @media screen and (max-width: 667px) {
 
@@ -44,6 +51,9 @@
     .ajax-modal {
         width: 95%;
         height: 90%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -64,7 +74,11 @@
     }
 
     .swiper-bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-top: 2rem;
     }
@@ -86,6 +100,9 @@
     }
 
     .contactUs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding-bottom: 5rem;
     }
@@ -97,6 +114,8 @@
     #contactUs-img {
         height: auto;
         width: 70%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
         margin-bottom: 50px;
     }
@@ -134,8 +153,15 @@
     }
 
     .footer-head {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 2rem;
     }
@@ -145,6 +171,9 @@
     }
 
     .footer-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -153,7 +182,11 @@
     }
 
     .footer-nav-block-tel-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -171,6 +204,9 @@
     }
 
     .home-section.section-third {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding-right: 15px;
     }
@@ -180,6 +216,8 @@
     }
 
     .section-third-left .btn {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
         margin-bottom: 60px;
     }

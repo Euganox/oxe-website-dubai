@@ -1,5 +1,5 @@
 <main class="main main-home">
-    <section class="home-section section section-first">
+    <section class="home-section section section-first" style="background-size: cover;">
         <p class="section-first-text fz-20-px color-white">Billion worth real estate in</p>
         <p class="section-first-text-big fz-128-px color-white font-arolse-serif">Dubai</p>
 
@@ -62,7 +62,7 @@
                 </svg>
             </a>
         </div>
-        <img src="/public/assets/images/oxana.png" alt="" class="section-third-right">
+        <img src="/public/assets/images/oxana.webp" alt="" class="section-third-right">
     </section>
 
     <section class="home-section section section-fourth pl-296-px">
@@ -70,14 +70,14 @@
     </section>
 
     <section id="ideology" class="home-section section section-fifth">
-        <img id="ideology_img1" src="./public/assets/images/dubai_view1.png" alt="">
+        <img id="ideology_img1" src="/public/assets/images/dubai_view1.webp" alt="">
 
         <div id="ideology_text" class="section-fifth-block">
             <p class="section-fifth-title beauty-text-words font-arolse-script fz-40-px color-red">Our ideology</p>
             <p class="section-fifth-text beauty-body-words fz-4-rem font-arolse-serif">We are <span class="beauty-body-words fz-4-rem font-arolse-serif text-color-red">young, energetic and ambitious,</span> which means you are the first to get access to the best</p>
         </div>
 
-        <img id="ideology_img2" src="./public/assets/images/dubai_view2.png" alt="">
+        <img id="ideology_img2" src="/public/assets/images/dubai_view2.webp" alt="">
     </section>
 
     <?php require MOD_PATH . 'contactus.module.php'?>

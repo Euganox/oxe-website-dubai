@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <section class="catalog-section section section-first pl-296-px pr-296-px">
+    <section class="catalog-section section section-first pl-296-px pr-296-px" style="background-size: cover;">
         <div class="section-first-top">
             <p class="section-first-text fz-20-px color-white">Billion worth real estate in</p>
             <p class="section-first-text-big fz-128-px color-white font-arolse-serif">Dubai</p>
@@ -248,7 +248,15 @@
                         </div>
 
                         <p class="addonForMap-object-price">from <span><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup></p>
-                        <img src="<?= Objects::getOldPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="" class="addonForMap-object-cover">
+                        <?php if(Objects::checkPhoto($object['id'], $object['foto_coverHoriz'])): ?>
+                            <div class="background-photo-block img-loaded">
+                                <img loading="lazy" class="addonForMap-object-cover" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="">
+                            </div>
+                        <?php else: ?>
+                            <div class="background-photo-block">
+                                <img class="addonForMap-object-cover" onload="imgLoaded(this)" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="">
+                            </div>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>

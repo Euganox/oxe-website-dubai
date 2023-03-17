@@ -9,7 +9,7 @@
     }
 
     .home-section.section-first, .catalog-section.section-first {
-        background: #afafaf url('../../images/mainCover320.png') no-repeat;
+        background: #afafaf url('../../images/mainCover320.webp') no-repeat;
         background-size: cover;
     }
 }

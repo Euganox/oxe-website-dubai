@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ПЛАНШЕТ */
 @media screen and (max-width: 768px) {
     * {
@@ -5,7 +12,7 @@
     }
 
     .home-section.section-first, .catalog-section.section-first {
-        background: #afafaf url('../../images/mainCover720.png') no-repeat;
+        background: #afafaf url('../../images/mainCover720.webp') no-repeat;
         background-size: cover;
     }
 
@@ -43,6 +50,7 @@
     }
 
     .catalog-second-table {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: inherit;
     }
@@ -137,6 +145,8 @@
 
     .about-swiper-header {
         padding-right: 2rem;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -145,6 +155,9 @@
     }
 
     .contacts-line-foot {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 

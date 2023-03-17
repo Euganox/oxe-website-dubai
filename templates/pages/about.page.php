@@ -96,7 +96,7 @@ $services = [
 
             <div id="team" class="about-swiper-team">
                 <div class="about-swiper-item">
-                    <img src="/public/images/team/oxana.png" alt="" class="about-swiper-item-img">
+                    <img src="/public/images/team/oxana.webp" alt="" class="about-swiper-item-img">
                     <div class="about-swiper-item-footer">
                         <p class="about-swiper-item-name">Oxana Ermishina</p>
                         <p class="about-swiper-item-descr">Founder. Chair of the Board of Directors</p>
