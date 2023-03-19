@@ -5,13 +5,13 @@
 <link rel="stylesheet" href="/public/assets/js/lightSlider/lightslider.css">
 <link rel="stylesheet" href="/public/assets/js/forms/jquery.formstyler.css">
 <link rel="stylesheet" href="/public/assets/js/rangeSlider/ion.rangeSlider.css">
-<link href="/public/assets/js/forms/jquery.formstyler.theme.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link rel="stylesheet" href="/public/assets/js/build/css/intlTelInput.min.css" />
-<link rel="stylesheet" href="/public/assets/js/amodal/amodal.css" />
+<link href="/public/assets/js/forms/jquery.formstyler.theme.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="/public/assets/js/build/css/intlTelInput.min.css">
+<link rel="stylesheet" href="/public/assets/js/amodal/amodal.css">
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'>
 
 <style>
     @font-face{font-family:'RalewayRegular';src:url(/public/assets/fonts/raleway/Raleway-Regular.woff);font-weight:400;font-style:normal}@font-face{font-family:'RalewayItalic';src:url(/public/assets/fonts/raleway/Raleway-Italic.woff);font-weight:400;font-style:italic}@font-face{font-family:'RalewayLight';src:url(/public/assets/fonts/raleway/Raleway-Light.woff);font-weight:300;font-style:normal}@font-face{font-family:'RalewayExtraLight';src:url(/public/assets/fonts/raleway/Raleway-ExtraLight.woff);font-weight:200;font-style:normal}@font-face{font-family:'RalewaySemiBold';src:url(/public/assets/fonts/raleway/Raleway-SemiBold.woff);font-weight:600;font-style:normal}@font-face{font-family:'RalewayBold';src:url(/public/assets/fonts/raleway/Raleway-Bold.woff);font-weight:700;font-style:normal}@font-face{font-family:'ArolseScript';src:url(/public/assets/fonts/arolse/ArolseBelmonteriaScript.woff) format('woff'),url("/public/assets/fonts/arolse/AB_script.otf") format('opentype'),url("/public/assets/fonts/arolse/AB_script.ttf") format('truetype');font-weight:400;font-style:normal}@font-face{font-family:'ArolseScriptItalic';src:url(/public/assets/fonts/arolse/ArolseBelmonteriaScriptItalic.woff) format('woff'),url("/public/assets/fonts/arolse/AB_script_italic.otf") format('opentype'),url("/public/assets/fonts/arolse/AB_script_italic.ttf") format('truetype');font-weight:400;font-style:italic}
