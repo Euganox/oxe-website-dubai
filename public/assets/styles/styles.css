@@ -3352,7 +3352,7 @@ select.sort {
 }
 
 /* ТЕЛЕФОН */
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
     * {
         font-size: 10px;
     }
