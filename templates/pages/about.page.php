@@ -176,13 +176,11 @@ $services = [
                     </li>
 
                     <li class="about-fourth-info-item animate__animated animate__fadeIn">
-                        <p>Money must work. The OXE CAPITAL knows how to make it happen most efficiently.</p>
                         <p>
-                            The company investment department offers available and efficient ways of getting recurring
-                            revenue. The department staff members possess expertise in how the Arabian real-estate
-                            market works and get true up-to-date information from their partners on financial markets
-                            and investments worldwide. Such knowledge allows efficient management of investment
-                            real-estate deals all over the world regardless of their complexity.
+                            <?= t("The OXE GROUP department of the city real properties is a team of super professional real estate brokers, who have good understanding of how the attractiveness of the capital's districts changes depending on global processes, as well as good grasp of minor nuances of selling properties offered by owners.") ?>
+                        </p>
+                        <p>
+                            <?= t("The department staff numbers 22 professionals possessing expertise and high-standard competence in the field of real estate resale. They initiate a great deal of transactions in the company. Brokers of the city real estate department truly love properties that are put to sale, they are knowledgeable about the history of Moscow and its topography: streets, avenues, squares and lanes. More often than not customers of the city real estate department become good friends with the brokers, who, in their turn, become family real estate agents engaged by several generations.") ?>
                         </p>
                     </li>
                 </ul>

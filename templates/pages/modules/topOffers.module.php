@@ -7,7 +7,7 @@ $objects = Objects::getTopObjects();
 <div class="swiper">
     <div class="swiper-header flex-default-sb-c">
         <h2 class="swiper-header-title font-arolse-serif fz-80-px">
-            TOP <span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>FFERS
+            <?= t('TOP <span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>FFERS') ?>
         </h2>
 
         <div class="swiper-header-nav flex-default-sb-c">
@@ -24,7 +24,8 @@ $objects = Objects::getTopObjects();
             </div>
         </div>
 
-        <a href="/catalog" class="btn btn-red-textwhite">go to catalog
+        <a href="/catalog" class="btn btn-red-textwhite">
+            <?= t('go to catalog') ?>
             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
             </svg>
@@ -64,17 +65,17 @@ $objects = Objects::getTopObjects();
                         <div class="swiper-item-nonvision-top">
                             <p class="swiper-item-nonvision-text fz-10-px">
                                 <img src="./public/assets/images/calendar.svg" alt="">
-                                Year: <br><?= $object['year'] ?>
+                                <?= t('Year') ?>: <br><?= $object['year'] ?>
                             </p>
                             <?php if($object['installment']): ?>
                             <p class="swiper-item-nonvision-text fz-10-px">
                                 <img src="./public/assets/images/checkbox.svg" alt="">
-                                Installment: <br>yes
+                                <?= t('Installment') ?>: <br>yes
                             </p>
                             <?php endif; ?>
                             <p class="swiper-item-nonvision-text fz-10-px">
                                 <img src="./public/assets/images/subtract.svg" alt="">
-                                Initial payment:<br><?= $object['payment'] ?>
+                                <?= t('Initial payment') ?>:<br><?= $object['payment'] ?>
                             </p>
                         </div>
 
@@ -87,7 +88,8 @@ $objects = Objects::getTopObjects();
         <?php endforeach; ?>
     </div>
     <div class="swiper-bottom">
-        <a href="/catalog" class="btn btn-red-textwhite">go to catalog
+        <a href="/catalog" class="btn btn-red-textwhite">
+            <?= t('go to catalog') ?>
             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
             </svg>
