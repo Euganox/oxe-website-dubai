@@ -51,7 +51,9 @@ class Router {
     }
 
     public static function getSite() : string {
-        return "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}";
+        $requestScheme = $_SERVER['REQUEST_SCHEME'] ?? 'https';
+        
+        return "$requestScheme://{$_SERVER['HTTP_HOST']}";
     }
 
     public static function getCurrentPage() : string {
