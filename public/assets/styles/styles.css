@@ -95,7 +95,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(89.79deg, #C52E38 5.23%, #821F25 128.49%);
+    background: -o-linear-gradient(357.74deg, #C52E38 4.87%, #821F25 92.61%);
+    background: linear-gradient(92.26deg, #C52E38 4.87%, #821F25 92.61%);
     align-items: center;
 }
 
