@@ -32,7 +32,8 @@
             <img class="footer-head-logo-img" src="/public/assets/images/whitelogo.webp" alt="">
         </a>
 
-        <a href="/#contactUs" class="footer-head-btn btn btn-red-textwhite btn-text-bold">book a call
+        <a href="/#contactUs" class="footer-head-btn btn btn-red-textwhite btn-text-bold">
+            <?= t("book a call") ?>
             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
             </svg>
@@ -44,7 +45,8 @@
             +971 467 92 475
         </p>
 
-        <a href="/#contactUs" class="footer-tel-btn btn btn-red-textwhite btn-text-bold">book a call
+        <a href="/#contactUs" class="footer-tel-btn btn btn-red-textwhite btn-text-bold">
+            <?= t("book a call") ?>
             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
             </svg>
@@ -53,40 +55,58 @@
 
     <div class="footer-nav">
         <div class="footer-nav-block">
-            <a href="/" class="footer-nav-link">Home</a>
+            <a href="/" class="footer-nav-link"><?= t("Home") ?></a>
         </div>
 
         <div class="footer-nav-block">
-            <a href="/catalog" class="footer-nav-link">Catalog</a>
+            <a href="/catalog" class="footer-nav-link"><?= t("Catalog") ?></a>
         </div>
 
         <div class="footer-nav-block footer-nav-block-tel-flex">
-            <a href="/services" class="footer-nav-link">Services</a>
+            <a href="/services" class="footer-nav-link"><?= t("Services") ?></a>
             <div class="footer-nav-blockInblock">
-                <a href="/services#investments" class="footer-nav-link footer-nav-link-mini">Investments</a>
-                <a href="/services#buysellrent" class="footer-nav-link footer-nav-link-mini">Real Estate: buy, sell, rent</a>
-                <a href="/services#management" class="footer-nav-link footer-nav-link-mini">Management of Real Estate</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Consulting</a>
-                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">Citizenship, passport</a>
-                <a href="/services#passport" class="footer-nav-link footer-nav-link-mini">Business Relocation</a>
-                <a href="/services#legalservices" class="footer-nav-link footer-nav-link-mini">Legal services</a>
-                <a href="/services#documents" class="footer-nav-link footer-nav-link-mini">Documents</a>
-                <a href="/services#insurance" class="footer-nav-link footer-nav-link-mini">Insurance</a>
+                <a href="/services#investments" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Investments") ?>
+                </a>
+                <a href="/services#buysellrent" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Real Estate: buy, sell, rent") ?>
+                </a>
+                <a href="/services#management" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Management of Real Estate") ?>
+                </a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Consulting") ?>
+                </a>
+                <a href="/services#consulting" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Citizenship, passport") ?>
+                </a>
+                <a href="/services#passport" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Business Relocation") ?>
+                </a>
+                <a href="/services#legalservices" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Legal services") ?>
+                </a>
+                <a href="/services#documents" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Documents") ?>
+                </a>
+                <a href="/services#insurance" class="footer-nav-link footer-nav-link-mini">
+                    <?= t("Insurance") ?>
+                </a>
             </div>
         </div>
 
         <div class="footer-nav-block">
-            <a href="/about" class="footer-nav-link">About us</a>
+            <a href="/about" class="footer-nav-link"><?= t("About us") ?></a>
         </div>
 
         <div class="footer-nav-block">
-            <a href="/contacts" class="footer-nav-link">Contacts</a>
+            <a href="/contacts" class="footer-nav-link"><?= t("Contacts") ?></a>
         </div>
     </div>
 
     <div class="footer-foot">
         <a href="#" class="footer-foot-link">Privacy Policy</a>
         <a href="mailto:welcome@oxegroup.ae" class="footer-foot-link">welcome@oxegroup.ae</a>
-        <p class="footer-foot-year">2022</p>
+        <p class="footer-foot-year">2023</p>
     </div>
 </footer>

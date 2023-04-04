@@ -14,14 +14,14 @@ class Objects
             if (count($objectsForCatalog) === 3 || count($objectsForCatalog) === 9) {
                 $text = [
                     4 => [
-                        'type' => 'text',
+                        'type'  => 'text',
                         'class' => 'text-1',
-                        'text' => 'Big money attracts even more money'
+                        'text'  => Router::getLocale() === 'RU' ? 'БОЛЬШИЕ ДЕНЬГИ ПРИВЛЕКАЮТ ЕЩЕ БОЛЬШЕ ДЕНЕГ' : 'Big money attracts even more money'
                     ],
                     10 => [
-                        'type' => 'text',
+                        'type'  => 'text',
                         'class' => 'text-2',
-                        'text' => 'We are not afraid to sell for billions'
+                        'text'  => Router::getLocale() === 'RU' ? 'МЫ НЕ БОИМСЯ ПРОДАВАТЬ НА МИЛЛИАРДЫ' : 'We are not afraid to sell for billions'
                     ]
 
                 ];

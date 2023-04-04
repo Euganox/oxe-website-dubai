@@ -4,13 +4,31 @@ function t(string $text) : string {
     $locale = $_SESSION['locale'] ?? "EN";
 
     if ($locale === "RU") {
-        return LOCALE[$text][$locale] ?? $text;
+        return !empty(LOCALE[$text][$locale]) ? LOCALE[$text][$locale] : $text;
     } else {
         return $text;
     }
 }
 
 const LOCALE = [
+    'Home' => [
+        "RU" => 'Главная'
+    ],
+    'About Us' => [
+        "RU" => 'О нас'
+    ],
+    'About us' => [
+        "RU" => 'О нас'
+    ],
+    'Catalog' => [
+        "RU" => 'Каталог'
+    ],
+    'Contacts' => [
+        "RU" => 'Контакты'
+    ],
+    "Our Contacts" => [
+        "RU" => 'Наши  контакты'
+    ],
     'Billion worth real estate in' => [
         'RU' => 'Недвижимость стоимостью в миллиард долларов в'
     ],
@@ -100,5 +118,35 @@ const LOCALE = [
     ],
     "Initial payment" => [
         "RU" => "Первичный взнос"
+    ],
+    'book a call' => [
+        "RU" => "заказать звонок"
+    ],
+    'Investments' => [
+        "RU" => "Инвестиции"
+    ],
+    'Real Estate: buy, sell, rent' => [
+        "RU" => "Недвижимость: покупка, продажа, аренда"
+    ],
+    'Management of Real Estate' => [
+        "RU" => "Управление недвижимостью"
+    ],
+    'Consulting' => [
+        "RU" => "Консультации"
+    ],
+    'Citizenship, passport' => [
+        "RU" => "Гражданство, паспорт"
+    ],
+    'Business Relocation' => [
+        "RU" => "Релокация бизнеса"
+    ],
+    'Legal services' => [
+        "RU" => "Юридические услуги"
+    ],
+    'Documents' => [
+        "RU" => "Документы"
+    ],
+    'Insurance' => [
+        "RU" => "Страхование"
     ],
 ];

@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Services';
+$title = Router::getLocale() === 'RU' ? 'Услуги' : 'Services';
 
-$content = view('services');
+$content = Router::view('services');
 require TPL_PATH . 'layouts' . DIRECTORY_SEPARATOR . 'main.layout.php';

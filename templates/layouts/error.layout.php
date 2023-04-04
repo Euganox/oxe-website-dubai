@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OXE GROUP - ERROR</title>
+
+    <link rel="stylesheet" href="<?= Router::getSite() ?>/public/assets/styles/styles.css">
 </head>
 <body>
+
+<main class="error">
+    <div class="container">
+        <?= $message ?>
+    </div>
+</main>
 
 </body>
 </html>

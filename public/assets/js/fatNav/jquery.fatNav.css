@@ -124,23 +124,17 @@
   text-align: center;
   margin-bottom: 2.5rem;
 }
-/*.fat-nav li, .fat-nav li a {*/
-/*  color: #fff;*/
-/*}*/
+
 .fat-nav li a {
   padding: 15px;
   text-decoration: none;
   font-family: 'ArolseSerif', serif;
   font-size: 3rem;
+  text-transform: uppercase;
   color: white;
   transition: all 0.3s;
 }
 
 .fat-nav li a:hover {
   text-decoration: underline;
-  /*background: linear-gradient(97.42deg, #D33C46 -1.38%, #832026 44.34%);*/
-  /*-webkit-background-clip: text;*/
-  /*-webkit-text-fill-color: transparent;*/
-  /*background-clip: text;*/
-  /*text-fill-color: transparent;*/
 }

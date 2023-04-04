@@ -1,6 +1,6 @@
 <?php 
 
-$title = 'Home';
+$title = Router::getLocale() === 'RU' ? 'Главная' : 'Home';
 
-$content = view('home');
+$content = Router::view('home');
 require TPL_PATH . 'layouts' . DIRECTORY_SEPARATOR . 'main.layout.php';

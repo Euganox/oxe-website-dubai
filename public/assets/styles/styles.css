@@ -58,11 +58,18 @@
     font-style: italic;
 }
 
+/*@font-face {*/
+/*    font-family: 'ArolseSerif';*/
+/*    src:    url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),*/
+/*    url("../fonts/arolse/AB_serif.otf") format('opentype'),*/
+/*    url("../fonts/arolse/AB_serif.ttf") format('truetype');*/
+/*    font-weight: 400;*/
+/*    font-style: normal;*/
+/*}*/
+
 @font-face {
     font-family: 'ArolseSerif';
-    src:    url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),
-    url("../fonts/arolse/AB_serif.otf") format('opentype'),
-    url("../fonts/arolse/AB_serif.ttf") format('truetype');
+    src: url("../fonts/ricordi.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -82,6 +89,19 @@
     font-family: 'RalewayRegular', serif;
     font-size: 18px;
     box-sizing: border-box;
+}
+
+.error {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(89.79deg, #C52E38 5.23%, #821F25 128.49%);
+    align-items: center;
+}
+
+.error .container {
+    font-size: 2rem;
+    color: white;
 }
 
 body {
@@ -135,12 +155,24 @@ img[data-src] {
     font-size: 0.888rem;
 }
 
+.fz-1-rem {
+    font-size: 1rem;
+}
+
 .fz-20-px {
     font-size: 1.111rem;
 }
 
 .fz-1-3-rem {
     font-size: 1.3rem;
+}
+
+.fz-3-25-rem {
+    font-size: 3.25rem;
+}
+
+.fz-3-5-rem {
+    font-size: 3.5rem;
 }
 
 .fz-4-rem {
@@ -189,6 +221,7 @@ img[data-src] {
 
 .font-arolse-serif {
     font-family: 'ArolseSerif', serif;
+    text-transform: uppercase;
 }
 
 .font-arolse-serif-special {
@@ -428,7 +461,7 @@ img[data-src] {
 }
 
 .section-second-text {
-    line-height: 120%;
+    line-height: 135%;
 }
 
 .section-second-text-gradient {

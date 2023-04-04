@@ -9,26 +9,28 @@
         this._name = pluginName;
         this.init();
     }
-    
+
+    function getLocale() {
+        let urlArr = document.location.pathname.split('/');
+
+        if (urlArr[1] === 'ru' || urlArr[1] === 'RU') {
+            return 'RU';
+        } else {
+            return 'EN'
+        }
+    }
+
+    let nameMenu = getLocale() === 'RU' ? 'меню' : 'menu';
+
     $.extend(Plugin.prototype, {
         
         init: function() {
 
             var self = this;
             var $nav = this.$nav = $('.fat-nav');
-            var $hamburger = this.$hamburger = $('<a class="hamburger"><div class="hamburger__icon"></div> <div class="hamburger__text fz-20-px">menu</div></a>');
+            var $hamburger = this.$hamburger = $('<a class="hamburger"><div class="hamburger__icon"></div> <div class="hamburger__text fz-20-px">' + nameMenu + '</div></a>');
             
             this._bodyOverflow = $('body').css('overflow');
-
-            // Hack to prevent mobile safari scrolling the whole body when nav is open
-            // if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
-            //
-            //     $nav.children().css({
-            //         'height': '110%',
-            //         'transform': 'translateY(-5%)'
-            //     });
-            //
-            // }
             
             $('.for-nav').append($hamburger);
             
