@@ -23,7 +23,7 @@
     <meta name="msapplication-TileImage" content="/public/assets/general/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>OXE GROUP - ERROR</title>
+    <title>OXE GROUP - <?= $message ?></title>
 
     <link rel="stylesheet" href="<?= Router::getSite() ?>/public/assets/styles/styles.css">
 </head>
