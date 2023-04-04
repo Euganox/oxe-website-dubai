@@ -52,7 +52,7 @@ class Router {
 
     public static function getSite() : string {
         $requestScheme = $_SERVER['REQUEST_SCHEME'] ?? 'https';
-        
+
         return "$requestScheme://{$_SERVER['HTTP_HOST']}";
     }
 

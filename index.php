@@ -36,4 +36,4 @@ if (isset($_GET['ajax'])) {
     exit();
 }
 
-Router::abort(404, 'Developing...');
+Router::abort(404, 'DEVELOPING');
