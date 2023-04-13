@@ -147,12 +147,8 @@ class Objects
             file_put_contents($file, file_get_contents($privateLink));
             return $publicLink;
         } else {
-            return "/public/images/$id/$src";
+            return Router::getSite() . "/public/images/$id/$src";
         }
-    }
-
-    public static function getOldPhotoUrl($id, $nameField, $src) : string {
-        return "https://crm.oxecapital.ru/export/img.php?watermark=false&img=". Objects::encrypt("sohokeyskeyssoho","files/int/objects_dubai/${id}/${nameField}/${src}");
     }
 
     public static function checkPhoto($id, $src) : bool {

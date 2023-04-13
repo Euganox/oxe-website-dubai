@@ -159,8 +159,8 @@
 
                         <?php if(!empty($object['isTopSalesTag']) && !empty($object['isHottestTag'])): ?>
                             <div class="swiper-tags">
-                                <?php if($object['isHottestTag'] === 1): ?><img src="./public/assets/images/hottest.png" alt=""><?php endif; ?>
-                                <?php if($object['isTopSalesTag'] === 1): ?><img src="./public/assets/images/topsales.png" alt=""><?php endif; ?>
+                                <?php if($object['isHottestTag'] === 1): ?><img src="<?= Router::getSite() ?>/public/assets/images/hottest.png" alt=""><?php endif; ?>
+                                <?php if($object['isTopSalesTag'] === 1): ?><img src="<?= Router::getSite() ?>/public/assets/images/topsales.png" alt=""><?php endif; ?>
                             </div>
                         <?php endif; ?>
 

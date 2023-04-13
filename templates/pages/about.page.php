@@ -57,7 +57,7 @@ $services = [
 
     <section class="about-section section section-second">
         <div class="about-leftside">
-            <img loading="lazy" src="/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
+            <img loading="lazy" src="<?= Router::getSite() ?>/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
 
             <p class="about-leftside-text">
                 Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
@@ -79,7 +79,7 @@ $services = [
                 <br><br>Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
             </p>
 
-            <img src="/public/assets/images/office_view2.webp" alt="" class="about-rightside-img">
+            <img src="<?= Router::getSite() ?>/public/assets/images/office_view2.webp" alt="" class="about-rightside-img">
         </div>
     </section>
 
@@ -96,7 +96,7 @@ $services = [
 
             <div id="team" class="about-swiper-team">
                 <div class="about-swiper-item">
-                    <img src="/public/images/team/oxana.webp" alt="" class="about-swiper-item-img">
+                    <img src="<?= Router::getSite() ?>/public/images/team/oxana.webp" alt="" class="about-swiper-item-img">
                     <div class="about-swiper-item-footer">
                         <p class="about-swiper-item-name">Oxana Ermishina</p>
                         <p class="about-swiper-item-descr">Founder. Chair of the Board of Directors</p>
@@ -118,7 +118,7 @@ $services = [
                     <div class="about-fourth-menu-item">The City Real Estate Department</div>
                 </div>
 
-                <img src="/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-main">
+                <img src="<?= Router::getSite() ?>/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-main">
             </div>
 
             <div class="about-fourth-right pr-296-px">
@@ -177,16 +177,16 @@ $services = [
 
                     <li class="about-fourth-info-item animate__animated animate__fadeIn">
                         <p>
-                            <?= t("The OXE GROUP department of the city real properties is a team of super professional real estate brokers, who have good understanding of how the attractiveness of the capital's districts changes depending on global processes, as well as good grasp of minor nuances of selling properties offered by owners.") ?>
+                            The OXE GROUP department of the city real properties is a team of super professional real estate brokers, who have good understanding of how the attractiveness of the capital's districts changes depending on global processes, as well as good grasp of minor nuances of selling properties offered by owners.
                         </p>
                         <p>
-                            <?= t("The department staff numbers 22 professionals possessing expertise and high-standard competence in the field of real estate resale. They initiate a great deal of transactions in the company. Brokers of the city real estate department truly love properties that are put to sale, they are knowledgeable about the history of Moscow and its topography: streets, avenues, squares and lanes. More often than not customers of the city real estate department become good friends with the brokers, who, in their turn, become family real estate agents engaged by several generations.") ?>
+                            The department staff numbers 22 professionals possessing expertise and high-standard competence in the field of real estate resale. They initiate a great deal of transactions in the company. Brokers of the city real estate department truly love properties that are put to sale, they are knowledgeable about the history of Moscow and its topography: streets, avenues, squares and lanes. More often than not customers of the city real estate department become good friends with the brokers, who, in their turn, become family real estate agents engaged by several generations.
                         </p>
                     </li>
                 </ul>
             </div>
         </div>
-        <img src="/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-tel">
+        <img src="<?= Router::getSite() ?>/public/assets/images/reception_view.webp" alt="" class="about-fourth-img-tel">
     </section>
 
     <section class="about-section section section-fifth">
