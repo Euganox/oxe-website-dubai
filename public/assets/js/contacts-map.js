@@ -5,7 +5,7 @@ let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
     center: [55.2768, 25.1850],
-    zoom: 14,
+    zoom: 13,
     scrollZoom: false,
     doubleClickZoom: false,
     dragPan: false,
