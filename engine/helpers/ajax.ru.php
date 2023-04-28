@@ -75,10 +75,10 @@ if (isset($_GET['openObject'])) {
     $toEcho .= "<div class='ajax-modal-block ajax-modal-types'>";
     $toEcho .= "<h3 class='ajax-modal-subtitle'>Количество комнат</h3>";
     $toEcho .= "<div class='ajax-modal-types-block'>";
-    if (strpos($object['types_of_apart'], '1B') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>1</div><p class='ajax-modal-types-p'>One bedroom</p></div>";
-    if (strpos($object['types_of_apart'], '2B') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>2</div><p class='ajax-modal-types-p'>Two-bedroom</p></div>";
-    if (strpos($object['types_of_apart'], '3B') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>3</div><p class='ajax-modal-types-p'>Three-bedroom</p></div>";
-    if (strpos($object['types_of_apart'], '2S') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>2</div><p class='ajax-modal-types-p'>Two-storey</p></div>";
+    if (strpos($object['types_of_apart'], '1B') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>1</div><p class='ajax-modal-types-p'>Одна спальня</p></div>";
+    if (strpos($object['types_of_apart'], '2B') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>2</div><p class='ajax-modal-types-p'>Две спальни</p></div>";
+    if (strpos($object['types_of_apart'], '3B') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>3</div><p class='ajax-modal-types-p'>Три спальни</p></div>";
+    if (strpos($object['types_of_apart'], '2S') !== false) $toEcho .= "<div><div class='ajax-modal-types-icon'>O</div><p class='ajax-modal-types-p'>Другое</p></div>";
     $toEcho .= "</div>";
     $toEcho .= "</div>";
 

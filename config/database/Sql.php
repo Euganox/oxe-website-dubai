@@ -31,7 +31,7 @@ class Sql {
         $where='d.dic_id=l.id and l.code="'.$dic_name.'" '.$where;
         if ($with_key!='')
             $fields[]='d.'.$with_key.' as value';
-        $list=DB::select($tbl,$fields,array('order'=>'d.pos, d.name','where'=>$where));
+        $list=DB::select($tbl,$fields,array('order'=>'d.id','where'=>$where));
         if ($with_empty)
             $list=array_merge(array(array('text'=>'')),$list);
 

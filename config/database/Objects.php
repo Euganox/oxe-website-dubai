@@ -144,6 +144,30 @@ class Objects
         return DB::select('soho_int_objects_site', '*', ['where' => ["isTop = 1"]]);
     }
 
+    public static function translateRealtyTypes($arr) : array {
+        $newArr = [];
+
+        foreach ($arr as $item) {
+            $newItem = [];
+
+            if ($item['text'] === 'Apartments') $newItem['text'] = 'Апартаменты';
+            else if ($item['text'] === 'Penthouse') $newItem['text'] = 'Пентхаус';
+            else if ($item['text'] === 'Townhouse') $newItem['text'] = 'Таунхаус';
+            else if ($item['text'] === 'Villa') $newItem['text'] = 'Вилла';
+            else if ($item['text'] === 'Other') $newItem['text'] = 'Другое';
+            else if ($item['text'] === 'Three bedroom') $newItem['text'] = 'Три спальни';
+            else if ($item['text'] === 'Two bedroom') $newItem['text'] = 'Две спальни';
+            else if ($item['text'] === 'One bedroom') $newItem['text'] = 'Одна спальня';
+            else $newItem['text'] = $item['text'];
+
+            $newItem['value'] = $item['value'];
+
+            $newArr[] = $newItem;
+        }
+
+        return $newArr;
+    }
+
     public static function getOneObject($id) : array {
         return DB::select('soho_int_objects_site', '*', ['where' => ["id = ${id}"]]);
     }
@@ -170,18 +194,32 @@ class Objects
     public static function getRealtyString(string $str) {
         $strToArr     = explode(', ', $str);
         $middleArray  = [];
-
-        foreach ($strToArr as $item) {
-            if ($item === 'AP') {
-                $middleArray[] = 'Apartments';
-            } else if ($item === 'PE') {
-                $middleArray[] = 'Penthouse';
-            } else if ($item === 'VI') {
-                $middleArray[] = 'Villa';
-            } else if ($item === 'TO') {
-                $middleArray[] = 'Townhouse';
+        if (Router::getLocale() === 'RU') {
+            foreach ($strToArr as $item) {
+                if ($item === 'AP') {
+                    $middleArray[] = 'Апартаменты';
+                } else if ($item === 'PE') {
+                    $middleArray[] = 'Пентхаус';
+                } else if ($item === 'VI') {
+                    $middleArray[] = 'Вилла';
+                } else if ($item === 'TO') {
+                    $middleArray[] = 'Таунхаус';
+                }
+            }
+        } else {
+            foreach ($strToArr as $item) {
+                if ($item === 'AP') {
+                    $middleArray[] = 'Apartments';
+                } else if ($item === 'PE') {
+                    $middleArray[] = 'Penthouse';
+                } else if ($item === 'VI') {
+                    $middleArray[] = 'Villa';
+                } else if ($item === 'TO') {
+                    $middleArray[] = 'Townhouse';
+                }
             }
         }
+
 
         return implode(', ', $middleArray);
     }

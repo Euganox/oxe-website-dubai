@@ -6,6 +6,11 @@ $districts = Sql::getDic('int_dubai_districts', false, 'code');
 $typesOfAparts = Sql::getDic('int_dubai_typesApart', false, 'code');
 $typesOfRealty = Sql::getDic('int_dubai_typesRealty', false, 'code');
 
+if (Router::getLocale() === 'RU') {
+    $typesOfAparts = Objects::translateRealtyTypes($typesOfAparts);
+    $typesOfRealty = Objects::translateRealtyTypes($typesOfRealty);
+}
+
 if (isset($_GET) && !empty($_GET)) {
     $objects = Objects::objectsForCatalog($_GET);
 } else {
