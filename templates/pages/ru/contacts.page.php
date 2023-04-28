@@ -5,20 +5,20 @@
         <div class="contacts-block">
             <a href="/contacts" class="header-page-link fz-20-px color-white">
                 <p class="fz-20-px">/</p>
-                <p class="fz-20-px">contacts</p>
+                <p class="fz-20-px">контакты</p>
             </a>
 
             <div class="contacts-line-mobile">
                 <header class="contacts-line-head">
-                    <p class="contacts-line-title fz-40-px font-arolse-serif">OUR<br>CONTACTS</p>
+                    <p class="contacts-line-title fz-40-px font-arolse-serif">НАШИ<br>КОНТАКТЫ</p>
                     <p class="contacts-line-text">Dubai, Business Bay, Metropolis Tower Penthouse, 22nd floor, Holding "OXE GROUP"</p>
                 </header>
 
                 <section class="contacts-line-works">
-                    <p class="contacts-line-subtitle">Office work hours:</p>
+                    <p class="contacts-line-subtitle">Рабочие часы офиса:</p>
                     <p class="contacts-line-time">
-                        Mo — Fr:&nbsp;&nbsp;&nbsp;&nbsp;9:00 - 21:00<br>
-                        Sa — Su:&nbsp;&nbsp;&nbsp;&nbsp;10:00 - 20:00
+                        ПН — ПТ:&nbsp;&nbsp;&nbsp;&nbsp;9:00 - 21:00<br>
+                        СБ — ВС:&nbsp;&nbsp;&nbsp;&nbsp;10:00 - 20:00
                     </p>
                 </section>
 
@@ -70,15 +70,15 @@
 
             <div class="contacts-line">
                 <header class="contacts-line-head">
-                    <p class="contacts-line-title fz-40-px font-arolse-serif">OUR<br>CONTACTS</p>
+                    <p class="contacts-line-title fz-40-px font-arolse-serif">НАШИ<br>КОНТАКТЫ</p>
                     <p class="contacts-line-text">Dubai, Business Bay, Metropolis Tower Penthouse, 22nd floor, Holding "OXE GROUP"</p>
                 </header>
 
                 <section class="contacts-line-works">
-                    <p class="contacts-line-subtitle">Office work hours:</p>
+                    <p class="contacts-line-subtitle">Рабочие часы офиса:</p>
                     <p class="contacts-line-time">
-                        Mo — Fr:&nbsp;&nbsp;&nbsp;&nbsp;9:00 - 21:00<br>
-                        Sa — Su:&nbsp;&nbsp;&nbsp;&nbsp;10:00 - 20:00
+                        ПН — ПТ:&nbsp;&nbsp;&nbsp;&nbsp;9:00 - 21:00<br>
+                        СБ — ВС:&nbsp;&nbsp;&nbsp;&nbsp;10:00 - 20:00
                     </p>
                 </section>
 
@@ -132,12 +132,12 @@
 
     <section class="contacts-section section section-first pl-296-px">
         <p class="section-second-author beauty-text-words font-arolse-script fz-40-px color-red">Ermishina Oxana</p>
-        <p class="section-second-text fz-4-rem font-arolse-serif">
-            we love big houses, big deals and big money. And we've made that love our job. Buying, renting, selling,
-            investing -
+        <p class="section-second-text fz-3-25-rem font-arolse-serif ">
+            Мы любим большие дома, большие сделки и большие деньги. И сделали эту любовь своей работой. Купить,
+            арендовать, продать, инвестировать, оформить, проконсультировать и выполнить еще миллион действий
         </p>
-        <p class="section-second-text section-second-text-gradient fz-4-5-rem font-arolse-serif">
-            NO PROBLEM.
+        <p class="section-second-text section-second-text-gradient fz-3-5-rem font-arolse-serif">
+            – не вопрос.
         </p>
     </section>
 

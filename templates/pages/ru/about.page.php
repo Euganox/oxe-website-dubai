@@ -48,7 +48,7 @@ $services = [
     </header>
 
     <section class="about-section section section-first pl-296-px">
-        <p class="font-arolse-serif fz-6-7-rem">ПРИНОСИТЬ ДЕНЬГИ</p>
+        <p class="font-arolse-serif fz-6-7-rem">РАБОТАТЬ</p>
     </section>
 
     <section class="about-section section section-second">
@@ -218,7 +218,7 @@ $services = [
                 <h2 class="about-services-title font-arolse-serif color-white fz-80-px">
                     <span class="font-arolse-serif-special font-arolse-serif color-white fz-80-px">НАШИ УСЛУГИ
                 </h2>
-                <a href="/services" class="btn btn-white-textred btn-text-bold about-services-link">все услуги
+                <a href="/ru/services" class="btn btn-white-textred btn-text-bold about-services-link">все услуги
                     <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                         <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
                     </svg>
@@ -241,7 +241,7 @@ $services = [
                 <div class="about-services-second">
                     <div class="about-services-left about-services-subtitle">
                         <h2 class="about-services-h2">Услуги для <br><span>покупателей</span></h2>
-                        <a href="/services" class="btn btn-white-textred btn-text-bold about-services-link">все услуги
+                        <a href="/ru/services" class="btn btn-white-textred btn-text-bold about-services-link">все услуги
                             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
                             </svg>

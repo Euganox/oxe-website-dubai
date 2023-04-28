@@ -51,13 +51,13 @@ if (isset($_GET['openObject'])) {
 
     $toEcho .= "<div class='ajax-modal-body'>";
     $toEcho .= "<div class='ajax-modal-block ajax-modal-opp'>";
-    if ($object['installment']) $toEcho .= "<div class='ajax-modal-opp-item'><p>Первоначальный платеж</p> <p>да</p></div>";
-    else $toEcho .= "<div class='ajax-modal-opp-item'><p>Первоначальный платеж</p> <p>нет</p></div>";
+    if ($object['installment']) $toEcho .= "<div class='ajax-modal-opp-item'><p>Рассрочка</p> <p>да</p></div>";
+    else $toEcho .= "<div class='ajax-modal-opp-item'><p>Рассрочка</p> <p>нет</p></div>";
 
-    if(isset($object['payment']) && !empty($object['payment'])) $toEcho .= "<div class='ajax-modal-opp-item'><p>Initial payment</p> <p>${object['payment']}%</p></div>";
+    if(isset($object['payment']) && !empty($object['payment'])) $toEcho .= "<div class='ajax-modal-opp-item'><p>Первоначальный взнос</p> <p>${object['payment']}%</p></div>";
 
     $toEcho .= "<div class='ajax-modal-opp-item'><p>Год сдачи</p> <p>${object['year']}</p></div>";
-    $toEcho .= "<div class='ajax-modal-opp-item'><p>Цена (за м<sup>2</sup>)</p> <p>от ${object['from_price_m2']} $</p></div>";
+    $toEcho .= "<div class='ajax-modal-opp-item'><p>Цена (за м2)</p> <p>от ${object['from_price_m2']} $</p></div>";
     $toEcho .= "<div class='ajax-modal-opp-item'><p>Тип недвижимости</p> <p>$realtyTypes</p></div>";
     $toEcho .= "</div>";
 
