@@ -2868,6 +2868,7 @@ select.sort {
     }
 
     .catalog-global-filter-bottom {
+        z-index: 9999;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -3322,7 +3323,7 @@ select.sort {
 
     .text-1 {
         align-self: center;
-        font-size: 5.6rem;
+        font-size: 4rem;
     }
 
     .swiper-item-cover {
