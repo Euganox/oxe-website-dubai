@@ -58,21 +58,21 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'ArolseSerif';
-    src:    url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),
-    url("../fonts/arolse/AB_serif.otf") format('opentype'),
-    url("../fonts/arolse/AB_serif.ttf") format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
 /*@font-face {*/
 /*    font-family: 'ArolseSerif';*/
-/*    src: url("../fonts/ricordi.ttf") format('truetype');*/
+/*    src:    url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),*/
+/*    url("../fonts/arolse/AB_serif.otf") format('opentype'),*/
+/*    url("../fonts/arolse/AB_serif.ttf") format('truetype');*/
 /*    font-weight: 400;*/
 /*    font-style: normal;*/
 /*}*/
+
+@font-face {
+    font-family: 'ArolseSerif';
+    src: url("../fonts/ricordi.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'ArolseSerifItalic';
@@ -1828,13 +1828,13 @@ img[data-src] {
     border-radius: 40px 0 0 40px;
 }
 
-.catalog-filter-accord:nth-child(2) {
-    border-left: 1px solid #C72D37;
+.catalog-filter-accord {
     border-right: 1px solid #C72D37;
 }
 
 .catalog-filter-accord:last-child {
     border-radius: 0 40px 40px 0;
+    border-right: none;
 }
 
 .catalog-filter-accord {
@@ -1859,6 +1859,8 @@ img[data-src] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter-checkbox {
@@ -2121,7 +2123,11 @@ select.sort {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 7.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.ajax-modal-right .btn-contactUs {
+    margin-bottom: 5.7rem;
 }
 
 .ajax-modal-header-title {

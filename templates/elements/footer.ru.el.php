@@ -33,7 +33,7 @@
         </a>
 
         <a href="/#contactUs" class="footer-head-btn btn btn-red-textwhite btn-text-bold">
-            <?= t("book a call") ?>
+            заказать звонок
             <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                 <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
             </svg>
@@ -55,28 +55,28 @@
 
     <div class="footer-nav">
         <div class="footer-nav-block">
-            <a href="/" class="footer-nav-link"><?= t("Home") ?></a>
+            <a href="/" class="footer-nav-link">Главная</a>
         </div>
 
         <div class="footer-nav-block">
-            <a href="/catalog" class="footer-nav-link"><?= t("Catalog") ?></a>
+            <a href="/catalog" class="footer-nav-link">Каталог</a>
         </div>
 
         <div class="footer-nav-block footer-nav-block-tel-flex">
-            <a href="/services" class="footer-nav-link"><?= t("Services") ?></a>
+            <a href="/services" class="footer-nav-link">Услуги</a>
         </div>
 
         <div class="footer-nav-block">
-            <a href="/about" class="footer-nav-link"><?= t("About us") ?></a>
+            <a href="/about" class="footer-nav-link">О нас</a>
         </div>
 
         <div class="footer-nav-block">
-            <a href="/contacts" class="footer-nav-link"><?= t("Contacts") ?></a>
+            <a href="/contacts" class="footer-nav-link">Контакты</a>
         </div>
     </div>
 
     <div class="footer-foot">
-        <a href="#" class="footer-foot-link">Terms and Conditions</a>
+        <a href="#" class="footer-foot-link">Политика конфиденциальности</a>
         <a href="mailto:welcome@oxegroup.ae" class="footer-foot-link">welcome@oxegroup.ae</a>
         <p class="footer-foot-year">2023</p>
     </div>

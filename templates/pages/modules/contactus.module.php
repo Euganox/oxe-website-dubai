@@ -51,7 +51,7 @@ if (isset($_POST) && !empty($_POST)) {
         <div class="contactUs-top">
             <h1 class="contactUs-title fz-4-rem font-arolse-serif color-white"><?= t("CONTACT US") ?></h1>
             <p class="contactUs-descr fz-1-3-rem color-white">
-                <?= t("Leave your details, and we will call you back within 10 minutes") ?>
+                We call you back in 10 minutes
             </p>
         </div>
 
@@ -72,10 +72,10 @@ if (isset($_POST) && !empty($_POST)) {
 
             <div class="contactUs-form-btn-place">
                 <p class="contactUs-form-term">
-                    <?= t("By clicking «send» you agree to the privacy policy") ?>
+                    By clicking submit you agree to the Terms and Conditions
                 </p>
                 <button class="btn btn-white-textred btn-text-bold">
-                    <?= t("send") ?>
+                    <?= t("submit") ?>
                     <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                         <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
                     </svg>

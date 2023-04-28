@@ -16,7 +16,7 @@ class Objects
                     4 => [
                         'type'  => 'text',
                         'class' => 'text-1',
-                        'text'  => Router::getLocale() === 'RU' ? 'БОЛЬШИЕ ДЕНЬГИ ПРИВЛЕКАЮТ ЕЩЕ БОЛЬШЕ ДЕНЕГ' : 'Big money attracts even more money'
+                        'text'  => Router::getLocale() === 'RU' ? 'МЫ ДЕЛАЕМ ТАК, ЧТОБЫ ВАШИ МИЛЛИАРДЫ РАБОТАЛИ НА ВАС' : 'Big money attracts even more money'
                     ],
                     10 => [
                         'type'  => 'text',
@@ -51,13 +51,13 @@ class Objects
     public static function getFilterWhere($get) : array {
         $where = ['where' => []];
 
-        if (isset($get['price']) && !empty($get['price'])) {
+        if (!empty($get['price'])) {
             $price = explode(';', $get['price']);
 
             $where['where'][] = "from_price_m2 >= ${price[0]} and from_price_m2 <= ${price[1]}";
         }
 
-        if (isset($get['district']) && !empty($get['district'])) {
+        if (!empty($get['district'])) {
             if (count($get['district']) > 1) {
                 $arrayQueryElement = [];
 
@@ -73,7 +73,7 @@ class Objects
             }
         }
 
-        if (isset($get['type']) && !empty($get['type'])) {
+        if (!empty($get['type'])) {
             if (count($get['type']) > 1) {
                 $arrayQueryElement = [];
 
@@ -86,6 +86,22 @@ class Objects
             } else {
                 $type = key($get['type']);
                 $where['where'][] = "types_of_apart LIKE '%${type}%'";
+            }
+        }
+
+        if (!empty($get['realty'])) {
+            if (count($get['realty']) > 1) {
+                $arrayQueryElement = [];
+
+                foreach ($get['realty'] as $typeName => $value) {
+                    $arrayQueryElement[] = "types_of_realty = '%".$typeName."%'";
+                }
+
+                $stringQueryElement = implode(' and ', $arrayQueryElement);
+                $where['where'][] = "(${stringQueryElement})";
+            } else {
+                $type = key($get['realty']);
+                $where['where'][] = "types_of_realty LIKE '%${type}%'";
             }
         }
 
@@ -149,6 +165,25 @@ class Objects
         } else {
             return Router::getSite() . "/public/images/$id/$src";
         }
+    }
+
+    public static function getRealtyString(string $str) {
+        $strToArr     = explode(', ', $str);
+        $middleArray  = [];
+
+        foreach ($strToArr as $item) {
+            if ($item === 'AP') {
+                $middleArray[] = 'Apartments';
+            } else if ($item === 'PE') {
+                $middleArray[] = 'Penthouse';
+            } else if ($item === 'VI') {
+                $middleArray[] = 'Villa';
+            } else if ($item === 'TO') {
+                $middleArray[] = 'Townhouse';
+            }
+        }
+
+        return implode(', ', $middleArray);
     }
 
     public static function checkPhoto($id, $src) : bool {

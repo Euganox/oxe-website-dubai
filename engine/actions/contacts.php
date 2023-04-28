@@ -1,6 +1,11 @@
 <?php
 
-$title = t('Contacts');
+$title = Router::getLocale() === 'RU' ? 'Контакты' : 'Contacts';
 
-$content = view('contacts');
-require TPL_PATH . 'layouts' . DIRECTORY_SEPARATOR . 'main.layout.php';
+$content = Router::view('contacts');
+
+if (Router::getLocale() === 'RU') {
+    require TPL_PATH . 'layouts' . DIRECTORY_SEPARATOR . 'main.ru.layout.php';
+} else {
+    require TPL_PATH . 'layouts' . DIRECTORY_SEPARATOR . 'main.layout.php';
+}

@@ -13,17 +13,15 @@
     <div class="catalog-global-filter">
         <div class="catalog-global-filter-close">закрыть</div>
 
-        <p class="section-first-bottom-title color-white">Выберите опции для вашей недвижимости</p>
-
         <div class="catalog-filter-group">
             <form method="get" class="catalog-filter">
                 <div class="catalog-filter-block">
-                    <p class="catalog-global-filter-title" for="price">Цена (m2)</p>
+                    <p class="catalog-global-filter-title" for="price">Цена (за м<sup>2</sup>)</p>
                     <input class="js-range-slider" name="price" id="price" type="text">
                 </div>
 
                 <div class="catalog-filter-block">
-                    <p class="catalog-global-filter-title">Выберите или введите район</p>
+                    <p class="catalog-global-filter-title">Район</p>
                     <div class="catalog-global-filter-btns">
                         <?php foreach ($districts as $district): ?>
                             <div>
@@ -37,7 +35,21 @@
                 </div>
 
                 <div class="catalog-filter-block">
-                    <p class="catalog-global-filter-title">Тип объекта</p>
+                    <p class="catalog-global-filter-title">Кол-во спален</p>
+                    <div class="catalog-global-filter-btns">
+                        <?php foreach ($typesOfRealty as $realty): ?>
+                            <div>
+                                <label class="filter-checkbox" for="<?= $realty['value'] ?>">
+                                    <input class="filter-checkbox-input" <?= isset($_GET['realty'][$realty['value']]) ? 'checked' : '' ?> id="<?= $realty['value'] ?>" type="checkbox" name="realty[<?= $realty['value'] ?>]">
+                                    <?= $realty['text'] ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-block">
+                    <p class="catalog-global-filter-title">Тип недвижимости</p>
                     <div class="catalog-global-filter-btns">
                         <?php foreach ($typesOfAparts as $apart): ?>
                             <div>
@@ -52,13 +64,13 @@
 
                 <div class="catalog-global-filter-bottom">
                     <button type="submit" id="btn_filter" class="catalog-global-filter-submit catalog-btn-filter btn btn-white-textred btn-text-bold">
-                        применить фильтр
+                        фильтровать
                         <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">
                             <path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z" />
                         </svg>
                     </button>
 
-                    <a href="/ru/catalog" class="catalog-link-filter catalog-global-filter-clear">очистить фильтр</a>
+                    <a href="/catalog" class="catalog-link-filter catalog-global-filter-clear">очистить фильтр</a>
                 </div>
             </form>
         </div>
@@ -72,13 +84,12 @@
 
 
         <div class="section-first-bottom">
-            <p class="section-first-bottom-title color-white">Выберите опции для вашей недвижимости</p>
-
             <div class="catalog-filter-group">
                 <div class="catalog-filter-titles">
-                    <p id="price" class="catalog-filter-accord">Цена (m2)</p>
-                    <p id="district" class="catalog-filter-accord">Выберите или введите район</p>
-                    <p id="type" class="catalog-filter-accord">Тип объекта</p>
+                    <p id="price" class="catalog-filter-accord">Цена (за м<sup>2</sup>)</p>
+                    <p id="district" class="catalog-filter-accord">Район</p>
+                    <p id="realty" class="catalog-filter-accord">Тип недвижимости</p>
+                    <p id="type" class="catalog-filter-accord">Кол-во спален</p>
                 </div>
 
                 <form method="get" class="catalog-filter">
@@ -96,6 +107,18 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
+
+                    <div id="realty_block" class="catalog-filter-block">
+                        <?php foreach ($typesOfRealty as $realty): ?>
+                            <div>
+                                <label class="filter-checkbox" for="<?= $realty['value'] ?>">
+                                    <input class="filter-checkbox-input" <?= isset($_GET['realty'][$realty['value']]) ? 'checked' : '' ?> id="<?= $realty['value'] ?>" type="checkbox" name="realty[<?= $realty['value'] ?>]">
+                                    <?= $realty['text'] ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
 
                     <div id="type_block" class="catalog-filter-block">
                         <?php foreach ($typesOfAparts as $apart): ?>
@@ -123,7 +146,7 @@
 
     <section class="catalog-section section section-second" id="tabs">
         <header class="catalog-section-header pl-296-px pr-296-px">
-            <h1 class="catalog-section-header-title font-arolse-serif fz-40-px">МЫ НАШЛИ: <?= count($objects) ?> ОБЪЕКТОВ</h1>
+            <h1 class="catalog-section-header-title font-arolse-serif fz-40-px">мы нашли: <?= count($objects) ?> объектов</h1>
             <select name="sort_by" class="sort">
                 <option disabled selected>Sort by</option>
                 <option value="from_price_m2">price</option>
@@ -131,8 +154,8 @@
             </select>
 
             <ul class="catalog-section-header-tabs">
-                <li class="catalog-section-header-tab" id="tab-one"><a href="#tabs-1">таблицей</a></li>
-                <li class="catalog-section-header-tab" id="tab-two"><a href="#tabs-2">картой</a></li>
+                <li class="catalog-section-header-tab" id="tab-one"><a href="#tabs-1">списком</a></li>
+                <li class="catalog-section-header-tab" id="tab-two"><a href="#tabs-2">на карте</a></li>
             </ul>
         </header>
         <div id="toInsertModal"></div>
@@ -159,12 +182,12 @@
 
                         <?php if(!empty($object['isTopSalesTag']) && !empty($object['isHottestTag'])): ?>
                             <div class="swiper-tags">
-                                <?php if($object['isHottestTag'] === 1): ?><img src="/public/assets/images/hottest.png" alt=""><?php endif; ?>
-                                <?php if($object['isTopSalesTag'] === 1): ?><img src="/public/assets/images/topsales.png" alt=""><?php endif; ?>
+                                <?php if($object['isHottestTag'] === 1): ?><img src="<?= Router::getSite() ?>/public/assets/images/hottest.png" alt=""><?php endif; ?>
+                                <?php if($object['isTopSalesTag'] === 1): ?><img src="<?= Router::getSite() ?>/public/assets/images/topsales.png" alt=""><?php endif; ?>
                             </div>
                         <?php endif; ?>
 
-                        <a onclick="openObject(<?= $object['id'] ?>);" class="swiper-item-link animate__animated animate__fadeIn"><img src="/public/assets/images/arrow-dia.svg" alt=""></a>
+                        <a onclick="openObjectRu(<?= $object['id'] ?>);" class="swiper-item-link animate__animated animate__fadeIn"><img src="<?= Router::getSite() ?>/public/assets/images/arrow-dia.svg" alt=""></a>
 
                         <div class="swiper-item-cover">
                             <div class="swiper-item-vision animate__animated animate__fadeInUp">
@@ -175,23 +198,23 @@
                             <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
                                 <div class="swiper-item-nonvision-top">
                                     <p class="swiper-item-nonvision-text fz-10-px">
-                                        <img src="/public/assets/images/calendar.svg" alt="">
-                                        Year: <br><?= $object['year'] ?>
+                                        <img src="<?= Router::getSite() ?>/public/assets/images/calendar.svg" alt="">
+                                        Год: <br><?= $object['year'] ?>
                                     </p>
                                     <?php if($object['installment']): ?>
                                         <p class="swiper-item-nonvision-text fz-10-px">
-                                            <img src="/public/assets/images/checkbox.svg" alt="">
-                                            Installment: <br>yes
+                                            <img src="<?= Router::getSite() ?>/public/assets/images/checkbox.svg" alt="">
+                                            Первоначальный платеж: да
                                         </p>
                                     <?php endif; ?>
                                     <p class="swiper-item-nonvision-text fz-10-px">
-                                        <img src="/public/assets/images/subtract.svg" alt="">
+                                        <img src="<?= Router::getSite() ?>/public/assets/images/subtract.svg" alt="">
                                         Initial payment:<br><?= $object['payment'] ?>
                                     </p>
                                 </div>
 
                                 <div class="swiper-item-nonvision-bottom font-raleway-light">
-                                    from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup>
+                                    От <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price_m2'] ?> $</span> за м<sup>2</sup>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +233,7 @@
                                 <p><?= $object['subtitle'] ?></p>
                             </div>
 
-                            <a onclick="openObject(<?= $object['id'] ?>)" class="addonForMap-object-header-link animate__animated animate__fadeIn"><img src="/public/assets/images/arrow-dia.svg" alt=""></a>
+                            <a onclick="openObjectRu(<?= $object['id'] ?>)" class="addonForMap-object-header-link animate__animated animate__fadeIn"><img src="<?= Router::getSite() ?>/public/assets/images/arrow-dia.svg" alt=""></a>
                         </div>
 
                         <div class="addonForMap-object-preferenses">
@@ -220,7 +243,7 @@
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9296 0C24.2058 0 24.4296 0.223858 24.4296 0.5V2.81104H26.9677C29.1769 2.81104 30.9677 4.6019 30.9677 6.81104V8.48389H0V6.81103C0 4.60189 1.79086 2.81104 4 2.81104H6.06891V0.5C6.06891 0.223858 6.29277 0 6.56891 0C6.84505 0 7.06891 0.223858 7.06891 0.5V2.81104H23.4296V0.5C23.4296 0.223858 23.6535 0 23.9296 0ZM0 9.48389H30.9677V27.4678C30.9677 29.6769 29.1769 31.4678 26.9677 31.4678H4C1.79086 31.4678 0 29.6769 0 27.4678V9.48389ZM6.48387 15.4839C6.48387 15.2077 6.26001 14.9839 5.98387 14.9839C5.70773 14.9839 5.48387 15.2077 5.48387 15.4839V16.4839C5.48387 16.76 5.70773 16.9839 5.98387 16.9839C6.26001 16.9839 6.48387 16.76 6.48387 16.4839V15.4839ZM10.4839 15.4839C10.4839 15.2077 10.26 14.9839 9.98387 14.9839C9.70773 14.9839 9.48387 15.2077 9.48387 15.4839V16.4839C9.48387 16.76 9.70773 16.9839 9.98387 16.9839C10.26 16.9839 10.4839 16.76 10.4839 16.4839V15.4839ZM14.9839 15.4839C14.9839 15.2077 14.76 14.9839 14.4839 14.9839C14.2077 14.9839 13.9839 15.2077 13.9839 15.4839V16.4839C13.9839 16.76 14.2077 16.9839 14.4839 16.9839C14.76 16.9839 14.9839 16.76 14.9839 16.4839V15.4839ZM19.4839 15.4839C19.4839 15.2077 19.26 14.9839 18.9839 14.9839C18.7077 14.9839 18.4839 15.2077 18.4839 15.4839V16.4839C18.4839 16.76 18.7077 16.9839 18.9839 16.9839C19.26 16.9839 19.4839 16.76 19.4839 16.4839V15.4839ZM23.9839 15.4839C23.9839 15.2077 23.76 14.9839 23.4839 14.9839C23.2077 14.9839 22.9839 15.2077 22.9839 15.4839V16.4839C22.9839 16.76 23.2077 16.9839 23.4839 16.9839C23.76 16.9839 23.9839 16.76 23.9839 16.4839V15.4839ZM6.48387 21.9839C6.48387 21.7077 6.26001 21.4839 5.98387 21.4839C5.70773 21.4839 5.48387 21.7077 5.48387 21.9839V22.9839C5.48387 23.26 5.70773 23.4839 5.98387 23.4839C6.26001 23.4839 6.48387 23.26 6.48387 22.9839V21.9839ZM10.4839 21.9839C10.4839 21.7077 10.26 21.4839 9.98387 21.4839C9.70773 21.4839 9.48387 21.7077 9.48387 21.9839V22.9839C9.48387 23.26 9.70773 23.4839 9.98387 23.4839C10.26 23.4839 10.4839 23.26 10.4839 22.9839V21.9839ZM14.9839 21.9839C14.9839 21.7077 14.76 21.4839 14.4839 21.4839C14.2077 21.4839 13.9839 21.7077 13.9839 21.9839V22.9839C13.9839 23.26 14.2077 23.4839 14.4839 23.4839C14.76 23.4839 14.9839 23.26 14.9839 22.9839V21.9839ZM19.4839 21.9839C19.4839 21.7077 19.26 21.4839 18.9839 21.4839C18.7077 21.4839 18.4839 21.7077 18.4839 21.9839V22.9839C18.4839 23.26 18.7077 23.4839 18.9839 23.4839C19.26 23.4839 19.4839 23.26 19.4839 22.9839V21.9839ZM23.9839 21.9839C23.9839 21.7077 23.76 21.4839 23.4839 21.4839C23.2077 21.4839 22.9839 21.7077 22.9839 21.9839V22.9839C22.9839 23.26 23.2077 23.4839 23.4839 23.4839C23.76 23.4839 23.9839 23.26 23.9839 22.9839V21.9839Z" fill="#C72D37"/>
                                     </svg>
 
-                                    Year:<br>
+                                    Год:<br>
                                     <?= $object['year'] ?>
                                 </p>
                             <?php endif; ?>
@@ -230,8 +253,8 @@
                                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 0C7.3873 0 0 7.3873 0 16.5C0 25.6127 7.3873 33 16.5 33C25.6127 33 33 25.6127 33 16.5C33 7.3873 25.6127 0 16.5 0ZM23.9021 10.7972C24.0662 10.5751 24.0193 10.262 23.7972 10.0979C23.5751 9.93377 23.262 9.98074 23.0979 10.2028L14.9252 21.26L10.3345 17.1284C10.1292 16.9436 9.81308 16.9603 9.62835 17.1655C9.44362 17.3708 9.46026 17.6869 9.66552 17.8716L14.6655 22.3716C14.7703 22.466 14.91 22.5116 15.0503 22.4975C15.1905 22.4833 15.3183 22.4106 15.4021 22.2972L23.9021 10.7972Z" fill="#C72D37"/>
                                     </svg>
-                                    Installment:<br>
-                                    yes
+                                    Первоначальный платеж:<br>
+                                    да
                                 </p>
                             <?php endif; ?>
 
@@ -247,7 +270,7 @@
                             <?php endif; ?>
                         </div>
 
-                        <p class="addonForMap-object-price">from <span><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup></p>
+                        <p class="addonForMap-object-price">От <span><?= $object['from_price_m2'] ?> $</span> за м<sup>2</sup></p>
                         <?php if(Objects::checkPhoto($object['id'], $object['foto_coverHoriz'])): ?>
                             <img loading="lazy" class="addonForMap-object-cover" src="<?= Objects::getPhotoUrl($object['id'], 'foto_coverHoriz', $object['foto_coverHoriz']) ?>" alt="">
                         <?php else: ?>

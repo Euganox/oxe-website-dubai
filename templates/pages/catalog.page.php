@@ -37,7 +37,21 @@
                 </div>
 
                 <div class="catalog-filter-block">
-                    <p class="catalog-global-filter-title">Type of object</p>
+                    <p class="catalog-global-filter-title">Realty Type</p>
+                    <div class="catalog-global-filter-btns">
+                        <?php foreach ($typesOfRealty as $realty): ?>
+                            <div>
+                                <label class="filter-checkbox" for="<?= $realty['value'] ?>">
+                                    <input class="filter-checkbox-input" <?= isset($_GET['realty'][$realty['value']]) ? 'checked' : '' ?> id="<?= $realty['value'] ?>" type="checkbox" name="realty[<?= $realty['value'] ?>]">
+                                    <?= $realty['text'] ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <div class="catalog-filter-block">
+                    <p class="catalog-global-filter-title">Property Type</p>
                     <div class="catalog-global-filter-btns">
                         <?php foreach ($typesOfAparts as $apart): ?>
                             <div>
@@ -78,7 +92,8 @@
                 <div class="catalog-filter-titles">
                     <p id="price" class="catalog-filter-accord">Price (m2)</p>
                     <p id="district" class="catalog-filter-accord">Select or enter the district</p>
-                    <p id="type" class="catalog-filter-accord">Type of object</p>
+                    <p id="realty" class="catalog-filter-accord">Realty Type</p>
+                    <p id="type" class="catalog-filter-accord">Property Type</p>
                 </div>
 
                 <form method="get" class="catalog-filter">
@@ -96,6 +111,18 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
+
+                    <div id="realty_block" class="catalog-filter-block">
+                        <?php foreach ($typesOfRealty as $realty): ?>
+                            <div>
+                                <label class="filter-checkbox" for="<?= $realty['value'] ?>">
+                                    <input class="filter-checkbox-input" <?= isset($_GET['realty'][$realty['value']]) ? 'checked' : '' ?> id="<?= $realty['value'] ?>" type="checkbox" name="realty[<?= $realty['value'] ?>]">
+                                    <?= $realty['text'] ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
 
                     <div id="type_block" class="catalog-filter-block">
                         <?php foreach ($typesOfAparts as $apart): ?>
@@ -176,12 +203,12 @@
                                 <div class="swiper-item-nonvision-top">
                                     <p class="swiper-item-nonvision-text fz-10-px">
                                         <img src="./public/assets/images/calendar.svg" alt="">
-                                        Year: <br><?= $object['year'] ?>
+                                        Handover: <br><?= $object['year'] ?>
                                     </p>
                                     <?php if($object['installment']): ?>
                                         <p class="swiper-item-nonvision-text fz-10-px">
                                             <img src="./public/assets/images/checkbox.svg" alt="">
-                                            Installment: <br>yes
+                                            Payment Plan: <br>yes
                                         </p>
                                     <?php endif; ?>
                                     <p class="swiper-item-nonvision-text fz-10-px">

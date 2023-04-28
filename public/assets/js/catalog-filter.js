@@ -6,13 +6,9 @@ if ($(window).width() > '736') {
     $('.catalog-filter-accord').click(function (e) {
         let block = $('#' + e.target.id + '_block');
 
-        console.log(block)
-
         if (block.hasClass("filter-active")) {
             block.removeClass("filter-active").fadeOut();
-            console.log('if')
         } else {
-            console.log('else')
             let otherEl = $(".catalog-filter-block.filter-active");
             otherEl.hide();
             otherEl.removeClass("filter-active");

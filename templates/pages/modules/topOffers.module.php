@@ -65,12 +65,12 @@ $objects = Objects::getTopObjects();
                         <div class="swiper-item-nonvision-top">
                             <p class="swiper-item-nonvision-text fz-10-px">
                                 <img src="./public/assets/images/calendar.svg" alt="">
-                                <?= t('Year') ?>: <br><?= $object['year'] ?>
+                                Handover: <br><?= $object['year'] ?>
                             </p>
                             <?php if($object['installment']): ?>
                             <p class="swiper-item-nonvision-text fz-10-px">
                                 <img src="./public/assets/images/checkbox.svg" alt="">
-                                <?= t('Installment') ?>: <br>yes
+                                Payment Plan: <br>yes
                             </p>
                             <?php endif; ?>
                             <p class="swiper-item-nonvision-text fz-10-px">

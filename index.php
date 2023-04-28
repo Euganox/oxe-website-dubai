@@ -34,6 +34,9 @@ session_start([
 if (isset($_GET['ajax'])) {
     include HLP_PATH . 'ajax.php';
     exit();
+} else if (isset($_GET['ajaxRu'])) {
+    include HLP_PATH . 'ajax.ru.php';
+    exit();
 }
 
 // Router::abort(404, 'COMING SOON');

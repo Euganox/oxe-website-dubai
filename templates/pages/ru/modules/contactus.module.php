@@ -71,7 +71,7 @@ if (isset($_POST) && !empty($_POST)) {
 
             <div class="contactUs-form-btn-place">
                 <p class="contactUs-form-term">
-                    нажимая “отправить” вы соглашаетесь с политикой
+                    нажимая “отправить” вы соглашаетесь с политикой конфиденциальности
                 </p>
                 <button class="btn btn-white-textred btn-text-bold">
                     отправить

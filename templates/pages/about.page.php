@@ -43,7 +43,7 @@ $services = [
                 <p class="fz-20-px">about<br>company</p>
             </a>
 
-            <p class="header-page-text color-white fz-20-px">a very important and interesting text, which will emphasize the merits of the company</p>
+            <p class="header-page-text color-white fz-20-px">We value our time and yours, we value you and your reputation, we count our money and yours. We give you an opportunity for your millions to become billions.</p>
         </div>
 
         <div class="header-page-bottom">
@@ -124,7 +124,7 @@ $services = [
             <div class="about-fourth-right pr-296-px">
                 <ul id="tab-items" class="about-fourth-info">
                     <li class="about-fourth-info-item about-fourth-info-active animate__animated animate__fadeIn">
-                        <p>Money must work. The OXE CAPITAL knows how to make it happen most efficiently.</p>
+                        <p>Money must work. The OXE GROUP knows how to make it happen most efficiently.</p>
                         <p>
                             The company investment department offers available and efficient ways of getting recurring
                             revenue. The department staff members possess expertise in how the Arabian real-estate
@@ -170,7 +170,7 @@ $services = [
                             Besides, those of us in charge of this segment of company operation take upon themselves
                             investment-portfolio management, perform sale and purchase of properties with good prospects
                             and assign assets to different lines of the company operation to lower risks. At the same
-                            time the company is fully liable for development and implementation of investors» financial
+                            time the company is fully liable for development and implementation of investors financial
                             strategies and provides insurance support to improve client security.
                         </p>
                     </li>
@@ -180,7 +180,7 @@ $services = [
                             The OXE GROUP department of the city real properties is a team of super professional real estate brokers, who have good understanding of how the attractiveness of the capital's districts changes depending on global processes, as well as good grasp of minor nuances of selling properties offered by owners.
                         </p>
                         <p>
-                            The department staff numbers 22 professionals possessing expertise and high-standard competence in the field of real estate resale. They initiate a great deal of transactions in the company. Brokers of the city real estate department truly love properties that are put to sale, they are knowledgeable about the history of Moscow and its topography: streets, avenues, squares and lanes. More often than not customers of the city real estate department become good friends with the brokers, who, in their turn, become family real estate agents engaged by several generations.
+                            The department staff numbers 22 professionals possessing expertise and high-standard competence in the field of real estate resale. They initiate a great deal of transactions in the company. Brokers of the city real estate department truly love properties that are put to sale, they are knowledgeable about the history of Dubai and its topography: streets, avenues, squares and lanes. More often than not customers of the city real estate department become good friends with the brokers, who, in their turn, become family real estate agents engaged by several generations.
                         </p>
                     </li>
                 </ul>

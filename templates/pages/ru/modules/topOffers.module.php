@@ -48,12 +48,12 @@ $objects = Objects::getTopObjects();
 
                 <?php if(!empty($object['isTopSalesTag']) && !empty($object['isHottestTag'])): ?>
                     <div class="swiper-tags">
-                        <?php if($object['isHottestTag'] === 1): ?><img src="./public/assets/images/hottest.png" alt=""><?php endif; ?>
-                        <?php if($object['isTopSalesTag'] === 1): ?><img src="./public/assets/images/topsales.png" alt=""><?php endif; ?>
+                        <?php if($object['isHottestTag'] === 1): ?><img src="<?= Router::getSite() ?>/public/assets/images/hottest.png" alt=""><?php endif; ?>
+                        <?php if($object['isTopSalesTag'] === 1): ?><img src="<?= Router::getSite() ?>/public/assets/images/topsales.png" alt=""><?php endif; ?>
                     </div>
                 <?php endif; ?>
 
-                <a onclick="openObject(<?= $object['id'] ?>)" class="swiper-item-link animate__animated animate__fadeIn"><img src="./public/assets/images/arrow-dia.svg" alt=""></a>
+                <a onclick="openObjectRu(<?= $object['id'] ?>)" class="swiper-item-link animate__animated animate__fadeIn"><img src="<?= Router::getSite() ?>/public/assets/images/arrow-dia.svg" alt=""></a>
 
                 <div class="swiper-item-cover">
                     <div class="swiper-item-vision animate__animated animate__fadeInUp">
@@ -64,23 +64,23 @@ $objects = Objects::getTopObjects();
                     <div class="swiper-item-nonvision animate__animated animate__fadeInUp">
                         <div class="swiper-item-nonvision-top">
                             <p class="swiper-item-nonvision-text fz-10-px">
-                                <img src="./public/assets/images/calendar.svg" alt="">
-                                <?= t('Year') ?>: <br><?= $object['year'] ?>
+                                <img src="<?= Router::getSite() ?>/public/assets/images/calendar.svg" alt="">
+                                Год: <br><?= $object['year'] ?>
                             </p>
                             <?php if($object['installment']): ?>
                             <p class="swiper-item-nonvision-text fz-10-px">
-                                <img src="./public/assets/images/checkbox.svg" alt="">
-                                <?= t('Installment') ?>: <br>yes
+                                <img src="<?= Router::getSite() ?>/public/assets/images/checkbox.svg" alt="">
+                                Первоначальный платеж: да
                             </p>
                             <?php endif; ?>
                             <p class="swiper-item-nonvision-text fz-10-px">
-                                <img src="./public/assets/images/subtract.svg" alt="">
+                                <img src="<?= Router::getSite() ?>/public/assets/images/subtract.svg" alt="">
                                 <?= t('Initial payment') ?>:<br><?= $object['payment'] ?>
                             </p>
                         </div>
 
                         <div class="swiper-item-nonvision-bottom font-raleway-light">
-                            from <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price_m2'] ?> $</span> per m<sup>2</sup>
+                            От <span class="swiper-item-nonvision-bottom-price font-raleway-semibold fz-1-5-rem"><?= $object['from_price_m2'] ?> $</span> за м<sup>2</sup>
                         </div>
                     </div>
                 </div>

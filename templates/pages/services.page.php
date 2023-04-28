@@ -17,7 +17,7 @@
     </header>
 
     <section class="services-section section section-first">
-        <p class="services-section-greeting font-raleway-light">Even if you are not going to invest in<br>real estate we can help you</p>
+        <p class="services-section-greeting font-raleway-light">We can be of service to you</p>
     </section>
 
     <section class="services-section section section-second pr-296-px">
