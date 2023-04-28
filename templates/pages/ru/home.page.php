@@ -104,8 +104,8 @@
                 Our ideology
             </p>
             <p class="section-fifth-text beauty-body-words fz-3-5-rem font-arolse-serif">
-                МЫ <span class="beauty-body-words fz-3-5-rem font-arolse-serif text-color-red">МОЛОДЫ, ЭНЕРГИЧНЫ ИАМБИЦИОЗНЫ,</span>
-                И ЗНАЧИТ, ВЫ ПЕРВЫМИ ПОЛУЧАЕТЕ ДОСТУП КО ВСЕМУ САМОМУ ЛУЧШЕМУ.
+                МЫ <span class="beauty-body-words fz-3-5-rem font-arolse-serif text-color-red">МОЛОДЫ, ЭНЕРГИЧНЫ И АМБИЦИОЗНЫ,</span>
+                И ЗНАЧИТ, ВЫ ПЕРВЫМИ ПОЛУЧАЕТЕ ДОСТУП КО ВСЕМУ САМОМУ ЛУЧШЕМУ
             </p>
         </div>
 
