@@ -1,6 +1,10 @@
 <header class="header flex-default-sb-c">
     <div class="header-lg-2 header-sm-1 for-nav">
-        <a href="/" class="header-logo"><img src="/public/assets/images/whitelogo.webp" alt="" class="header-logo-img"></a>
+        <?php if(Router::getLocale() === 'RU'): ?>
+            <a href="/ru/" class="header-logo"><img src="/public/assets/images/whitelogo.webp" alt="" class="header-logo-img"></a>
+        <?php else: ?>
+            <a href="/" class="header-logo"><img src="/public/assets/images/whitelogo.webp" alt="" class="header-logo-img"></a>
+        <?php endif; ?>
         <div class="fat-nav">
             <div class="fat-nav__wrapper">
                 <ul>
