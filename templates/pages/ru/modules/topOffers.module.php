@@ -57,8 +57,8 @@ $objects = Objects::getTopObjects();
 
                 <div class="swiper-item-cover">
                     <div class="swiper-item-vision animate__animated animate__fadeInUp">
-                        <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight"><?= $object['title'] ?></h1>
-                        <p class="swiper-item-text color-white font-raleway-light"><?= $object['subtitle'] ?></p>
+                        <h1 class="swiper-item-title fz-36-px color-white font-raleway-extralight"><?= $object['title_ru'] ?? $object['title'] ?></h1>
+                        <p class="swiper-item-text color-white font-raleway-light"><?= $object['subtitle_ru'] ?? $object['subtitle'] ?></p>
                     </div>
 
                     <div class="swiper-item-nonvision animate__animated animate__fadeInUp">

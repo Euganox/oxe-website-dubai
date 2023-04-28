@@ -2241,6 +2241,15 @@ select.sort {
     margin-bottom: 0.8rem;
 }
 
+.ajax-modal-description-text ul {
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.ajax-modal-description-text ul li {
+    margin-bottom: 0.5rem;
+}
+
 .ajax-modal-slider {
     height: 100%;
 }

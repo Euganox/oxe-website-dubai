@@ -41,8 +41,19 @@ if (isset($_GET['openObject'])) {
     $toEcho .= "<div class='ajax-modal-right'>";
     $toEcho .= "<div class='ajax-modal-header'>";
     $toEcho .= "<div class='ajax-modal-header-left'>";
-    $toEcho .= "<h1 class='ajax-modal-header-title'>${object['title']}</h1>";
-    $toEcho .= "<p class='ajax-modal-header-discr'>${object['subtitle']}</p>";
+
+    if (isset($object['title_ru'])) {
+        $toEcho .= "<h1 class='ajax-modal-header-title'>{$object['title_ru']}</h1>";
+    } else {
+        $toEcho .= "<h1 class='ajax-modal-header-title'>{$object['title']}</h1>";
+    }
+
+    if (isset($object['subtitle_ru'])) {
+        $toEcho .= "<p class='ajax-modal-header-discr'>{$object['subtitle_ru']}</p>";
+    } else {
+        $toEcho .= "<p class='ajax-modal-header-discr'>{$object['subtitle']}</p>";
+    }
+
     $toEcho .= "</div>";
 
     $toEcho .= "</div>";
@@ -72,10 +83,12 @@ if (isset($_GET['openObject'])) {
     $toEcho .= "</div>";
 
     $toEcho .= "<div class='ajax-modal-block ajax-modal-description'>";
-    $toEcho .= "<h3 class='ajax-modal-subtitle'>Описание объекта</h3>";
-    $toEcho .= "<div class='ajax-modal-description-text'>
-                        ${object['description']}
-                    </div>";
+        $toEcho .= "<h3 class='ajax-modal-subtitle'>Описание объекта</h3>";
+        if (!empty($object['description_ru'])) {
+            $toEcho .= "<div class='ajax-modal-description-text'>{$object['description_ru']}</div>";
+        } else {
+            $toEcho .= "<div class='ajax-modal-description-text'>{$object['description']}</div>";
+        }
     $toEcho .= "</div>";
 
     $toEcho .= "<div class='ajax-modal-block ajax-modal-bottom'>";
