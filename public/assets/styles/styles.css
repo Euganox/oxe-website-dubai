@@ -58,21 +58,21 @@
     font-style: italic;
 }
 
-/*@font-face {*/
-/*    font-family: 'ArolseSerif';*/
-/*    src:    url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),*/
-/*    url("../fonts/arolse/AB_serif.otf") format('opentype'),*/
-/*    url("../fonts/arolse/AB_serif.ttf") format('truetype');*/
-/*    font-weight: 400;*/
-/*    font-style: normal;*/
-/*}*/
-
 @font-face {
     font-family: 'ArolseSerif';
-    src: url("../fonts/ricordi.ttf") format('truetype');
+    src: url(../fonts/arolse/ArolseBelmonteriaSerif.woff) format('woff'),
+    url("../fonts/arolse/AB_serif.otf") format('opentype'),
+    url("../fonts/arolse/AB_serif.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
+
+/*@font-face {*/
+/*    font-family: 'ArolseSerif';*/
+/*    src: url("../fonts/ricordi.ttf") format('truetype');*/
+/*    font-weight: 400;*/
+/*    font-style: normal;*/
+/*}*/
 
 @font-face {
     font-family: 'ArolseSerifItalic';
