@@ -39,13 +39,21 @@ class Objects
     }
 
     public static function getAllObjects(): array {
-        return DB::select('soho_int_objects_site', '*', ['where' => ['archive = 0', 'foto_coverHoriz != ""']]);
+        return DB::select(
+            'soho_int_objects_site',
+            '*',
+            [
+                'where' => ['archive = 0', 'foto_coverHoriz != ""'],
+                'order' => 'id desc'
+            ]);
     }
 
     public static function getFilteredObjects($get) {
-        $where = self::getFilterWhere($get);
+        $where      = self::getFilterWhere($get);
+        $parameters = array_merge($where, ['order' => 'id desc']);
 
-        return DB::select('soho_int_objects_site', '*', $where);
+
+        return DB::select('soho_int_objects_site', '*', $parameters);
     }
 
     public static function getFilterWhere($get) : array {
@@ -141,7 +149,11 @@ class Objects
     }
 
     public static function getTopObjects() : array {
-        return DB::select('soho_int_objects_site', '*', ['where' => ["isTop = 1"]]);
+        return DB::select('soho_int_objects_site', '*',
+            [
+                'where' => ["isTop = 1"],
+                'order' => 'id desc'
+            ]);
     }
 
     public static function translateRealtyTypes($arr) : array {
