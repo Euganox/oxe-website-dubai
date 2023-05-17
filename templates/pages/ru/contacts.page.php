@@ -10,7 +10,7 @@
 
             <div class="contacts-line-mobile">
                 <header class="contacts-line-head">
-                    <p class="contacts-line-title fz-40-px font-arolse-serif">НАШИ<br>КОНТАКТЫ</p>
+                    <p class="contacts-line-title fz-40-px font-vetrino">НАШИ<br>КОНТАКТЫ</p>
                     <p class="contacts-line-text">Dubai, Business Bay, Metropolis Tower Penthouse, 22nd floor, Holding "OXE GROUP"</p>
                 </header>
 
@@ -70,7 +70,7 @@
 
             <div class="contacts-line">
                 <header class="contacts-line-head">
-                    <p class="contacts-line-title fz-40-px font-arolse-serif">НАШИ<br>КОНТАКТЫ</p>
+                    <p class="contacts-line-title fz-40-px font-vetrino">НАШИ<br>КОНТАКТЫ</p>
                     <p class="contacts-line-text">Dubai, Business Bay, Metropolis Tower Penthouse, 22nd floor, Holding "OXE GROUP"</p>
                 </header>
 
@@ -132,11 +132,11 @@
 
     <section class="contacts-section section section-first pl-296-px">
         <p class="section-second-author beauty-text-words font-arolse-script fz-40-px color-red">Ermishina Oxana</p>
-        <p class="section-second-text fz-3-25-rem font-arolse-serif ">
+        <p class="section-second-text fz-3-25-rem font-vetrino f-up">
             Мы любим большие дома, большие сделки и большие деньги. И сделали эту любовь своей работой. Купить,
             арендовать, продать, инвестировать, оформить, проконсультировать и выполнить еще миллион действий
         </p>
-        <p class="section-second-text section-second-text-gradient fz-3-5-rem font-arolse-serif">
+        <p class="section-second-text section-second-text-gradient fz-3-5-rem font-vetrino f-up">
             – не вопрос.
         </p>
     </section>

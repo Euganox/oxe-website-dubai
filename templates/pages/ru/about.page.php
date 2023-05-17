@@ -43,12 +43,12 @@ $services = [
         </div>
 
         <div class="header-page-bottom">
-            <p class="font-arolse-serif color-white fz-6-7-rem">ДЕНЬГИ ДОЛЖНЫ</p>
+            <p class="font-vetrino color-white fz-6-7-rem">ДЕНЬГИ ДОЛЖНЫ</p>
         </div>
     </header>
 
     <section class="about-section section section-first pl-296-px">
-        <p class="font-arolse-serif fz-6-7-rem">РАБОТАТЬ</p>
+        <p class="font-vetrino fz-6-7-rem">РАБОТАТЬ</p>
     </section>
 
     <section class="about-section section section-second">
@@ -65,8 +65,8 @@ $services = [
         <div class="about-rightside">
             <p class="about-rightside-script beauty-text-words font-arolse-script fz-40-px color-red">Billion-worth real estate in Dubai</p>
 
-            <p class="about-rightside-title-main font-arolse-serif fz-80-px"><span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>XE<br>&nbsp;&nbsp;&nbsp;GROUP</p>
-            <p class="about-rightside-title-tel font-arolse-serif fz-80-px"><span class="font-arolse-serif-special font-arolse-serif fz-80-px">O</span>XE GROUP</p>
+            <p class="about-rightside-title-main font-vetrino fz-80-px">OXE<br>&nbsp;&nbsp;&nbsp;GROUP</p>
+            <p class="about-rightside-title-tel font-vetrino fz-80-px">OXE GROUP</p>
 
             <p class="about-rightside-text pr-296-px">
                 Если вас не пугают такие цифры – тогда вы по адресу. А в адресах мы настоящие профи. Мы любим большие
@@ -92,7 +92,7 @@ $services = [
     <section class="about-section section section-third pl-296-px">
         <div class="about-swiper">
             <div class="about-swiper-header">
-                <h2 class="about-swiper-title font-arolse-serif fz-80-px">МЫ КОМАНДА</h2>
+                <h2 class="about-swiper-title font-vetrino fz-80-px">МЫ КОМАНДА</h2>
 
                 <div class="about-swiper-header-nav flex-default-sb-c">
                     <div id="goToPrevSlide" class="swiper-header-nav-left"><svg class="swiper-header-nav-arrow swiper-header-nav-arrow-left" style="transform: rotate(180deg);" width="49" height="14" viewBox="0 0 49 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42 0L40.59 1.41L45.17 6H0.5V8H45.17L40.58 12.59L42 14L49 7L42 0Z"/></svg></div>
@@ -113,8 +113,8 @@ $services = [
     </section>
 
     <section class="about-section section section-fourth">
-        <h2 class="pl-296-px about-fourth-title font-arolse-serif fz-80-px fw-400">
-            ДЕПАРТАМЕНТЫ В <span class="font-arolse-serif fz-80-px color-red color-red">ДУБАЕ</span>
+        <h2 class="pl-296-px about-fourth-title font-vetrino fz-80-px fw-400">
+            ДЕПАРТАМЕНТЫ В <span class="font-vetrino fz-80-px color-red color-red">ДУБАЕ</span>
         </h2>
 
         <div class="about-fourth-block">
@@ -215,8 +215,8 @@ $services = [
     <section class="about-section section section-fifth">
         <div class="about-services pl-296-px pr-296-px">
             <div class="about-services-head">
-                <h2 class="about-services-title font-arolse-serif color-white fz-80-px">
-                    <span class="font-arolse-serif-special font-arolse-serif color-white fz-80-px">НАШИ УСЛУГИ
+                <h2 class="about-services-title font-vetrino color-white fz-80-px">
+                    НАШИ УСЛУГИ
                 </h2>
                 <a href="/ru/services" class="btn btn-white-textred btn-text-bold about-services-link">все услуги
                     <svg class="svg-arrow-i" width="49" height="14" viewBox="0 0 49 13" xmlns="http://www.w3.org/2000/svg">

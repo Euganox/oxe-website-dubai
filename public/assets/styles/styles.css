@@ -75,6 +75,13 @@
 /*}*/
 
 @font-face {
+    font-family: 'Vetrino';
+    src: url("../fonts/Vetrino.otf") format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'ArolseSerifItalic';
     src:    url(../fonts/arolse/ArolseBelmonteriaSerifItalic.woff),
     url("../fonts/arolse/AB_serif_italic.otf") format('opentype'),
@@ -243,6 +250,14 @@ img[data-src] {
 
 .font-raleway-semibold {
     font-family: 'RalewaySemiBold', serif;
+}
+
+.font-vetrino {
+    font-family: 'Vetrino';
+}
+
+.f-up {
+    text-transform: uppercase;
 }
 
 .btn {
