@@ -92,13 +92,13 @@ class Router {
         $uriArr = array_values(array_filter(explode('/', explode('?', $_SERVER['REQUEST_URI'])[0]), fn($it) => boolval($it)));
 
         if (isset($uriArr[0]) && $uriArr[0] === 'ru'
-            || $uriArr[0] === 'lora'
-            || $uriArr[0] === 'mer'
-            || $uriArr[0] === 'ub'
-            || $uriArr[0] === 'mont'
-            || $uriArr[0] === 'play'
-            || $uriArr[0] === 'bit'
-            || $uriArr[0] === 'ral'
+            || isset($uriArr[0]) && $uriArr[0] === 'lora'
+            || isset($uriArr[0]) && $uriArr[0] === 'mer'
+            || isset($uriArr[0]) && $uriArr[0] === 'ub'
+            || isset($uriArr[0]) && $uriArr[0] === 'mont'
+            || isset($uriArr[0]) && $uriArr[0] === 'play'
+            || isset($uriArr[0]) && $uriArr[0] === 'bit'
+            || isset($uriArr[0]) && $uriArr[0] === 'ral'
         ) {
             $currentAction = Arrays::arrayGet($uriArr, 1, $default);
         } else {
