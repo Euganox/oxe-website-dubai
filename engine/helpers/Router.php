@@ -19,6 +19,20 @@ class Router {
 
         if (isset($uriArr[0]) && ($uriArr[0] === 'ru' || $uriArr[0] === 'RU')) {
             return 'RU';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'lora' || $uriArr[0] === 'LORA')) {
+            return 'LORA';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'mont' || $uriArr[0] === 'MONT')) {
+            return 'MONT';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'play' || $uriArr[0] === 'PLAY')) {
+            return 'PLAY';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'mer' || $uriArr[0] === 'MER')) {
+            return 'MER';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'bit' || $uriArr[0] === 'BIT')) {
+            return 'BIT';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'UB' || $uriArr[0] === 'ub')) {
+            return 'UB';
+        } else if (isset($uriArr[0]) && ($uriArr[0] === 'ral' || $uriArr[0] === 'RAL')) {
+            return 'RAL';
         } else {
             return 'EN';
         }
@@ -38,6 +52,20 @@ class Router {
 
         if (self::getLocale() === 'RU') {
             require TPL_PATH . 'pages/ru/' . $page . '.page.php';
+        } else if (self::getLocale() === 'LORA') {
+            require TPL_PATH . 'pages/lora/' . $page . '.page.php';
+        } else if (self::getLocale() === 'MER') {
+            require TPL_PATH . 'pages/mer/' . $page . '.page.php';
+        } else if (self::getLocale() === 'MONT') {
+            require TPL_PATH . 'pages/mont/' . $page . '.page.php';
+        } else if (self::getLocale() === 'PLAY') {
+            require TPL_PATH . 'pages/play/' . $page . '.page.php';
+        } else if (self::getLocale() === 'BIT') {
+            require TPL_PATH . 'pages/bit/' . $page . '.page.php';
+        } else if (self::getLocale() === 'UB') {
+            require TPL_PATH . 'pages/ub/' . $page . '.page.php';
+        } else if (self::getLocale() === 'RAL') {
+            require TPL_PATH . 'pages/ral/' . $page . '.page.php';
         } else {
             require TPL_PATH . 'pages/' . $page . '.page.php';
         }
@@ -63,7 +91,15 @@ class Router {
     private static function getCurrentAction($default = "home") : string {
         $uriArr = array_values(array_filter(explode('/', explode('?', $_SERVER['REQUEST_URI'])[0]), fn($it) => boolval($it)));
 
-        if (isset($uriArr[0]) && $uriArr[0] === 'ru') {
+        if (isset($uriArr[0]) && $uriArr[0] === 'ru'
+            || $uriArr[0] === 'lora'
+            || $uriArr[0] === 'mer'
+            || $uriArr[0] === 'ub'
+            || $uriArr[0] === 'mont'
+            || $uriArr[0] === 'play'
+            || $uriArr[0] === 'bit'
+            || $uriArr[0] === 'ral'
+        ) {
             $currentAction = Arrays::arrayGet($uriArr, 1, $default);
         } else {
             $currentAction = Arrays::arrayGet($uriArr, 0, $default);

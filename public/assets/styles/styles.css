@@ -256,6 +256,34 @@ img[data-src] {
     font-family: 'Vetrino';
 }
 
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-bitter {
+    font-family: 'Bitter', serif;
+}
+
+.font-mer {
+    font-family: 'Merriweather', serif;
+}
+
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-play {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-ral {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-ub {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .f-up {
     text-transform: uppercase;
 }
