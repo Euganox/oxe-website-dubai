@@ -78,7 +78,21 @@
     font-family: 'Vetrino';
     src: url("../fonts/Vetrino.otf") format('opentype');
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url("../fonts/RobotoCondensed-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedLight';
+    src: url("../fonts/RobotoCondensed-Light.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
@@ -254,6 +268,14 @@ img[data-src] {
 
 .font-vetrino {
     font-family: 'Vetrino';
+}
+
+.font-cond {
+    font-family: 'RobotoCondensed';
+}
+
+.font-cond-light {
+    font-family: 'RobotoCondensedLight';
 }
 
 .font-lora {

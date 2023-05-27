@@ -33,6 +33,8 @@ class Router {
             return 'UB';
         } else if (isset($uriArr[0]) && ($uriArr[0] === 'ral' || $uriArr[0] === 'RAL')) {
             return 'RAL';
+        }  else if (isset($uriArr[0]) && ($uriArr[0] === 'cond' || $uriArr[0] === 'COND')) {
+            return 'COND';
         } else {
             return 'EN';
         }
@@ -66,6 +68,8 @@ class Router {
             require TPL_PATH . 'pages/ub/' . $page . '.page.php';
         } else if (self::getLocale() === 'RAL') {
             require TPL_PATH . 'pages/ral/' . $page . '.page.php';
+        } else if (self::getLocale() === 'COND') {
+            require TPL_PATH . 'pages/cond/' . $page . '.page.php';
         } else {
             require TPL_PATH . 'pages/' . $page . '.page.php';
         }
@@ -99,6 +103,7 @@ class Router {
             || isset($uriArr[0]) && $uriArr[0] === 'play'
             || isset($uriArr[0]) && $uriArr[0] === 'bit'
             || isset($uriArr[0]) && $uriArr[0] === 'ral'
+            || isset($uriArr[0]) && $uriArr[0] === 'cond'
         ) {
             $currentAction = Arrays::arrayGet($uriArr, 1, $default);
         } else {
