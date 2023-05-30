@@ -2525,6 +2525,7 @@ select.sort {
     .home-section.section-first, .catalog-section.section-first {
         background: #afafaf url('../images/mainCover1024.webp') no-repeat;
         background-size: cover;
+        background-position-x: center;
     }
 
     .header-page {
@@ -2663,6 +2664,7 @@ select.sort {
     .home-section.section-first, .catalog-section.section-first {
         background: #afafaf url('../images/mainCover720.webp') no-repeat;
         background-size: cover;
+        background-position-x: center;
     }
 
     .display-sm-none {
