@@ -2,11 +2,3 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php
-
-#Add WWW | Добавление WWW
-# Make sure we have www. in the HTTP HOST
-RewriteCond %{HTTP_HOST} ^oxegroup\.ae$ [NC]
-RewriteRule (.*) http://www\.oxegroup\.ae%{REQUEST_URI} [R=301]
-# Remove WWW | Удаление WWW
-RewriteCond %{HTTP_HOST} www\.oxegroup\.ae
-RewriteRule (.*) http://oxegroup\.ae%{REQUEST_URI} [L,R=301]
