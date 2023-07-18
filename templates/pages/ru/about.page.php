@@ -53,7 +53,7 @@ $services = [
 
     <section class="about-section section section-second">
         <div class="about-leftside">
-            <img loading="lazy" src="/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
+            <img src="/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
 
             <p class="about-leftside-text">
                 Мы специализируемся на инвестициях в элитную недвижимость. А это значит, что с нами вы сможете зайти в

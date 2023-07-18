@@ -42,7 +42,7 @@
 
     <div class="footer-tel">
         <p class="footer-tel-tel color-white font-arolse-serif fz-80-px">
-            +971 467 92 475
+            +971 4 243 8653
         </p>
 
         <a href="#contactUs" class="footer-tel-btn btn btn-red-textwhite btn-text-bold">

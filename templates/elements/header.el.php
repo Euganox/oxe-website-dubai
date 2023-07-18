@@ -27,6 +27,6 @@
     </div>
 
     <div class="header-lg-2 display-sm-none">
-        <a href="tel:971-58-570-5947" class="header-tel fz-20-px"><img src="/public/assets/images/phone.png" alt="" class="header-tel-img">+971 58 570 5947</a>
+        <a href="tel:97142438653" class="header-tel fz-20-px"><img src="/public/assets/images/phone.png" alt="" class="header-tel-img">+971 4 243 8653</a>
     </div>
 </header>

@@ -57,7 +57,7 @@ $services = [
 
     <section class="about-section section section-second">
         <div class="about-leftside">
-            <img loading="lazy" src="<?= Router::getSite() ?>/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
+            <img src="<?= Router::getSite() ?>/public/assets/images/office_view1.webp" alt="" class="about-leftside-img">
 
             <p class="about-leftside-text">
                 Our mane focus is investments. We do pre-sales at the most famous projects in Dubai and give an opportunity for your millions become billions. We work as if we expect to live forever, and live the way as if we do not work.
