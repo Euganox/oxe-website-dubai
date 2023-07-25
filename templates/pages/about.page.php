@@ -106,6 +106,13 @@ $services = [
         </div>
     </section>
 
+    <section style="margin-bottom: 15rem;" class="about-section section section-six pl-296-px">
+        <h2 class="about-swiper-title font-arolse-serif fz-80-px">
+            To know more a<span class="font-arolse-serif-special font-arolse-serif fz-80-px">b</span>out us rea<span class="font-arolse-serif-special font-arolse-serif fz-80-px">d</span>
+            <a target="_blank" href="/public/assets/pdf/OxeBook_2023.pdf" style="border-bottom: 5px solid #C72D37;" class="font-arolse-serif fz-80-px color-red">OXE BOOK</a>
+        </h2>
+    </section>
+
     <section class="about-section section section-fourth">
         <h2 class="pl-296-px about-fourth-title font-arolse-serif fz-80-px fw-400">
             <span class="font-arolse-serif-special font-arolse-serif fz-80-px">D</span>UBAI <span class="font-arolse-serif fz-80-px color-red color-red">DEPARTMENTS</span>

@@ -40,3 +40,4 @@
 <script src="<?= Router::getSite() ?>/public/assets/js/catalog-objects.js"></script>
 <script src="<?= Router::getSite() ?>/public/assets/js/contactUsInputs.js"></script>
 <script src="<?= Router::getSite() ?>/public/assets/js/loaded-imgs.js"></script>
+<script defer src="<?= Router::getSite() ?>/public/assets/js/fontawesome2/js/all.min.js"></script>

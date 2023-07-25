@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <link rel="stylesheet" href="<?= Router::getSite() ?>/public/assets/js/build/css/intlTelInput.min.css">
 <link rel="stylesheet" href="<?= Router::getSite() ?>/public/assets/js/amodal/amodal.css">
+<link href="<?= Router::getSite() ?>/public/assets/js/fontawesome2/css/all.min.css" rel="stylesheet" />
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'>

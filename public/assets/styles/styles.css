@@ -1095,13 +1095,22 @@ img[data-src] {
     margin-bottom: 6rem;
 }
 
-.footer-head .footer-head-socials {
-    -ms-grid-column-align: start;
-    justify-self: start;
+.footer-head-socials {
+    display: flex;
+    gap: 1rem;
 }
 
-.footer-head-social:nth-child(2n) {
-    margin: 0 0.9rem;
+.contacts-head-socials {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.footer-head-social {
+    transition: all 0.3s;
+}
+
+.footer-head-social:hover {
+    opacity: 0.7;
 }
 
 .footer-head .footer-head-btn {
